@@ -13,6 +13,8 @@ To begin, visit the official micro:bit introduction page:
 
 This page provides an overview of the micro:bit device, its features, and what you need to get started.
 
+!micro:bit setup.png
+
 ---
 
 ## 2. Coding with micro:bit
