@@ -9,16 +9,15 @@ Welcome to your journey with the **BBC micro:bit**! This guide will walk you thr
 The **micro:bit** is a pocket-sized computer designed to make learning and teaching easy and fun. It features:
 
 - A 5x5 LED matrix  
-- Two programmable buttons (A and B)  
-- Motion detection (accelerometer)  
-- Compass  
+- Two programmable buttons (A and B)   
 - Bluetooth connectivity  
 - USB interface  
-- Input/output rings for external components
+- Input/output 
 
 👉 **Start here:** micro:bit Getting Started Guide
 
 This official guide provides an overview of the device, its features, and what you need to begin.
+https://microbit.org/get-started/getting-started/get-coding/?device=computer
 
 ---
 
@@ -28,10 +27,14 @@ You can program your micro:bit in two main ways:
 
 ### A. On a Computer (Browser-Based)
 
+
 1. Open your browser and go to the [MakeCode Editor
-2. Use the block-based or JavaScript editor to write your code.
-3. Click **Download** to save the `.hex` file.
-4. Connect your micro:bit via USB and drag the `.hex` file onto the device.
+2. https://microbit.org/code/
+https://makecode.microbit.org/
+https://classroom.microbit.org/
+3. Use the block-based or JavaScript editor to write your code.
+4. Click **Download** to save the `.hex` file.
+5. Connect your micro:bit via USB and drag the `.hex` file onto the device.
 
 ✅ **Tip:** The micro:bit will flash its LEDs when the code is successfully transferred.
 
@@ -83,3 +86,4 @@ Once paired, you can download and run your code wirelessly from the app.
 
 - [micro:bit Projects- micro:bit Support
 - micro:bit Python Editor
+https://support.microbit.org/support/home
