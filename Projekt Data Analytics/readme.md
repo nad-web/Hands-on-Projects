@@ -2,11 +2,10 @@
 # Synchronisation zweier asynchroner Datensätze mittels Mustererkennung und maschinellem Lernen  
 ## Eine wissenschaftliche Analyse für das MR-TOF-MS-Experiment
 
-![Projektübersicht](https://via.placeholder.com/800x300?text=Synchronisation+asynchroner+Datens%C3%A4tze+mittels+KI)
-
 [![Python-Version](https://img.shields.io/badge/python-3.13-blue.svg)](https://www.python.org/downloads/release/python-3130/)
 [![Lizenz](https://img.shields.io/badge/lizenz-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/status-abgeschlossen-brightgreen.svg)](https://github.com)
+
 
 ---
 
