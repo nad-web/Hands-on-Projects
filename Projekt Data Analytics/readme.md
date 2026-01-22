@@ -240,7 +240,7 @@ except Exception as e1:
 ### 1.4.3 Abbildungen
 
 #### Abbildung 1: Geglättete Ereignisrate mit periodischen Beam-Zyklen
-![Ereignisrate](/assets/Ereignisrate.png)
+![Abbildung 1: Ereignisrate](assets/Ereignisrate.png)
 
 ```python
 # Code zur Generierung von Abbildung 1
