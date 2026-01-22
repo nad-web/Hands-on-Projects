@@ -946,7 +946,7 @@ Zukünftige Verbesserungen könnten folgende Richtungen einschlagen:
 # 2. Logbuch
 
 ## 2.1 Projektsetup und Dateninspektion (07.11.2025) 
-* Projektstart
+
 **Aufgaben:**
 - Erste Analyse der Rohdaten durchgeführt
 - Festgestellt: Komplexe Dateistruktur mit Kommentaren und variabler Spaltenanzahl
