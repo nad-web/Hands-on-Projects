@@ -945,8 +945,8 @@ Zukünftige Verbesserungen könnten folgende Richtungen einschlagen:
 
 # 2. Logbuch
 
-## 2.1 Projektsetup und Dateninspektion (15.11.2025)
-
+## 2.1 Projektsetup und Dateninspektion (07.11.2025) 
+* Projektstart
 **Aufgaben:**
 - Erste Analyse der Rohdaten durchgeführt
 - Festgestellt: Komplexe Dateistruktur mit Kommentaren und variabler Spaltenanzahl
@@ -1344,8 +1344,8 @@ PDF: /Users/noorullah.adel/mr_tof_ms_plots/Abbildung4_Synchronisierter_Ausschnit
 
 ---
 
-**Autor:** Noorullah  
-**E-Mail:** noorullah.adel@example.com  
-**Institution:** [Name der Institution]  
+**Autor:** Noorullah Adel
+**E-Mail:** noorullah.adel@stud.uni-giessen.de 
+**Universität:** [JLU-Gießen]  
 **Projekt-Repository:** [GitLab-Repository-Link]  
 **Datum:** 22. Januar 2026
