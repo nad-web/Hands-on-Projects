@@ -1343,4 +1343,4 @@ PDF: /Users/noorullah.adel/mr_tof_ms_plots/Abbildung4_Synchronisierter_Ausschnit
 
 ---
 
-**Autor:** Noorullah Adel | **E-Mail:** noorullah.adel@stud.uni-giessen.de | **JLU-Gießen:** | **Datum:** 22. Januar 2026
+**Autor:** Noorullah Adel | **E-Mail:** noorullah.adel@stud.uni-giessen.de | **JLU-Gießen** | **Datum:** 22. Januar 2026
