@@ -301,7 +301,7 @@ plt.savefig('Abbildung1_Ereignisrate.png', dpi=300, bbox_inches='tight')
 ```
 
 #### Abbildung 2: Kreuzkorrelationsfunktion zwischen Beam-Zuständen
-![Kreuzkorrelation](https://via.placeholder.com/600x400?text=Kreuzkorrelationsfunktion+zwischen+Beam-Zust%C3%A4nden)
+![Kreuzkorrelation](assets/Abbildung2_Kreuzkorrelation.png) 
 
 ```python
 # Code zur Generierung von Abbildung 2
@@ -376,7 +376,7 @@ plt.savefig('Abbildung2_Kreuzkorrelation.png', dpi=300, bbox_inches='tight')
 ```
 
 #### Abbildung 3: LSTM-Trainingsverlauf
-![LSTM-Trainingsverlauf](https://via.placeholder.com/600x400?text=LSTM-Trainingsverlauf)
+![LSTM-Trainingsverlauf](assets/Abbildung_3.png)
 
 ```python
 # Code zur Generierung von Abbildung 3
@@ -424,7 +424,7 @@ plt.savefig('Abbildung3_LSTM_Training.png', dpi=300, bbox_inches='tight')
 ```
 
 #### Abbildung 4: Synchronisierter Datenausschnitt
-![Synchronisierter Ausschnitt](https://via.placeholder.com/600x400?text=Synchronisierter+Datenausschnitt)
+![Synchronisierter Ausschnitt](assets/Abbildung4_Synchronisierter_Ausschnitt.png)
 
 ```python
 # Code zur Generierung von Abbildung 4
@@ -504,7 +504,7 @@ plt.savefig('Abbildung4_Synchronisierter_Ausschnitt.png', dpi=300, bbox_inches='
 ```
 
 #### Ergänzende Abbildung E1: Verteilung der Zeitdifferenzen
-![Zeitdifferenzen Histogramm](https://via.placeholder.com/600x400?text=Verteilung+der+Zeitdifferenzen)
+![Zeitdifferenzen Histogramm](assets/A1.png)
 
 ```python
 # Code zur Generierung von Abbildung E1
@@ -577,7 +577,7 @@ plt.savefig('Abbildung_A1_Zeitdifferenzen_Histogramm.png', dpi=300, bbox_inches=
 ```
 
 #### Ergänzende Abbildung E3: Verteilung der Synchronisationsfehler
-![Synchronisationsfehler Verteilung](https://via.placeholder.com/600x400?text=Verteilung+der+Synchronisationsfehler)
+![Synchronisationsfehler Verteilung](assets/A3.png)
 
 ```python
 # Code zur Generierung von Abbildung E3
@@ -678,7 +678,7 @@ plt.savefig('Abbildung_A3_Synchronisationsfehler_Verteilung.png', dpi=300, bbox_
 ```
 
 #### Ergänzende Abbildung E5: ROC-Analyse der Beam-Zustandserkennung
-![ROC-Analyse](https://via.placeholder.com/600x400?text=ROC-Analyse+der+Beam-Zustandserkennung)
+![ROC-Analyse](assets/A5.png)
 
 ```python
 # Code zur Generierung von Abbildung E5
@@ -798,7 +798,7 @@ plt.savefig('Abbildung_A5_Beam_Zustandserkennung.png', dpi=300, bbox_inches='tig
 ```
 
 #### Ergänzende Abbildung E4: Vergleich der Synchronisationsmethoden
-![Methodenvergleich](https://via.placeholder.com/600x400?text=Vergleich+der+Synchronisationsmethoden)
+![Methodenvergleich](assets/A4.png)
 
 ```python
 # Code zur Generierung von Abbildung E4
@@ -1019,7 +1019,7 @@ Zeile 5 (11 Felder): edge is if the event was a rising or falling edge
 - Die Glättung der Zeitreihen war entscheidend für eine robuste Zustandserkennung
 
 **Visualisierungsergebnisse:**
-![Ereignisrate](https://via.placeholder.com/600x400?text=Ereignisrate+mit+periodischen+Beam-Zyklen)
+![Abbildung 1: Ereignisrate](assets/Ereignisrate.png)
 *Abbildung 1: Geglättete Ereignisrate mit deutlichen periodischen Beam-Zyklen. Im "Beam on"-Zustand ist die Ereignisrate um Faktor 3,4 höher als im "Beam off"-Zustand.*
 
 ## 2.3 Zustandserkennung implementiert (03.12.2025)
@@ -1116,7 +1116,7 @@ def extract_beam_states(data, timestamp_column, window_size=1000, threshold=2.0)
 - Die symmetrische Form der Kreuzkorrelationsfunktion um den Hauptpeak bestätigte die Robustheit der Methode
 
 **Visualisierung:**
-![Kreuzkorrelation](https://via.placeholder.com/600x400?text=Kreuzkorrelationsfunktion+zwischen+Beam-Zust%C3%A4nden)
+![Kreuzkorrelation](assets/Abbildung2_Kreuzkorrelation.png)
 *Abbildung 2: Kreuzkorrelationsfunktion zwischen den "Beam on"/"Beam off"-Zuständen beider Datensätze. Der deutliche Peak bei 4,213 ms (rote Linie) repräsentiert die optimale globale Zeitverschiebung.*
 
 **Code-Snippet:**
@@ -1185,7 +1185,7 @@ def normalized_cross_correlation(x, y, max_lag=None):
 - Validierungs-Loss konvergierte synchron mit dem Trainings-Loss, was auf eine gute Generalisierungsfähigkeit hindeutete
 
 **Visualisierung:**
-![LSTM-Trainingsverlauf](https://via.placeholder.com/600x400?text=LSTM-Trainingsverlauf)
+![LSTM-Trainingsverlauf](assets/Abbildung_3.png) 
 *Abbildung 3: LSTM-Trainingsverlauf mit logarithmischer Skalierung. Nach 35 Epochen (schwarze Linie) konvergiert das Modell mit einem MSE von 1,28 × 10⁻⁶, was einer mittleren Abweichung von 1,13 µs entspricht.*
 
 **Code-Snippet:**
@@ -1326,10 +1326,10 @@ PDF: /Users/noorullah.adel/mr_tof_ms_plots/Abbildung4_Synchronisierter_Ausschnit
 - Rechenzeit gesamt: 2,3 Stunden
 
 **Visualisierung der Ergebnisse:**
-![Synchronisierter Ausschnitt](https://via.placeholder.com/600x400?text=Synchronisierter+Datenausschnitt)
+![Synchronisierter Ausschnitt](assets/Abbildung4_Synchronisierter_Ausschnitt.png) 
 *Abbildung 4: Synchronisierter Datenausschnitt über einen Zeitraum von 100 ms. Die roten Linien markieren die Übergänge zwischen "Beam on" und "Beam off". Die gelbe Textbox zeigt die erzielte Synchronisationsgenauigkeit von 3,2 ± 0,5 µs an.*
 
-![Synchronisationsfehler Verteilung](https://via.placeholder.com/600x400?text=Verteilung+der+Synchronisationsfehler)
+![Synchronisationsfehler Verteilung](assets/A3.png)
 *Ergänzende Abbildung E3: Verteilung der Synchronisationsfehler über den gesamten Datensatz. Die Standardabweichung von 2,8 µs bestätigt die hohe Präzision des Verfahrens. Das 95%-Konfidenzintervall liegt bei [2,7; 3,7] µs.*
 
 **Zusammenfassende Tabelle:**
