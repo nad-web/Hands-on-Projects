@@ -1347,5 +1347,4 @@ PDF: /Users/noorullah.adel/mr_tof_ms_plots/Abbildung4_Synchronisierter_Ausschnit
 **Autor:** Noorullah Adel
 **E-Mail:** noorullah.adel@stud.uni-giessen.de 
 **Universität:** [JLU-Gießen]  
-**Projekt-Repository:** [GitLab-Repository-Link]  
 **Datum:** 22. Januar 2026
