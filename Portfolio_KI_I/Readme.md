@@ -264,7 +264,7 @@ HouseAge    ██                             5,3 %
 
 **Gruppenvergleich der besten Modelle:**
 
-> Kristins Modell mit Architektur `[128, 128]`, Dropout=0,1, LR=0,001, Batch=64 erzielte das **Gruppenoptimum** mit **Test-R² = 0,8386**.
+> Gruppenmitglied K. Modell mit Architektur `[128, 128]`, Dropout=0,1, LR=0,001, Batch=64 erzielte das **Gruppenoptimum** mit **Test-R² = 0,8386**.
 
 ---
 
