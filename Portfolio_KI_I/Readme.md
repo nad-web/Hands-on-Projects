@@ -63,7 +63,7 @@ Dieses Projekt wurde im Rahmen des Moduls **Künstliche Intelligenz I** (M.Sc. D
 
 | Aspekt | Inhalt |
 |--------|--------|
-| **Gruppenstruktur** | Kennenlernen der Mitglieder; Kristin Jankowsky als Gruppensprecherin gewählt |
+| **Gruppenstruktur** | Kennenlernen der Mitglieder; eine aus dem Team als Gruppensprecherin gewählt |
 | **Beschluss** | Frühzeitiger Projektstart; eigenständige Datensatz-Erkundung bis zum nächsten Treffen |
 | **Aufgaben** | Datensatz-Analyse inkl. EDA, Feature-Engineering-Ideen, erste Modellierungsansätze |
 | **Dokumentation** | Protokoll wird gemeinschaftlich auf GitHub geführt und dient als Ideensammlung |
