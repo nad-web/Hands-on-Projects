@@ -35,7 +35,7 @@
 
 ## 1. Projektübersicht
 
-Dieses Projekt wurde im Rahmen des Moduls **Künstliche Intelligenz I** (M.Sc. Data Analytics) durchgeführt. Ziel ist die systematische Entwicklung, der Vergleich und das Hyperparameter-Tuning verschiedener Machine-Learning-Modelle — mit besonderem Fokus auf einem **tiefen neuronalen Netz (Keras/TensorFlow)** — zur Vorhersage medianer Hauspreise in Kalifornien.
+Dieses Projekt wurde im Rahmen des Moduls **Künstliche Intelligenz I** (M.Sc. Data Analytics) durchgeführt. Ziel ist die systematische Entwicklung, der Vergleich und das Hyperparameter-Tuning verschiedener Machine-Learning-Modelle mit besonderem Fokus auf einem **tiefen neuronalen Netz (Keras/TensorFlow)** — zur Vorhersage medianer Hauspreise in Kalifornien.
 
 ### Problemstellung
 
