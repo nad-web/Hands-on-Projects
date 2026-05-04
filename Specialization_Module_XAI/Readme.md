@@ -1,4 +1,4 @@
-# 🧠 Explainable AI: Analysing and Interpreting Learned Representations
+#  Explainable AI: Analysing and Interpreting Learned Representations
 ### *Understanding Internal Representations of Convolutional Neural Networks*
 
 > **Author:** Noorullah Adel · M.Sc. Data Analytics · Justus-Liebig-Universität Gießen
