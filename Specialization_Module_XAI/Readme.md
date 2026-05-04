@@ -651,7 +651,7 @@ xai-learned-representations/
 
 ---
 
-# 4. References
+# 3. References
 
 | Citation | Full Reference |
 |---------|---------------|
@@ -671,7 +671,7 @@ xai-learned-representations/
 
 ---
 
-# 5. Appendices & Code
+# 4. Appendices & Code
 
 ## 5.1 Project Structure
 
@@ -716,7 +716,7 @@ xai-learned-representations/
 
 ---
 
-## 5.2 Complete Code Implementation
+## 4.2 Complete Code Implementation
 
 ### `config.py` — Hyperparameters & Seeds
 
@@ -1094,9 +1094,9 @@ python -m pytest tests/ --verbose
 
 ---
 
-# 6. Reproducibility & Environment
+# 5. Reproducibility & Environment
 
-## 6.1 Software Environment
+## 5.1 Software Environment
 
 ```
 Python        3.10.12
@@ -1111,7 +1111,7 @@ tqdm          4.65.0
 jupyter       1.0.0
 ```
 
-## 6.2 Hardware
+## 5.2 Hardware
 
 All experiments conducted on **standard laptop hardware** (Intel Core i7, 16GB RAM) without GPU acceleration:
 
@@ -1122,7 +1122,7 @@ All experiments conducted on **standard laptop hardware** (Intel Core i7, 16GB R
 | Train Deep (5 conv) | ~9 min |
 | Full analysis pipeline | ~2 hours |
 
-## 6.3 Setup Instructions
+## 5.3 Setup Instructions
 
 ```bash
 # 1. Clone the repository
@@ -1146,7 +1146,7 @@ python main.py --mode analyse --depths 2 3 5
 python main.py --mode visualise
 ```
 
-## 6.4 Reproducibility Checklist
+## 5.4 Reproducibility Checklist
 
 - [x] Fixed random seeds (`seed = 42`) for all experiments
 - [x] Deterministic CUDA operations enabled
