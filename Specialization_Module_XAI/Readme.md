@@ -858,9 +858,9 @@ Intersection       0.12     0.24    0.35    📈 Monotonic
 - Verified all dependencies install correctly on clean Python 3.10 environment
 - Submitted paper and repository link for colloquium review
 
-**Repository structure finalised:**
+**Repository structure:**
 ```
-xai-learned-representations/
+Specialization_Module_XAI/
 ├── src/
 │   ├── config.py
 │   ├── models.py
@@ -909,7 +909,7 @@ xai-learned-representations/
 ## 5.1 Project Structure
 
 ```
-xai-learned-representations/
+Specialization_Module_XAI/
 ├── 📄 README.md                    ← This file
 ├── 📄 requirements.txt             ← Python dependencies
 ├── 📄 main.py                      ← Orchestrates full experiment pipeline
