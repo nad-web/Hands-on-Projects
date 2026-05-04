@@ -2,7 +2,7 @@
 ### *Understanding Internal Representations of Convolutional Neural Networks*
 
 > **Author:** Noorullah Adel · M.Sc. Data Analytics · Justus-Liebig-Universität Gießen  
-> ****Colloquium:** May 4, 2026  
+> **Colloquium:** May 4, 2026  
 > **Supervisor:** Prof. Thesisler, Mr. Gerschner · **Program Director:** Mr. Sebastian Busse
 
 ---
