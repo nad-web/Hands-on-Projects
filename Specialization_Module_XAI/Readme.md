@@ -2,14 +2,14 @@
 ### *Understanding Internal Representations of Convolutional Neural Networks*
 
 > **Author:** Noorullah Adel · M.Sc. Data Analytics · Justus-Liebig-Universität Gießen  
-> **Matrikel-Nr.:** 847378 · **Colloquium:** 22/04/2026  
+> ****Colloquium:** May 4, 2026  
 > **Supervisor:** Prof. Thesisler, Mr. Gerschner · **Program Director:** Mr. Sebastian Busse
 
 ---
 
 ## 📋 Table of Contents
 
-- [1. Specialization Module (tai)](#1-specialization-module-tai)
+- [1. Specialization Module](#1-specialization-module)
   - [1.1 Introduction](#11-introduction)
   - [1.2 Materials and Methods](#12-materials-and-methods)
   - [1.3 Results](#13-results)
@@ -22,7 +22,7 @@
 
 ---
 
-# 1. Specialization Module (tai)
+# 1. Specialization Module
 
 ## Abstract
 
