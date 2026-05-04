@@ -1,7 +1,8 @@
 # 🧠 Explainable AI: Analysing and Interpreting Learned Representations
 ### *Understanding Internal Representations of Convolutional Neural Networks*
 
-> **Author:** Noorullah Adel · M.Sc. Data Analytics · Justus-Liebig-Universität Gießen  
+> **Author:** Noorullah Adel · M.Sc. Data Analytics · Justus-Liebig-Universität Gießen
+> **07-MDA-13 Spezialisierungsmodul**  
 > **Colloquium:** May 4, 2026  
 > **Supervisor:** Prof. Thesisler, Mr. Gerschner · **Program Director:** Mr. Sebastian Busse
 
@@ -135,8 +136,6 @@ The **MNIST dataset** *(LeCun et al., 1998)* serves as the empirical benchmark:
 | **Intersection** | 4, 8, 9 | 0, 1, 2, 3, 5, 6, 7 | Crossing line segments | 🔴 Composite |
 
 > **Design criteria for concept sets:** (a) visual interpretability, each concept must correspond to a property that human observers can reliably identify; (b) statistical separability, the positive and negative sets must differ systematically in pixel-level structure; (c) compositional structure, the set must span a range from primitive features to composite structures.
-
-**LLM-Based Validation:** Inter-rater agreement achieved **Krippendorff's alpha > 0.85**, indicating near-perfect agreement. Disagreements were resolved by majority vote.
 
 ---
 
@@ -314,7 +313,7 @@ Intersection         0.12      0.24      0.35   ████████
 ─────────────────────────────────────────────────────────────────
 ```
 
-**Key observation — Representational Phase Transition:**
+**Key observation: Representational Phase Transition:**
 
 | Architecture | Behavior |
 |-------------|---------|
@@ -455,11 +454,10 @@ This paper introduced a **multi-method framework** for analysing and interpretin
 # 2. Project Plan
 
 > **Author:** Noorullah Adel · **Document Date:** 30 January 2026  
-> **Supervisors:** Mr. Gerschner · Professor Theissler · **Program Director:** Mr. Sebastian Busse
 
 ## 2.1 Project Overview
 
-This section captures the complete project plan for the Specialization Module thesis: **"Explainable AI: Analysing and Interpreting Learned Representations (Understanding Internal Representations)"**. The project investigates how convolutional neural networks (CNNs) internally organise visual information into meaningful, human-interpretable concepts — a fundamental question at the intersection of deep learning and explainability research. The work spans topic selection, supervisor communication, exposé preparation, iterative feedback cycles, empirical analysis, and final documentation, all conducted over the course of the Spring 2026 semester.
+This section captures the complete project plan for the Specialization Module thesis: **"Explainable AI: Analysing and Interpreting Learned Representations (Understanding Internal Representations)"**. The project investigates how convolutional neural networks (CNNs) internally organise visual information into meaningful, human-interpretable concepts a fundamental question at the intersection of deep learning and explainability research. The work spans topic selection, supervisor communication, exposé preparation, iterative feedback cycles, empirical analysis, and final documentation.
 
 ---
 
@@ -494,7 +492,7 @@ gantt
 ### 📌 KW 04 · 19 January – 23 January 2026
 **Topic Selection & Initial Supervisor Contact**
 
-During this opening week, the topic for the Specialization Module was selected from the dynamically maintained Excel list of available thesis topics provided by the faculty. Upon identifying the most compelling and research-relevant option — Explainable AI and the analysis of learned representations — the Program Director Mr. Sebastian Busse, as well as the designated supervisors Mr. Gerschner and Professor Theissler, were formally contacted via email to communicate the topic selection and express genuine academic interest in pursuing it.
+During this opening week, the topic for the Specialization Module was selected from the dynamically maintained Excel list of available thesis topics provided by the faculty. Upon identifying the most compelling and research-relevant option "Explainable AI and the analysis of learned representations" the Program Director Mr. Sebastian Busse, as well as the designated supervisors Mr. Gerschner and Professor Theissler, were formally contacted via email to communicate the topic selection and express genuine academic interest in pursuing it.
 
 | Item | Detail |
 |------|--------|
@@ -626,7 +624,7 @@ timeline
 │  Paper length            │  Minimum 10 pages — Maximum 15 pages     │
 │  Empirical domain        │  MNIST handwritten digit dataset          │
 │  Primary method          │  Multi-method XAI representation analysis │
-│  Final submission to     │  Professor Theissler only                 │
+│  Final submission to     │  Professor Theissler and Mr. Gerschner    │
 │  Supervisor contact      │  Mr. Gerschner (ongoing)                  │
 │  Hardware constraint     │  Standard laptop CPU (no GPU required)    │
 │  Reproducibility         │  Fixed seed (42), open-source stack only  │
@@ -686,8 +684,7 @@ mindmap
 
 # 3. Logbook
 
-> 📓 *Project development log for: Explainable AI — Analysing and Interpreting Learned Representations*  
-> *Dates are approximate markers; exact entries adjusted manually.*
+> 📓 *Project development log for: Specialization Module "Explainable AI — Analysing and Interpreting Learned Representations"*  
 
 ---
 
@@ -1370,10 +1367,6 @@ python main.py --mode visualise
 - [x] Fixed random seeds (`seed = 42`) for all experiments
 - [x] Deterministic CUDA operations enabled
 - [x] Five-fold cross-validation for all probe accuracy estimates
-- [x] Bootstrap CI (n=1000) for all RSA correlations
-- [x] Model checkpoints saved to `checkpoints/`
-- [x] Results match reported values within floating-point precision
-- [x] Unit tests cover all core analysis functions
 - [x] MNIST dataset downloaded automatically via `torchvision` (no proprietary data)
 
 ---
@@ -1382,13 +1375,13 @@ python main.py --mode visualise
 
 > I hereby declare that I am the sole author of this term paper and that I did not use any other aids or resources than the ones stated. Those parts of the paper that were taken from other works, either as quote or paraphrase, are marked by respective statements of sources.
 >
-> **Frankfurt am Main, 22/04/2026** — *Noorullah Adel*
+> **Frankfurt am Main, May 4, 2026** — *Noorullah Adel*
 
 ---
 
 <div align="center">
 
-*Justus-Liebig-Universität Gießen · M.Sc. Data Analytics · Specialization Module*
+*Justus-Liebig-Universität Gießen · M.Sc. Data Analytics · 07-MDA-13 Spezialisierungsmodul*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/)
