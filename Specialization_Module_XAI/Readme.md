@@ -458,7 +458,7 @@ This paper introduced a **multi-method framework** for analysing and interpretin
 
 ---
 
-### 📅 Entry 1 — `2026-01-12` · *Project Inception & Literature Survey*
+### 📅 Entry 1 — `2026-02-23` · *Project Inception & Literature Survey*
 
 **Focus:** Initial project scoping, literature review, and problem formulation.
 
@@ -482,7 +482,7 @@ This paper introduced a **multi-method framework** for analysing and interpretin
 
 ---
 
-### 📅 Entry 2 — `2026-01-26` · *Architecture Design & Data Pipeline Implementation*
+### 📅 Entry 2 — `2026-02-26` · *Architecture Design & Data Pipeline Implementation*
 
 **Focus:** CNN architecture implementation and MNIST concept data loading.
 
@@ -510,7 +510,7 @@ This paper introduced a **multi-method framework** for analysing and interpretin
 
 ---
 
-### 📅 Entry 3 — `2026-02-09` · *Training Pipeline & Initial Model Evaluation*
+### 📅 Entry 3 — `2026-03-10` · *Training Pipeline & Initial Model Evaluation*
 
 **Focus:** Training loop implementation, model checkpointing, and first training results.
 
@@ -537,7 +537,7 @@ This paper introduced a **multi-method framework** for analysing and interpretin
 
 ---
 
-### 📅 Entry 4 — `2026-02-23` · *CAV Computation & Linear Probing Implementation*
+### 📅 Entry 4 — `2026-04-05` · *CAV Computation & Linear Probing Implementation*
 
 **Focus:** Implementing the first two analytical components — CAV estimation and linear probing.
 
@@ -564,7 +564,7 @@ Intersection      0.51    0.56    0.64    0.71    0.76
 
 ---
 
-### 📅 Entry 5 — `2026-03-09` · *RSA Implementation & Architecture Comparison*
+### 📅 Entry 5 — `2026-04-10` · *RSA Implementation & Architecture Comparison*
 
 **Focus:** Representational Similarity Analysis and cross-architecture comparison.
 
@@ -591,7 +591,7 @@ Intersection       0.12     0.24    0.35    📈 Monotonic
 
 ---
 
-### 📅 Entry 6 — `2026-03-23` · *Intervention Analysis & Causal Validation*
+### 📅 Entry 6 — `2026-04-19` · *Intervention Analysis & Causal Validation*
 
 **Focus:** Implementing targeted ablation and counterfactual injection; establishing causal evidence.
 
@@ -612,7 +612,7 @@ Intersection       0.12     0.24    0.35    📈 Monotonic
 
 ---
 
-### 📅 Entry 7 — `2026-04-07` · *Visualisation, Write-up & Final Submission*
+### 📅 Entry 7 — `2026-05-05` · *Visualisation, Write-up & Final Submission*
 
 **Focus:** Figure generation, paper write-up, README documentation, and submission preparation.
 
