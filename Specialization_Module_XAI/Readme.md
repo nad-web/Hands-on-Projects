@@ -214,7 +214,7 @@ where $\mathbf{w}$ is the SVM weight vector for concept $c$ at layer $l$.
 
 **TCAV Sensitivity Score:**
 
-$$S_{\text{TCAV}}(c, k, l) = \frac{\left|\left\{x \in X_k : \nabla h_{l,x} \cdot \hat{v}_c^{(l)} > 0\right\}\right|}{|X_k|}$$
+$$S_{\text{TCAV}}(c, k, l) = \frac{\lvert\{ x \in X_k : \nabla h_{l,x} \cdot \hat{v}_c^{(l)} > 0 \}\rvert}{|X_k|}$$
 
 where $X_k$ is the set of class-$k$ inputs. A score near 1.0 indicates strong causal relevance.
 
