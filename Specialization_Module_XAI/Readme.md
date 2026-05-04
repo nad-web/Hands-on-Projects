@@ -673,7 +673,7 @@ xai-learned-representations/
 
 # 4. Appendices & Code
 
-## 5.1 Project Structure
+## 4.1 Project Structure
 
 ```
 xai-learned-representations/
