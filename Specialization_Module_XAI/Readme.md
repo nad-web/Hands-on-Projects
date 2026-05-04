@@ -360,7 +360,7 @@ xychart-beta
 
 The results demonstrate that concept-based representation analysis can trace the **hierarchical construction of meaning** in CNNs with precision exceeding what pixel-attribution methods can provide.
 
-The systematic ordering of concept emergence — primitive strokes first, composite structures later — aligns with the theoretical prediction that CNNs exploit the compositional structure of visual objects *(LeCun et al., 2015)*. This finding has methodological implications:
+The systematic ordering of concept emergence primitive strokes first, composite structures later  aligns with the theoretical prediction that CNNs exploit the compositional structure of visual objects *(LeCun et al., 2015)*. This finding has methodological implications:
 
 > 💡 **The depth at which a concept becomes linearly decodable can serve as an operational measure of representational complexity**, with potential applications in automated architecture search and curriculum learning.
 
