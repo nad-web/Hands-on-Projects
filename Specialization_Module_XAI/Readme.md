@@ -14,10 +14,11 @@
   - [1.2 Materials and Methods](#12-materials-and-methods)
   - [1.3 Results](#13-results)
   - [1.4 Discussion](#14-discussion)
-- [2. Logbook](#2-logbook)
-- [3. References](#3-references)
-- [4. Appendices & Code](#4-appendices--code)
-- [5. Reproducibility & Environment](#5-reproducibility--environment)
+- [2. Project Plan](#2-project-plan)
+- [3. Logbook](#3-logbook)
+- [4. References](#4-references)
+- [5. Appendices & Code](#5-appendices--code)
+- [6. Reproducibility & Environment](#6-reproducibility--environment)
 
 ---
 
@@ -451,7 +452,239 @@ This paper introduced a **multi-method framework** for analysing and interpretin
 
 ---
 
-# 2. Logbook
+# 2. Project Plan
+
+> **Author:** Noorullah Adel · **Document Date:** 30 January 2026  
+> **Supervisors:** Mr. Gerschner · Professor Theissler · **Program Director:** Mr. Sebastian Busse
+
+## 2.1 Project Overview
+
+This section captures the complete project plan for the Specialization Module thesis: **"Explainable AI: Analysing and Interpreting Learned Representations (Understanding Internal Representations)"**. The project investigates how convolutional neural networks (CNNs) internally organise visual information into meaningful, human-interpretable concepts — a fundamental question at the intersection of deep learning and explainability research. The work spans topic selection, supervisor communication, exposé preparation, iterative feedback cycles, empirical analysis, and final documentation, all conducted over the course of the Spring 2026 semester.
+
+---
+
+## 2.2 Timeline at a Glance
+
+```mermaid
+gantt
+    title Project Timeline — Specialization Module Spring 2026
+    dateFormat  YYYY-MM-DD
+    axisFormat  %d %b
+
+    section Initiation
+    Topic Selection & Supervisor Contact     :done,    kw04, 2026-01-19, 5d
+    Kick-Off Meeting with Mr. Gerschner      :done,    kw05, 2026-01-26, 5d
+
+    section Planning & Scoping
+    Project Scope & Constraints Discussion   :done,    kw06, 2026-02-02, 5d
+
+    section Research & Development
+    Exposé Review & Revision                 :done,    kw09, 2026-02-23, 5d
+    Content & Methodology Presentation       :done,    kw15, 2026-04-06, 5d
+
+    section Finalisation
+    Supervisor Feedback & Revision           :done,    kw17, 2026-04-20, 5d
+    Project Documentation & README           :done,    kw19, 2026-05-04, 5d
+```
+
+---
+
+## 2.3 Week-by-Week Planning
+
+### 📌 KW 04 · 19 January – 23 January 2026
+**Topic Selection & Initial Supervisor Contact**
+
+During this opening week, the topic for the Specialization Module was selected from the dynamically maintained Excel list of available thesis topics provided by the faculty. Upon identifying the most compelling and research-relevant option — Explainable AI and the analysis of learned representations — the Program Director Mr. Sebastian Busse, as well as the designated supervisors Mr. Gerschner and Professor Theissler, were formally contacted via email to communicate the topic selection and express genuine academic interest in pursuing it.
+
+| Item | Detail |
+|------|--------|
+| **Action taken** | Topic selected from faculty Excel list; supervisors contacted by email |
+| **Outcome** | Topic confirmed; initial interest acknowledged by supervisors |
+| **Status** | ✅ Complete |
+
+---
+
+### 📌 KW 05 · 26 January – 30 January 2026
+**First Kick-Off Meeting with Mr. Gerschner**
+
+The first formal meeting with supervisor Mr. Gerschner took place during this week. This kick-off session served as an introductory exchange in which the research question was introduced, initial expectations were aligned, and the general direction of the project was discussed. The meeting laid the groundwork for a productive supervisory relationship and provided the first concrete framing of the research problem.
+
+| Item | Detail |
+|------|--------|
+| **Meeting format** | One-on-one kick-off with Mr. Gerschner |
+| **Focus** | Introduction, research question framing, initial alignment |
+| **Status** | ✅ Complete |
+
+---
+
+### 📌 KW 06 · 02 February – 06 February 2026
+**Project Scope & Constraints Discussion**
+
+This week involved a dedicated content discussion focused on defining the precise scope of the project and identifying its key constraints and boundaries. The conversation covered what the project would — and would not — address, ensuring that the research remained focused and feasible within the semester's time frame. An appointment was also set for the formal Exposé discussion, with the project start date confirmed as **25 February 2026**.
+
+| Item | Detail |
+|------|--------|
+| **Topics covered** | Project scope definition, research constraints, thematic boundaries |
+| **Appointment set** | Exposé discussion meeting scheduled |
+| **Start date confirmed** | 25 February 2026 |
+| **Status** | ✅ Complete |
+
+---
+
+### 📌 KW 09 · 23 February – 27 February 2026
+**Exposé Discussion & Research Refinement**
+
+The formal Exposé presentation and discussion took place this week. Following supervisor feedback, the exposé was revised and resubmitted for review. Key methodological decisions were crystallised during this meeting, including the comparison of feature maps and concepts, the examination of visual primitives such as vertical strokes and loops (as seen in digit "8"), and the investigation of how the network constructs and organises these concepts internally. The meeting also clarified important administrative parameters: the paper is to be a minimum of **10 pages** and a maximum of **15 pages**, and the final version is to be submitted **only to Professor Theissler**.
+
+| Item | Detail |
+|------|--------|
+| **Action** | Exposé presented, feedback received, revised and resubmitted |
+| **Research directions agreed** | Feature map–concept comparison; vertical stroke and loop analysis; hierarchical concept investigation |
+| **Paper length** | Minimum 10 pages, maximum 15 pages |
+| **Submission rule** | Final submission goes to Professor Theissler only |
+| **Literature review requirement** | Must include related work and clear differentiation from existing literature |
+| **Status** | ✅ Complete |
+
+---
+
+### 📌 KW 15 · 06 April – 10 April 2026
+**Content & Methodology Presentation to Supervisor**
+
+At this stage of the project, the first complete version of the analytical approach and methodology was presented to the supervisor. This session covered the initial empirical pipeline, including the multi-method analysis framework combining Concept Activation Vectors (CAVs), linear probing, Representational Similarity Analysis (RSA), and concept-level interventions. The supervisor assessed the proposed methodology and the overall direction of the work, providing the first round of substantive feedback on content and approach.
+
+| Item | Detail |
+|------|--------|
+| **Presented** | First methodology and approach overview |
+| **Focus** | Analytical pipeline structure, concept selection rationale, experimental design |
+| **Outcome** | Feedback session initiated; revision cycle began |
+| **Status** | ✅ Complete |
+
+---
+
+### 📌 KW 17 · 20 April – 24 April 2026
+**Supervisor Feedback & Revision**
+
+During this week, formal feedback and improvement suggestions were received from the supervisor. All proposed revisions were carefully reviewed and incorporated into the paper. This revision cycle addressed both structural and content-level improvements, ensuring that the final manuscript met the academic standards and research expectations established throughout the supervisory process.
+
+| Item | Detail |
+|------|--------|
+| **Received** | Detailed feedback and improvement suggestions from supervisor |
+| **Action** | All feedback reviewed and revisions applied to the manuscript |
+| **Status** | ✅ Complete |
+
+---
+
+### 📌 KW 19 · 04 May – 08 May 2026
+**Project Documentation, README, & Final Submission**
+
+In the final week of active project work, the complete project documentation was assembled and the README file was created to accompany the GitHub repository. The finalised version of all materials — paper, code, documentation, and logbook — was compiled into a cohesive submission package and sent to the supervisor for a final review and sign-off before formal submission.
+
+| Item | Detail |
+|------|--------|
+| **Deliverables created** | Full project documentation, README.md, logbook, code repository |
+| **Sent to** | Supervisor for final review and approval |
+| **Status** | ✅ Complete |
+
+---
+
+## 2.4 Key Milestones
+
+```mermaid
+timeline
+    title Key Project Milestones
+    section January 2026
+        KW04 : Topic selected from faculty list
+             : Supervisors contacted by email
+        KW05 : First kick-off meeting held
+             : Research question framed
+    section February 2026
+        KW06 : Project scope defined
+             : Exposé appointment set
+             : Start date confirmed (25 Feb)
+        KW09 : Exposé discussed and revised
+             : Methodology direction agreed
+             : Paper parameters confirmed (10–15 pages)
+    section April 2026
+        KW15 : Methodology presented to supervisor
+             : First substantive feedback received
+        KW17 : Feedback incorporated
+             : Manuscript revised
+    section May 2026
+        KW19 : Documentation complete
+             : README and logbook created
+             : Final version sent for approval
+```
+
+---
+
+## 2.5 Scope & Constraints
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                     Project Scope & Parameters                      │
+├──────────────────────────┬──────────────────────────────────────────┤
+│  Paper length            │  Minimum 10 pages — Maximum 15 pages     │
+│  Empirical domain        │  MNIST handwritten digit dataset          │
+│  Primary method          │  Multi-method XAI representation analysis │
+│  Final submission to     │  Professor Theissler only                 │
+│  Supervisor contact      │  Mr. Gerschner (ongoing)                  │
+│  Hardware constraint     │  Standard laptop CPU (no GPU required)    │
+│  Reproducibility         │  Fixed seed (42), open-source stack only  │
+│  Literature requirement  │  Related work section + differentiation   │
+└──────────────────────────┴──────────────────────────────────────────┘
+```
+
+---
+
+## 2.6 Research Direction Notes
+
+The following research directions were agreed and crystallised during the KW09 Exposé discussion session with Mr. Gerschner. These notes capture the raw thinking that shaped the final analytical framework:
+
+**1. Feature Maps and Concept Comparison** — The project investigates how feature maps at different network layers relate to human-defined visual concepts. Rather than treating features and concepts as separate objects, the goal is to understand the geometric and statistical relationship between what the network learns and what humans recognise as meaningful structure.
+
+**2. Visual Concept Investigation: Strokes and Loops** — Specific visual primitives were identified as key objects of analysis — in particular, the vertical stroke (prominent in digits 1, 4, 7, 9) and the loop structure (characteristic of digits 0, 6, 8, 9, with digit "8" being the archetypal composite loop example). These concepts span the spectrum from primitive features to composite structures requiring the integration of multiple primitives.
+
+**3. Hierarchical Concept Construction** — The central research question asks how concepts are *constructed* by the network layer by layer — not merely where they appear, but *how* primitive elements at early layers compose into abstract structures at deeper layers. This hierarchical dimension distinguishes the work from flat, single-layer concept attribution approaches.
+
+```mermaid
+mindmap
+  root((Research Focus))
+    Concepts vs Feature Maps
+      CAV direction analysis
+      Layer-wise activation geometry
+    Visual Primitives
+      Vertical stroke
+      Horizontal stroke
+      Loop structures
+      Curvature
+      Intersections
+    Hierarchical Construction
+      Primitive → Composite
+      Layer-by-layer emergence
+      Compositional tracing
+    Literature Position
+      Related work survey
+      Clear differentiation
+      Abilities-based framework
+```
+
+---
+
+## 2.7 Communication Log
+
+| Date | Action | Parties Involved |
+|------|--------|-----------------|
+| KW04 (Jan 2026) | Email sent expressing topic interest | Noorullah Adel → Mr. Busse, Mr. Gerschner, Prof. Theissler |
+| KW05 (Jan 2026) | Kick-off meeting held | Noorullah Adel ↔ Mr. Gerschner |
+| KW06 (Feb 2026) | Scope discussion meeting | Noorullah Adel ↔ Mr. Gerschner |
+| KW09 (Feb 2026) | Exposé discussion & revision submitted | Noorullah Adel ↔ Mr. Gerschner |
+| KW15 (Apr 2026) | Methodology presentation | Noorullah Adel → Mr. Gerschner |
+| KW17 (Apr 2026) | Feedback received & revisions applied | Noorullah Adel ↔ Mr. Gerschner |
+| KW19 (May 2026) | Final documentation sent for review | Noorullah Adel → Mr. Gerschner |
+
+---
+
+# 3. Logbook
 
 > 📓 *Project development log for: Explainable AI — Analysing and Interpreting Learned Representations*  
 > *Dates are approximate markers; exact entries adjusted manually.*
@@ -651,7 +884,7 @@ xai-learned-representations/
 
 ---
 
-# 3. References
+# 4. References
 
 | Citation | Full Reference |
 |---------|---------------|
@@ -671,9 +904,9 @@ xai-learned-representations/
 
 ---
 
-# 4. Appendices & Code
+# 5. Appendices & Code
 
-## 4.1 Project Structure
+## 5.1 Project Structure
 
 ```
 xai-learned-representations/
@@ -716,7 +949,7 @@ xai-learned-representations/
 
 ---
 
-## 4.2 Complete Code Implementation
+## 5.2 Complete Code Implementation
 
 ### `config.py` — Hyperparameters & Seeds
 
@@ -1094,9 +1327,9 @@ python -m pytest tests/ --verbose
 
 ---
 
-# 5. Reproducibility & Environment
+# 6. Reproducibility & Environment
 
-## 5.1 Software Environment
+## 6.1 Software Environment
 
 ```
 Python        3.10.12
@@ -1111,7 +1344,7 @@ tqdm          4.65.0
 jupyter       1.0.0
 ```
 
-## 5.2 Hardware
+## 6.2 Hardware
 
 All experiments conducted on **standard laptop hardware** (Intel Core i7, 16GB RAM) without GPU acceleration:
 
@@ -1122,7 +1355,7 @@ All experiments conducted on **standard laptop hardware** (Intel Core i7, 16GB R
 | Train Deep (5 conv) | ~9 min |
 | Full analysis pipeline | ~2 hours |
 
-## 5.3 Setup Instructions
+## 6.3 Setup Instructions
 
 ```bash
 # 1. Clone the repository
@@ -1146,7 +1379,7 @@ python main.py --mode analyse --depths 2 3 5
 python main.py --mode visualise
 ```
 
-## 5.4 Reproducibility Checklist
+## 6.4 Reproducibility Checklist
 
 - [x] Fixed random seeds (`seed = 42`) for all experiments
 - [x] Deterministic CUDA operations enabled
@@ -1176,4 +1409,5 @@ python main.py --mode visualise
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.1.0-red.svg)](https://pytorch.org/)
 
 </div>
+
 
