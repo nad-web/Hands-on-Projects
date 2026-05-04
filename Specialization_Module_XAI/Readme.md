@@ -874,8 +874,6 @@ Specialization_Module_XAI/
 │   ├── 02_analysis.ipynb
 │   └── 03_visualisation.ipynb
 ├── figures/
-├── checkpoints/
-├── tests/
 ├── requirements.txt
 └── README.md    ← this file
 ```
@@ -932,19 +930,7 @@ Specialization_Module_XAI/
 │   ├── figure2_concept_emergence.png
 │   ├── figure3_rsa_comparison.png
 │   └── figure4_intervention.png
-│
-├── 📁 checkpoints/
-│   ├── mnist_depth2.pt             ← Shallow model weights
-│   ├── mnist_depth3.pt             ← Medium model weights
-│   └── mnist_depth5.pt             ← Deep model weights
-│
-├── 📁 tests/
-│   ├── test_models.py
-│   ├── test_analysis.py
-│   └── test_data.py
-│
-└── 📁 config/
-    └── experiment.yaml             ← Experiment configuration
+
 ```
 
 ---
@@ -1359,7 +1345,7 @@ All experiments conducted on **standard laptop hardware** (Intel Core i7, 16GB R
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/[author]/xai-learned-representations.git
+git clone https://github.com/[author]/Specialization_Module_XAI.git
 cd xai-learned-representations
 
 # 2. Create virtual environment
