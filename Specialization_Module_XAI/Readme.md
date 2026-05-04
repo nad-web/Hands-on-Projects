@@ -15,9 +15,9 @@
   - [1.3 Results](#13-results)
   - [1.4 Discussion](#14-discussion)
 - [2. Logbook](#2-logbook)
-- [3. References](#4-references)
-- [4. Appendices & Code](#5-appendices--code)
-- [5. Reproducibility & Environment](#6-reproducibility--environment)
+- [3. References](#3-references)
+- [4. Appendices & Code](#4-appendices--code)
+- [5. Reproducibility & Environment](#5-reproducibility--environment)
 
 ---
 
