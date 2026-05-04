@@ -133,7 +133,7 @@ The **MNIST dataset** *(LeCun et al., 1998)* serves as the empirical benchmark:
 | **Curvature** | 0, 2, 3, 5, 6, 8, 9 | 1, 4, 7 | Rounded vs. angular forms | 🟡 Intermediate |
 | **Intersection** | 4, 8, 9 | 0, 1, 2, 3, 5, 6, 7 | Crossing line segments | 🔴 Composite |
 
-> **Design criteria for concept sets:** (a) visual interpretability — each concept must correspond to a property that human observers can reliably identify; (b) statistical separability — the positive and negative sets must differ systematically in pixel-level structure; (c) compositional structure — the set must span a range from primitive features to composite structures.
+> **Design criteria for concept sets:** (a) visual interpretability, each concept must correspond to a property that human observers can reliably identify; (b) statistical separability, the positive and negative sets must differ systematically in pixel-level structure; (c) compositional structure, the set must span a range from primitive features to composite structures.
 
 **LLM-Based Validation:** Inter-rater agreement achieved **Krippendorff's alpha > 0.85**, indicating near-perfect agreement. Disagreements were resolved by majority vote.
 
