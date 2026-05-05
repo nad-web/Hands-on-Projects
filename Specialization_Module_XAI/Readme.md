@@ -4,7 +4,7 @@
 > **Author:** Noorullah Adel · M.Sc. Data Analytics · Justus-Liebig-Universität Gießen
 > **07-MDA-13 Spezialisierungsmodul**  
 > **Colloquium:** May 4, 2026  
-> **Supervisor:** Prof. Thesisler, Mr. Gerschner · **Program Director:** Mr. Sebastian Busse
+> **Supervisor:** Prof. Thesisler, Mr. Gerschner · **Program Director:** Mr. S. Busse
 
 ---
 
