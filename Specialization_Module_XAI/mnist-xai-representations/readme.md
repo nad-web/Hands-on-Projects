@@ -2441,20 +2441,6 @@ results/
 
 ---
 
-## Citation
-
-If you use this code in academic research, please cite:
-
-```bibtex
-@mastersthesis{mnist_xai_representations_2026,
-  title={Explainable AI: Analysing and Interpreting Learned Representations in CNNs using MNIST},
-  author={[Author Name]},
-  school={Justus-Liebig-Universität Gießen},
-  year={2026},
-  note={07-MDA-13 Specialization Module}
-}
-```
 
 ---
 
-*End of Documentation*
