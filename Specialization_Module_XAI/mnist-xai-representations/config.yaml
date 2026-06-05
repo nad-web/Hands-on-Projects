@@ -1,1 +1,39 @@
 
+
+```yaml
+# Central configuration for reproducibility
+random_seed: 42
+
+dataset:
+  name: MNIST
+  data_dir: ./data
+  batch_size: 64
+  num_workers: 0  # Deterministic loading
+
+training:
+  optimizer: Adam
+  learning_rate: 0.001
+  epochs: 50
+  early_stopping_patience: 5
+  validation_split: 0.1
+
+model:
+  channel_progression: [1, 16, 32, 64, 128, 256]
+  depths: [2, 3, 5]  # Shallow, Medium, Deep
+  fc_hidden: 128
+
+analysis:
+  cav_svm_c: 1.0
+  probe_logreg_c: 1.0
+  probe_max_iter: 1000
+  cv_folds: 5
+  rsa_sample_size: 500
+  ablation_top_pct: 0.10
+  injection_alphas: [0.5, 1.0, 2.0]
+
+paths:
+  models_dir: ./models
+  activations_dir: ./activations
+  results_dir: ./results
+  figures_dir: ./figures
+```
