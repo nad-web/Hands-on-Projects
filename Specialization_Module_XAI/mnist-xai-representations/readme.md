@@ -2,7 +2,7 @@
 
 **Explainable AI: Analysing and Interpreting Learned Representations in CNNs**
 
-*07-MDA-13 Specialization Module — Implementation Guide*
+*07-MDA-13 Specialization Module: Implementation Guide*
 
 ---
 
