@@ -1,4 +1,4 @@
-# MNIST XAI Representation Analysis — Code Documentation
+# MNIST XAI Representation Analysis (Code Documentation)
 
 **Explainable AI: Analysing and Interpreting Learned Representations in CNNs**
 
