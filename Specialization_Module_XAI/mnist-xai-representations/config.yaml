@@ -1,6 +1,4 @@
 
-
-```yaml
 # Central configuration for reproducibility
 random_seed: 42
 
@@ -36,4 +34,5 @@ paths:
   activations_dir: ./activations
   results_dir: ./results
   figures_dir: ./figures
-```
+
+
