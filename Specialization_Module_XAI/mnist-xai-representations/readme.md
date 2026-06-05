@@ -1,8 +1,8 @@
-# MNIST XAI Representation Analysis — Complete Code Documentation
+# MNIST XAI Representation Analysis — Code Documentation
 
 **Explainable AI: Analysing and Interpreting Learned Representations in CNNs**
 
-*07-MDA-13 Specialization Module — Full Implementation Guide*
+*07-MDA-13 Specialization Module — Implementation Guide*
 
 ---
 
