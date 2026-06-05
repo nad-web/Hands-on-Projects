@@ -1,4 +1,3 @@
-
 # MNIST XAI Representation Analysis — Complete Code Documentation
 
 **Explainable AI: Analysing and Interpreting Learned Representations in CNNs**
@@ -17,21 +16,20 @@
 ## 📖 Table of Contents
 
 1. [Project Overview](#1-project-overview)
-2. [Directory Structure](#2-directory-structure)
-3. [Installation & Setup](#3-installation--setup)
-4. [Module 1: CNN Architecture (`model.py`)](#4-module-1-cnn-architecture-modelpy)
-5. [Module 2: Training (`train.py`)](#5-module-2-training-trainpy)
-6. [Module 3: Activation Extraction (`extract_activations.py`)](#6-module-3-activation-extraction-extract_activationspy)
-7. [Module 4: Concept Definitions (`concepts.py`)](#7-module-4-concept-definitions-conceptspy)
-8. [Module 5: CAV Computation (`cav.py`)](#8-module-5-cav-computation-cavpy)
-9. [Module 6: Linear Probing (`linear_probe.py`)](#9-module-6-linear-probing-linear_probepy)
-10. [Module 7: RSA Analysis (`rsa.py`)](#10-module-7-rsa-analysis-rsapy)
-11. [Module 8: Intervention Analysis (`interventions.py`)](#11-module-8-intervention-analysis-interventionspy)
-12. [Module 9: Visualization (`plot_results.py`)](#12-module-9-visualization-plot_resultspy)
-13. [Module 10: Main Experiment Runner (`run_experiments.py`)](#13-module-10-main-experiment-runner-run_experimentspy)
-14. [Reproducibility Checklist](#14-reproducibility-checklist)
-15. [Expected Outputs](#15-expected-outputs)
-16. [Troubleshooting](#16-troubleshooting)
+2. [Installation & Setup](#2-installation--setup)
+3. [Module 1: CNN Architecture (`model.py`)](#3-module-1-cnn-architecture-modelpy)
+4. [Module 2: Training (`train.py`)](#4-module-2-training-trainpy)
+5. [Module 3: Activation Extraction (`extract_activations.py`)](#5-module-3-activation-extraction-extract_activationspy)
+6. [Module 4: Concept Definitions (`concepts.py`)](#6-module-4-concept-definitions-conceptspy)
+7. [Module 5: CAV Computation (`cav.py`)](#7-module-5-cav-computation-cavpy)
+8. [Module 6: Linear Probing (`linear_probe.py`)](#8-module-6-linear-probing-linear_probepy)
+9. [Module 7: RSA Analysis (`rsa.py`)](#9-module-7-rsa-analysis-rsapy)
+10. [Module 8: Intervention Analysis (`interventions.py`)](#10-module-8-intervention-analysis-interventionspy)
+11. [Module 9: Visualization (`plot_results.py`)](#11-module-9-visualization-plot_resultspy)
+12. [Module 10: Main Experiment Runner (`run_experiments.py`)](#12-module-10-main-experiment-runner-run_experimentspy)
+13. [Reproducibility Checklist](#13-reproducibility-checklist)
+14. [Expected Outputs](#14-expected-outputs)
+15. [Troubleshooting](#15-troubleshooting)
 
 ---
 
@@ -52,68 +50,16 @@ This repository contains the complete implementation for the paper *"Explainable
 
 ---
 
-## 2. Directory Structure
+## 2. Installation & Setup
 
-```
-mnist-xai-representations/
-│
-├── README.md                          # This documentation
-├── requirements.txt                   # Python dependencies
-├── config.yaml                        # Central configuration file
-├── logbook.md                         # Experimental decisions log
-│
-├── src/                               # Source code modules
-│   ├── __init__.py
-│   ├── model.py                       # CNN architecture (Module 1)
-│   ├── train.py                       # Training script (Module 2)
-│   ├── extract_activations.py         # Hook-based activation extraction (Module 3)
-│   ├── concepts.py                    # Concept definitions & labelling (Module 4)
-│   ├── cav.py                         # CAV estimation & TCAV scoring (Module 5)
-│   ├── linear_probe.py                # Linear probing with CV (Module 6)
-│   ├── rsa.py                         # RDM computation & RSA correlation (Module 7)
-│   ├── interventions.py               # Ablation & counterfactual injection (Module 8)
-│   ├── plot_results.py                # Figure generation (Module 9)
-│   └── run_experiments.py             # End-to-end experiment runner (Module 10)
-│
-├── data/                              # MNIST dataset (auto-downloaded)
-│   └── mnist/
-│       ├── raw/
-│       └── processed/
-│
-├── models/                            # Saved trained models
-│   ├── shallow.pt
-│   ├── medium.pt
-│   └── deep.pt
-│
-├── activations/                       # Extracted activation vectors (.npy)
-│   ├── shallow/
-│   ├── medium/
-│   └── deep/
-│
-├── results/                           # Numerical results (JSON/CSV)
-│   ├── probing_results.csv
-│   ├── rsa_results.csv
-│   ├── cav_scores.json
-│   └── intervention_results.json
-│
-└── figures/                           # Generated plots
-    ├── concept_emergence.png
-    ├── rsa_comparison.png
-    └── intervention_outcomes.png
-```
-
----
-
-## 3. Installation & Setup
-
-### 3.1 Prerequisites
+### 2.1 Prerequisites
 
 - Python 3.10 or higher
 - pip package manager
 - ~2 GB free disk space
 - CPU only (no GPU required)
 
-### 3.2 Create Virtual Environment
+### 2.2 Create Virtual Environment
 
 ```bash
 # Clone repository
@@ -130,7 +76,7 @@ source venv/bin/activate
 venv\Scripts\activate
 ```
 
-### 3.3 Install Dependencies
+### 2.3 Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -150,7 +96,7 @@ pyyaml>=6.0
 tqdm>=4.65.0
 ```
 
-### 3.4 Configuration (`config.yaml`)
+### 2.4 Configuration (`config.yaml`)
 
 ```yaml
 # Central configuration for reproducibility
@@ -192,7 +138,7 @@ paths:
 
 ---
 
-## 4. Module 1: CNN Architecture (`model.py`)
+## 3. Module 1: CNN Architecture (`model.py`)
 
 ### Purpose
 Defines the configurable CNN architecture with three depth variants (Shallow=2, Medium=3, Deep=5 convolutional blocks). Each block follows the structure: **Conv2d → BatchNorm2d → ReLU → MaxPool2d(2×2)**. Channel dimensions double each block: 1 → 16 → 32 → 64 → 128 → 256.
@@ -404,7 +350,7 @@ if __name__ == "__main__":
 
 ---
 
-## 5. Module 2: Training (`train.py`)
+## 4. Module 2: Training (`train.py`)
 
 ### Purpose
 Trains the three CNN architectures (Shallow, Medium, Deep) on MNIST with identical hyperparameters. Implements early stopping, validation split, and full reproducibility via fixed random seeds.
@@ -710,7 +656,7 @@ Test Loss: 0.0421 | Test Accuracy: 98.65%
 
 ---
 
-## 6. Module 3: Activation Extraction (`extract_activations.py`)
+## 5. Module 3: Activation Extraction (`extract_activations.py`)
 
 ### Purpose
 Extracts intermediate activations from each convolutional layer using PyTorch forward hooks. Applies global average pooling to obtain fixed-length vectors per image. These vectors form the dataset for all subsequent analyses (CAV, probing, RSA).
@@ -905,7 +851,7 @@ activations/deep/
 
 ---
 
-## 7. Module 4: Concept Definitions (`concepts.py`)
+## 6. Module 4: Concept Definitions (`concepts.py`)
 
 ### Purpose
 Defines the five human-defined visual concepts and their binary positive/negative class assignments. Provides utility functions to generate concept labels for any MNIST dataset subset.
@@ -1042,7 +988,7 @@ print(f"Loop-positive: {loop_labels.sum()} / {len(loop_labels)}")
 
 ---
 
-## 8. Module 5: CAV Computation (`cav.py`)
+## 7. Module 5: CAV Computation (`cav.py`)
 
 ### Purpose
 Implements Concept Activation Vector (CAV) estimation using LinearSVM, and TCAV score computation. The CAV is the normalised weight vector of a linear SVM trained to distinguish concept-positive from concept-negative activations.
@@ -1282,7 +1228,7 @@ $$S_{TCAV}(c, k, l) = \frac{1}{N_k} \sum_{i=1}^{N_k} \mathbb{1}\left[ \nabla_{h_
 
 ---
 
-## 9. Module 6: Linear Probing (`linear_probe.py`)
+## 8. Module 6: Linear Probing (`linear_probe.py`)
 
 ### Purpose
 Trains logistic regression classifiers on frozen layer activations to predict concept labels. Uses stratified 5-fold cross-validation with AUC as the evaluation metric.
@@ -1470,7 +1416,7 @@ python src/linear_probe.py --variant deep
 
 ---
 
-## 10. Module 7: RSA Analysis (`rsa.py`)
+## 9. Module 7: RSA Analysis (`rsa.py`)
 
 ### Purpose
 Computes Representational Dissimilarity Matrices (RDMs) from layer activations and compares them to concept-model RDMs using Kendall's tau rank correlation.
@@ -1717,7 +1663,7 @@ $$\tau = \frac{2}{n(n-1)} \sum_{i<j} \text{sgn}(\text{RDM}_{ij}^{\text{net}} - \
 
 ---
 
-## 11. Module 8: Intervention Analysis (`interventions.py`)
+## 10. Module 8: Intervention Analysis (`interventions.py`)
 
 ### Purpose
 Implements two causal intervention methods on the Deep architecture: (1) Targeted Ablation — zeros out the top 10% of concept-aligned channels; (2) Counterfactual Injection — adds a scaled CAV direction to layer activations. Both use PyTorch forward hooks.
@@ -1856,27 +1802,6 @@ def targeted_ablation(model: MNIST_CNN, loader: DataLoader, device: str,
 
     # Helper to compute accuracy
     def compute_accuracy():
-        correct = 0
-        total = 0
-        correct_pos = 0
-        total_pos = 0
-        correct_neg = 0
-        total_neg = 0
-
-        with torch.no_grad():
-            for images, lbls in loader:
-                images = images.to(device)
-                outputs = model(images)
-                _, predicted = outputs.max(1)
-
-                correct += predicted.eq(lbls.to(device)).sum().item()
-                total += lbls.size(0)
-
-                # Split by concept label
-                pos_mask = torch.from_numpy(concept_labels[total - lbls.size(0):total]).bool().to(device)
-                # Note: This indexing is simplified; in production use proper batch tracking
-
-        # Recompute with proper batch tracking
         all_preds = []
         all_targets = []
 
@@ -1996,10 +1921,6 @@ def counterfactual_injection(model: MNIST_CNN, loader: DataLoader, device: str,
     gt_logits_after = logits_after[np.arange(len(labels_all)), labels_all]
     delta_logits = gt_logits_after - gt_logits_before
 
-    # Load concept labels (assumes same order as loader)
-    # In practice, pass concept_labels directly to this function
-    # Here we use a placeholder - in the main script this is properly handled
-
     return {
         'mean_delta_logit': float(delta_logits.mean()),
         'std_delta_logit': float(delta_logits.std()),
@@ -2093,7 +2014,7 @@ done
 
 ---
 
-## 12. Module 9: Visualization (`plot_results.py`)
+## 11. Module 9: Visualization (`plot_results.py`)
 
 ### Purpose
 Generates publication-quality figures: concept emergence curves, RSA comparison bar charts, and intervention outcome plots.
@@ -2306,7 +2227,7 @@ python src/plot_results.py
 
 ---
 
-## 13. Module 10: Main Experiment Runner (`run_experiments.py`)
+## 12. Module 10: Main Experiment Runner (`run_experiments.py`)
 
 ### Purpose
 End-to-end orchestration script that runs the complete experimental pipeline: training → extraction → CAV → probing → RSA → interventions → plotting. Ensures all steps are executed in the correct order with consistent configuration.
@@ -2442,12 +2363,12 @@ python src/run_experiments.py
 
 ---
 
-## 14. Reproducibility Checklist
+## 13. Reproducibility Checklist
 
 | Item | Status | Implementation |
 |------|--------|---------------|
 | ✅ Fixed random seed (42) | Implemented | `set_seed(42)` in `train.py`; `random_state=42` in scikit-learn calls |
-| ✅ Explicit hyperparameters | Documented | `config.yaml` centralises all hyperparameters |
+| ✅ Explicit hyperparameters documented | Documented | `config.yaml` centralises all hyperparameters |
 | ✅ Open-source software only | Verified | PyTorch, scikit-learn, NumPy, SciPy, Matplotlib |
 | ✅ Code publicly available | Yes | This repository |
 | ✅ Concept labels documented | Yes | `concepts.py` with explicit positive/negative digit sets |
@@ -2459,7 +2380,7 @@ python src/run_experiments.py
 
 ---
 
-## 15. Expected Outputs
+## 14. Expected Outputs
 
 ### Numerical Results
 
@@ -2507,7 +2428,7 @@ results/
 
 ---
 
-## 16. Troubleshooting
+## 15. Troubleshooting
 
 | Issue | Cause | Solution |
 |-------|-------|----------|
