@@ -1,0 +1,23 @@
+{
+  "model": "LSTM",
+  "execution_version": "corrected-independent-rerun-v1",
+  "executed_in_this_environment": true,
+  "run_started_utc": "2026-11-06T14:03:28.202995+00:00",
+  "run_finished_utc": "2026-11-06T14:25:59.456913+00:00",
+  "wall_seconds": 1351.253916501999,
+  "planned_fold_units": 80,
+  "completed_fold_units": 80,
+  "missing_fold_units": 0,
+  "observation_prediction_rows": 18480,
+  "planned_explained_units": 60,
+  "completed_explained_units": 60,
+  "validation_checks": {
+    "all_planned_fold_units_complete": true,
+    "all_explained_units_complete": true,
+    "predictions_finite": true,
+    "prediction_metrics_recompute": true,
+    "sunspot_matches_original_tsf": true,
+    "observation_level_predictions_exported": true,
+    "no_missing_prediction_targets": true
+  }
+}

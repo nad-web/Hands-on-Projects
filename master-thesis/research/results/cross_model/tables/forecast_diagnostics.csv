@@ -1,0 +1,761 @@
+series,horizon,scheme,fold,n_train,seed_prediction_sigma,best_iteration_mean,model,n_train_raw,raw_train_start,raw_train_end,selected_order,supervised_target_train_mean,raw_train_mean_for_native_counterfactual,n_train_sequences,epochs_run,best_validation_loss
+sp500,1,rolling,0,500.0,0.0,,Linear,,,,,,,,,
+sp500,1,rolling,1,500.0,0.0,,Linear,,,,,,,,,
+sp500,1,rolling,2,500.0,0.0,,Linear,,,,,,,,,
+sp500,1,rolling,3,500.0,0.0,,Linear,,,,,,,,,
+sp500,1,rolling,4,500.0,0.0,,Linear,,,,,,,,,
+sp500,1,rolling,5,500.0,0.0,,Linear,,,,,,,,,
+sp500,1,expanding,0,500.0,0.0,,Linear,,,,,,,,,
+sp500,1,expanding,1,752.0,0.0,,Linear,,,,,,,,,
+sp500,1,expanding,2,1004.0,0.0,,Linear,,,,,,,,,
+sp500,1,expanding,3,1256.0,0.0,,Linear,,,,,,,,,
+sp500,1,expanding,4,1508.0,0.0,,Linear,,,,,,,,,
+sp500,1,expanding,5,1760.0,0.0,,Linear,,,,,,,,,
+sp500,5,rolling,0,500.0,0.0,,Linear,,,,,,,,,
+sp500,5,rolling,1,500.0,0.0,,Linear,,,,,,,,,
+sp500,5,rolling,2,500.0,0.0,,Linear,,,,,,,,,
+sp500,5,rolling,3,500.0,0.0,,Linear,,,,,,,,,
+sp500,5,rolling,4,500.0,0.0,,Linear,,,,,,,,,
+sp500,5,rolling,5,500.0,0.0,,Linear,,,,,,,,,
+sp500,5,expanding,0,500.0,0.0,,Linear,,,,,,,,,
+sp500,5,expanding,1,752.0,0.0,,Linear,,,,,,,,,
+sp500,5,expanding,2,1004.0,0.0,,Linear,,,,,,,,,
+sp500,5,expanding,3,1256.0,0.0,,Linear,,,,,,,,,
+sp500,5,expanding,4,1508.0,0.0,,Linear,,,,,,,,,
+sp500,5,expanding,5,1760.0,0.0,,Linear,,,,,,,,,
+dax,1,rolling,0,500.0,0.0,,Linear,,,,,,,,,
+dax,1,rolling,1,500.0,0.0,,Linear,,,,,,,,,
+dax,1,rolling,2,500.0,0.0,,Linear,,,,,,,,,
+dax,1,rolling,3,500.0,0.0,,Linear,,,,,,,,,
+dax,1,rolling,4,500.0,0.0,,Linear,,,,,,,,,
+dax,1,rolling,5,500.0,0.0,,Linear,,,,,,,,,
+dax,1,expanding,0,500.0,0.0,,Linear,,,,,,,,,
+dax,1,expanding,1,752.0,0.0,,Linear,,,,,,,,,
+dax,1,expanding,2,1004.0,0.0,,Linear,,,,,,,,,
+dax,1,expanding,3,1256.0,0.0,,Linear,,,,,,,,,
+dax,1,expanding,4,1508.0,0.0,,Linear,,,,,,,,,
+dax,1,expanding,5,1760.0,0.0,,Linear,,,,,,,,,
+dax,5,rolling,0,500.0,0.0,,Linear,,,,,,,,,
+dax,5,rolling,1,500.0,0.0,,Linear,,,,,,,,,
+dax,5,rolling,2,500.0,0.0,,Linear,,,,,,,,,
+dax,5,rolling,3,500.0,0.0,,Linear,,,,,,,,,
+dax,5,rolling,4,500.0,0.0,,Linear,,,,,,,,,
+dax,5,rolling,5,500.0,0.0,,Linear,,,,,,,,,
+dax,5,expanding,0,500.0,0.0,,Linear,,,,,,,,,
+dax,5,expanding,1,752.0,0.0,,Linear,,,,,,,,,
+dax,5,expanding,2,1004.0,0.0,,Linear,,,,,,,,,
+dax,5,expanding,3,1256.0,0.0,,Linear,,,,,,,,,
+dax,5,expanding,4,1508.0,0.0,,Linear,,,,,,,,,
+dax,5,expanding,5,1760.0,0.0,,Linear,,,,,,,,,
+nasdaq,1,rolling,0,500.0,0.0,,Linear,,,,,,,,,
+nasdaq,1,rolling,1,500.0,0.0,,Linear,,,,,,,,,
+nasdaq,1,rolling,2,500.0,0.0,,Linear,,,,,,,,,
+nasdaq,1,rolling,3,500.0,0.0,,Linear,,,,,,,,,
+nasdaq,1,rolling,4,500.0,0.0,,Linear,,,,,,,,,
+nasdaq,1,rolling,5,500.0,0.0,,Linear,,,,,,,,,
+nasdaq,1,expanding,0,500.0,0.0,,Linear,,,,,,,,,
+nasdaq,1,expanding,1,752.0,0.0,,Linear,,,,,,,,,
+nasdaq,1,expanding,2,1004.0,0.0,,Linear,,,,,,,,,
+nasdaq,1,expanding,3,1256.0,0.0,,Linear,,,,,,,,,
+nasdaq,1,expanding,4,1508.0,0.0,,Linear,,,,,,,,,
+nasdaq,1,expanding,5,1760.0,0.0,,Linear,,,,,,,,,
+nasdaq,5,rolling,0,500.0,0.0,,Linear,,,,,,,,,
+nasdaq,5,rolling,1,500.0,0.0,,Linear,,,,,,,,,
+nasdaq,5,rolling,2,500.0,0.0,,Linear,,,,,,,,,
+nasdaq,5,rolling,3,500.0,0.0,,Linear,,,,,,,,,
+nasdaq,5,rolling,4,500.0,0.0,,Linear,,,,,,,,,
+nasdaq,5,rolling,5,500.0,0.0,,Linear,,,,,,,,,
+nasdaq,5,expanding,0,500.0,0.0,,Linear,,,,,,,,,
+nasdaq,5,expanding,1,752.0,0.0,,Linear,,,,,,,,,
+nasdaq,5,expanding,2,1004.0,0.0,,Linear,,,,,,,,,
+nasdaq,5,expanding,3,1256.0,0.0,,Linear,,,,,,,,,
+nasdaq,5,expanding,4,1508.0,0.0,,Linear,,,,,,,,,
+nasdaq,5,expanding,5,1760.0,0.0,,Linear,,,,,,,,,
+djia,1,rolling,0,500.0,0.0,,Linear,,,,,,,,,
+djia,1,rolling,1,500.0,0.0,,Linear,,,,,,,,,
+djia,1,rolling,2,500.0,0.0,,Linear,,,,,,,,,
+djia,1,rolling,3,500.0,0.0,,Linear,,,,,,,,,
+djia,1,rolling,4,500.0,0.0,,Linear,,,,,,,,,
+djia,1,rolling,5,500.0,0.0,,Linear,,,,,,,,,
+djia,1,expanding,0,500.0,0.0,,Linear,,,,,,,,,
+djia,1,expanding,1,752.0,0.0,,Linear,,,,,,,,,
+djia,1,expanding,2,1004.0,0.0,,Linear,,,,,,,,,
+djia,1,expanding,3,1256.0,0.0,,Linear,,,,,,,,,
+djia,1,expanding,4,1508.0,0.0,,Linear,,,,,,,,,
+djia,1,expanding,5,1760.0,0.0,,Linear,,,,,,,,,
+djia,5,rolling,0,500.0,0.0,,Linear,,,,,,,,,
+djia,5,rolling,1,500.0,0.0,,Linear,,,,,,,,,
+djia,5,rolling,2,500.0,0.0,,Linear,,,,,,,,,
+djia,5,rolling,3,500.0,0.0,,Linear,,,,,,,,,
+djia,5,rolling,4,500.0,0.0,,Linear,,,,,,,,,
+djia,5,rolling,5,500.0,0.0,,Linear,,,,,,,,,
+djia,5,expanding,0,500.0,0.0,,Linear,,,,,,,,,
+djia,5,expanding,1,752.0,0.0,,Linear,,,,,,,,,
+djia,5,expanding,2,1004.0,0.0,,Linear,,,,,,,,,
+djia,5,expanding,3,1256.0,0.0,,Linear,,,,,,,,,
+djia,5,expanding,4,1508.0,0.0,,Linear,,,,,,,,,
+djia,5,expanding,5,1760.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,1,rolling,0,500.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,1,rolling,1,500.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,1,rolling,2,500.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,1,rolling,3,500.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,1,rolling,4,500.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,1,rolling,5,500.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,1,expanding,0,500.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,1,expanding,1,752.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,1,expanding,2,1004.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,1,expanding,3,1256.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,1,expanding,4,1508.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,1,expanding,5,1760.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,5,rolling,0,500.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,5,rolling,1,500.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,5,rolling,2,500.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,5,rolling,3,500.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,5,rolling,4,500.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,5,rolling,5,500.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,5,expanding,0,500.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,5,expanding,1,752.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,5,expanding,2,1004.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,5,expanding,3,1256.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,5,expanding,4,1508.0,0.0,,Linear,,,,,,,,,
+monash_sunspot,5,expanding,5,1760.0,0.0,,Linear,,,,,,,,,
+sp500,1,rolling,0,,,,ARIMA,500.0,7039.0,7539.0,"(3, 0, 0)",0.0003317509600326,0.0003249997788353,,,
+sp500,1,rolling,1,,,,ARIMA,500.0,7291.0,7791.0,"(3, 0, 0)",0.0006587652499002,0.0006635351605066,,,
+sp500,1,rolling,2,,,,ARIMA,500.0,7543.0,8043.0,"(3, 0, 0)",0.0007414867546394,0.000756260592585,,,
+sp500,1,rolling,3,,,,ARIMA,500.0,7795.0,8295.0,"(1, 0, 0)",0.0001700891261075,0.0001902396954725,,,
+sp500,1,rolling,4,,,,ARIMA,500.0,8047.0,8547.0,"(1, 0, 0)",-5.1261585397100575e-05,-5.7847857972260414e-05,,,
+sp500,1,rolling,5,,,,ARIMA,500.0,8299.0,8799.0,"(1, 0, 0)",0.0008738782792144,0.0008541401495509,,,
+sp500,1,expanding,0,,,,ARIMA,500.0,252.0,752.0,"(1, 0, 0)",0.0005984043674411,0.0005772105936936,,,
+sp500,1,expanding,1,,,,ARIMA,752.0,252.0,1004.0,"(1, 0, 0)",0.0004712839063696,0.0004575859099707,,,
+sp500,1,expanding,2,,,,ARIMA,1004.0,252.0,1256.0,"(1, 0, 0)",0.0003352842267574,0.0003256111190748,,,
+sp500,1,expanding,3,,,,ARIMA,1256.0,252.0,1508.0,"(1, 0, 0)",0.0005002715365371,0.000484439984482,,,
+sp500,1,expanding,4,,,,ARIMA,1508.0,252.0,1760.0,"(1, 0, 0)",0.0005300585175306,0.000517806543673,,,
+sp500,1,expanding,5,,,,ARIMA,1760.0,252.0,2012.0,"(1, 0, 0)",0.0006176116767118,0.0006083518333764,,,
+sp500,5,rolling,0,,,,ARIMA,500.0,7039.0,7539.0,"(3, 0, 0)",0.0016420914587208,0.0003249997788353,,,
+sp500,5,rolling,1,,,,ARIMA,500.0,7291.0,7791.0,"(3, 0, 0)",0.0033575163105001,0.0006635351605066,,,
+sp500,5,rolling,2,,,,ARIMA,500.0,7543.0,8043.0,"(3, 0, 0)",0.0038326178096997,0.000756260592585,,,
+sp500,5,rolling,3,,,,ARIMA,500.0,7795.0,8295.0,"(1, 0, 0)",0.0007481315840247,0.0001902396954725,,,
+sp500,5,rolling,4,,,,ARIMA,500.0,8047.0,8547.0,"(1, 0, 0)",-0.0001668462030195,-5.7847857972260414e-05,,,
+sp500,5,rolling,5,,,,ARIMA,500.0,8299.0,8799.0,"(1, 0, 0)",0.0042417030189963,0.0008541401495509,,,
+sp500,5,expanding,0,,,,ARIMA,500.0,252.0,752.0,"(1, 0, 0)",0.0031701986433402,0.0005772105936936,,,
+sp500,5,expanding,1,,,,ARIMA,752.0,252.0,1004.0,"(1, 0, 0)",0.0025335603071797,0.0004575859099707,,,
+sp500,5,expanding,2,,,,ARIMA,1004.0,252.0,1256.0,"(1, 0, 0)",0.0018058127393926,0.0003256111190748,,,
+sp500,5,expanding,3,,,,ARIMA,1256.0,252.0,1508.0,"(1, 0, 0)",0.0025753034767151,0.000484439984482,,,
+sp500,5,expanding,4,,,,ARIMA,1508.0,252.0,1760.0,"(1, 0, 0)",0.0027794898381859,0.000517806543673,,,
+sp500,5,expanding,5,,,,ARIMA,1760.0,252.0,2012.0,"(1, 0, 0)",0.0031154481154116,0.0006083518333764,,,
+dax,1,rolling,0,,,,ARIMA,500.0,7079.0,7579.0,"(1, 0, 0)",-1.5147717126430484e-05,3.284573671674362e-05,,,
+dax,1,rolling,1,,,,ARIMA,500.0,7331.0,7831.0,"(2, 0, 0)",0.0004777021776872,0.0004943282734959,,,
+dax,1,rolling,2,,,,ARIMA,500.0,7583.0,8083.0,"(2, 0, 0)",0.0003198296139338,0.0003359214752298,,,
+dax,1,rolling,3,,,,ARIMA,500.0,7835.0,8335.0,"(1, 0, 0)",-3.63584592013394e-06,1.5844295153311096e-07,,,
+dax,1,rolling,4,,,,ARIMA,500.0,8087.0,8587.0,"(1, 0, 0)",9.400714978335055e-05,0.0001113615774802,,,
+dax,1,rolling,5,,,,ARIMA,500.0,8339.0,8839.0,"(2, 0, 0)",0.0007599021570631,0.0007612254167418,,,
+dax,1,expanding,0,,,,ARIMA,500.0,252.0,752.0,"(3, 0, 0)",0.0002291934471447,0.0002383912414393,,,
+dax,1,expanding,1,,,,ARIMA,752.0,252.0,1004.0,"(3, 0, 0)",0.0006489416884608,0.0006632399697001,,,
+dax,1,expanding,2,,,,ARIMA,1004.0,252.0,1256.0,"(2, 0, 0)",0.0004089343840087,0.0004168339886819,,,
+dax,1,expanding,3,,,,ARIMA,1256.0,252.0,1508.0,"(1, 0, 0)",0.0004244774467843,0.0004373272021183,,,
+dax,1,expanding,4,,,,ARIMA,1508.0,252.0,1760.0,"(1, 0, 0)",0.0005156652470349,0.0005242264814931,,,
+dax,1,expanding,5,,,,ARIMA,1760.0,252.0,2012.0,"(1, 0, 0)",0.0006495188885731,0.0006465587118181,,,
+dax,5,rolling,0,,,,ARIMA,500.0,7079.0,7579.0,"(1, 0, 0)",-2.5749842542294844e-05,3.284573671674362e-05,,,
+dax,5,rolling,1,,,,ARIMA,500.0,7331.0,7831.0,"(2, 0, 0)",0.002377820485305,0.0004943282734959,,,
+dax,5,rolling,2,,,,ARIMA,500.0,7583.0,8083.0,"(2, 0, 0)",0.0016702504626095,0.0003359214752298,,,
+dax,5,rolling,3,,,,ARIMA,500.0,7835.0,8335.0,"(1, 0, 0)",-5.653638597691968e-06,1.5844295153311096e-07,,,
+dax,5,rolling,4,,,,ARIMA,500.0,8087.0,8587.0,"(1, 0, 0)",0.0003983078128807,0.0001113615774802,,,
+dax,5,rolling,5,,,,ARIMA,500.0,8339.0,8839.0,"(2, 0, 0)",0.0037740352897194,0.0007612254167418,,,
+dax,5,expanding,0,,,,ARIMA,500.0,252.0,752.0,"(3, 0, 0)",0.0012763606070066,0.0002383912414393,,,
+dax,5,expanding,1,,,,ARIMA,752.0,252.0,1004.0,"(3, 0, 0)",0.0031029165596177,0.0006632399697001,,,
+dax,5,expanding,2,,,,ARIMA,1004.0,252.0,1256.0,"(2, 0, 0)",0.0020972629223559,0.0004168339886819,,,
+dax,5,expanding,3,,,,ARIMA,1256.0,252.0,1508.0,"(1, 0, 0)",0.0022042307697891,0.0004373272021183,,,
+dax,5,expanding,4,,,,ARIMA,1508.0,252.0,1760.0,"(1, 0, 0)",0.0026266225285216,0.0005242264814931,,,
+dax,5,expanding,5,,,,ARIMA,1760.0,252.0,2012.0,"(1, 0, 0)",0.0032521957978051,0.0006465587118181,,,
+nasdaq,1,rolling,0,,,,ARIMA,500.0,7039.0,7539.0,"(3, 0, 0)",0.0004581400783043,0.0004580967907274,,,
+nasdaq,1,rolling,1,,,,ARIMA,500.0,7291.0,7791.0,"(3, 0, 0)",0.0011340342743154,0.0011441948883018,,,
+nasdaq,1,rolling,2,,,,ARIMA,500.0,7543.0,8043.0,"(3, 0, 0)",0.0011201804320924,0.0011577128765408,,,
+nasdaq,1,rolling,3,,,,ARIMA,500.0,7795.0,8295.0,"(1, 0, 0)",-0.0001865747938865,-0.0001866695755719,,,
+nasdaq,1,rolling,4,,,,ARIMA,500.0,8047.0,8547.0,"(1, 0, 0)",-0.0001849559274494,-0.0002076801991338,,,
+nasdaq,1,rolling,5,,,,ARIMA,500.0,8299.0,8799.0,"(1, 0, 0)",0.001180761717215,0.0011506193025683,,,
+nasdaq,1,expanding,0,,,,ARIMA,500.0,252.0,752.0,"(1, 0, 0)",0.0011481608333913,0.0011444786989649,,,
+nasdaq,1,expanding,1,,,,ARIMA,752.0,252.0,1004.0,"(2, 0, 0)",0.0009416495583016,0.00094387626593,,,
+nasdaq,1,expanding,2,,,,ARIMA,1004.0,252.0,1256.0,"(2, 0, 0)",0.0006688944111322,0.00066377399964,,,
+nasdaq,1,expanding,3,,,,ARIMA,1256.0,252.0,1508.0,"(2, 0, 0)",0.0008076363155568,0.0007855025023596,,,
+nasdaq,1,expanding,4,,,,ARIMA,1508.0,252.0,1760.0,"(2, 0, 0)",0.0008119621458603,0.0008063153829954,,,
+nasdaq,1,expanding,5,,,,ARIMA,1760.0,252.0,2012.0,"(2, 0, 0)",0.0008116547989452,0.0008031707990709,,,
+nasdaq,5,rolling,0,,,,ARIMA,500.0,7039.0,7539.0,"(3, 0, 0)",0.0022778327238996,0.0004580967907274,,,
+nasdaq,5,rolling,1,,,,ARIMA,500.0,7291.0,7791.0,"(3, 0, 0)",0.0057260335185674,0.0011441948883018,,,
+nasdaq,5,rolling,2,,,,ARIMA,500.0,7543.0,8043.0,"(3, 0, 0)",0.0057399628068179,0.0011577128765408,,,
+nasdaq,5,rolling,3,,,,ARIMA,500.0,7795.0,8295.0,"(1, 0, 0)",-0.0011691642917034,-0.0001866695755719,,,
+nasdaq,5,rolling,4,,,,ARIMA,500.0,8047.0,8547.0,"(1, 0, 0)",-0.0007385625779935,-0.0002076801991338,,,
+nasdaq,5,rolling,5,,,,ARIMA,500.0,8299.0,8799.0,"(1, 0, 0)",0.0058309709953397,0.0011506193025683,,,
+nasdaq,5,expanding,0,,,,ARIMA,500.0,252.0,752.0,"(1, 0, 0)",0.0059935134397053,0.0011444786989649,,,
+nasdaq,5,expanding,1,,,,ARIMA,752.0,252.0,1004.0,"(2, 0, 0)",0.004866039536734,0.00094387626593,,,
+nasdaq,5,expanding,2,,,,ARIMA,1004.0,252.0,1256.0,"(2, 0, 0)",0.0035080202104975,0.00066377399964,,,
+nasdaq,5,expanding,3,,,,ARIMA,1256.0,252.0,1508.0,"(2, 0, 0)",0.0041573298203736,0.0007855025023596,,,
+nasdaq,5,expanding,4,,,,ARIMA,1508.0,252.0,1760.0,"(2, 0, 0)",0.0041665036502886,0.0008063153829954,,,
+nasdaq,5,expanding,5,,,,ARIMA,1760.0,252.0,2012.0,"(2, 0, 0)",0.0040810922504447,0.0008031707990709,,,
+djia,1,rolling,0,,,,ARIMA,500.0,6533.0,7033.0,"(2, 0, 1)",0.0002655816514015,0.0002607605659093,,,
+djia,1,rolling,1,,,,ARIMA,500.0,6785.0,7285.0,"(3, 0, 0)",0.0004092898044673,0.0004063720654158,,,
+djia,1,rolling,2,,,,ARIMA,500.0,7037.0,7537.0,"(3, 0, 0)",0.0004306128746582,0.0004320645851744,,,
+djia,1,rolling,3,,,,ARIMA,500.0,7289.0,7789.0,"(1, 0, 0)",0.0002426300731411,0.0002638961645747,,,
+djia,1,rolling,4,,,,ARIMA,500.0,7541.0,8041.0,"(1, 0, 0)",1.6696487437353858e-05,2.057960010597168e-05,,,
+djia,1,rolling,5,,,,ARIMA,500.0,7793.0,8293.0,"(1, 0, 0)",0.0005756884486477,0.0005630594566104,,,
+djia,1,expanding,0,,,,ARIMA,500.0,252.0,752.0,"(1, 0, 0)",0.000289321732179,0.0002703571377501,,,
+djia,1,expanding,1,,,,ARIMA,752.0,252.0,1004.0,"(1, 0, 0)",0.0005775280129712,0.0005597552784766,,,
+djia,1,expanding,2,,,,ARIMA,1004.0,252.0,1256.0,"(3, 0, 0)",0.0006707965736467,0.0006450696637392,,,
+djia,1,expanding,3,,,,ARIMA,1256.0,252.0,1508.0,"(3, 0, 0)",0.0006893381882199,0.0006957055878213,,,
+djia,1,expanding,4,,,,ARIMA,1508.0,252.0,1760.0,"(3, 0, 0)",0.0006579577171738,0.0006518797598868,,,
+djia,1,expanding,5,,,,ARIMA,1760.0,252.0,2012.0,"(3, 0, 0)",0.000691287849042,0.0006935978662384,,,
+djia,5,rolling,0,,,,ARIMA,500.0,6533.0,7033.0,"(2, 0, 1)",0.0013127925232591,0.0002607605659093,,,
+djia,5,rolling,1,,,,ARIMA,500.0,6785.0,7285.0,"(3, 0, 0)",0.0020981122909355,0.0004063720654158,,,
+djia,5,rolling,2,,,,ARIMA,500.0,7037.0,7537.0,"(3, 0, 0)",0.0023252332248156,0.0004320645851744,,,
+djia,5,rolling,3,,,,ARIMA,500.0,7289.0,7789.0,"(1, 0, 0)",0.0011452925945609,0.0002638961645747,,,
+djia,5,rolling,4,,,,ARIMA,500.0,7541.0,8041.0,"(1, 0, 0)",0.0001417732558413,2.057960010597168e-05,,,
+djia,5,rolling,5,,,,ARIMA,500.0,7793.0,8293.0,"(1, 0, 0)",0.0027133662241063,0.0005630594566104,,,
+djia,5,expanding,0,,,,ARIMA,500.0,252.0,752.0,"(1, 0, 0)",0.0015112482544031,0.0002703571377501,,,
+djia,5,expanding,1,,,,ARIMA,752.0,252.0,1004.0,"(1, 0, 0)",0.0028992153793697,0.0005597552784766,,,
+djia,5,expanding,2,,,,ARIMA,1004.0,252.0,1256.0,"(3, 0, 0)",0.0033807360337191,0.0006450696637392,,,
+djia,5,expanding,3,,,,ARIMA,1256.0,252.0,1508.0,"(3, 0, 0)",0.0034029393613137,0.0006957055878213,,,
+djia,5,expanding,4,,,,ARIMA,1508.0,252.0,1760.0,"(3, 0, 0)",0.0033540567853777,0.0006518797598868,,,
+djia,5,expanding,5,,,,ARIMA,1760.0,252.0,2012.0,"(3, 0, 0)",0.003490233937502,0.0006935978662384,,,
+monash_sunspot,1,rolling,0,,,,ARIMA,500.0,9082.0,9582.0,"(2, 0, 1)",71.618,71.778,,,
+monash_sunspot,1,rolling,1,,,,ARIMA,500.0,9334.0,9834.0,"(2, 0, 1)",49.266,49.248,,,
+monash_sunspot,1,rolling,2,,,,ARIMA,500.0,9586.0,10086.0,"(2, 0, 1)",28.892,28.9,,,
+monash_sunspot,1,rolling,3,,,,ARIMA,500.0,9838.0,10338.0,"(2, 0, 1)",17.926,17.91,,,
+monash_sunspot,1,rolling,4,,,,ARIMA,500.0,10090.0,10590.0,"(2, 0, 0)",10.838,10.928,,,
+monash_sunspot,1,rolling,5,,,,ARIMA,500.0,10342.0,10842.0,"(2, 0, 1)",5.896,5.926,,,
+monash_sunspot,1,expanding,0,,,,ARIMA,500.0,252.0,752.0,"(2, 0, 1)",199.258,199.274,,,
+monash_sunspot,1,expanding,1,,,,ARIMA,752.0,252.0,1004.0,"(2, 0, 1)",175.95212765957447,175.99867021276594,,,
+monash_sunspot,1,expanding,2,,,,ARIMA,1004.0,252.0,1256.0,"(2, 0, 1)",158.97908366533864,159.0756972111554,,,
+monash_sunspot,1,expanding,3,,,,ARIMA,1256.0,252.0,1508.0,"(2, 0, 1)",139.64092356687897,139.71815286624204,,,
+monash_sunspot,1,expanding,4,,,,ARIMA,1508.0,252.0,1760.0,"(3, 0, 0)",123.29376657824932,123.3441644562334,,,
+monash_sunspot,1,expanding,5,,,,ARIMA,1760.0,252.0,2012.0,"(3, 0, 0)",110.22045454545454,110.29147727272728,,,
+monash_sunspot,5,rolling,0,,,,ARIMA,500.0,9082.0,9582.0,"(2, 0, 1)",70.954,71.778,,,
+monash_sunspot,5,rolling,1,,,,ARIMA,500.0,9334.0,9834.0,"(2, 0, 1)",49.15,49.248,,,
+monash_sunspot,5,rolling,2,,,,ARIMA,500.0,9586.0,10086.0,"(2, 0, 1)",28.966,28.9,,,
+monash_sunspot,5,rolling,3,,,,ARIMA,500.0,9838.0,10338.0,"(2, 0, 1)",18.016,17.91,,,
+monash_sunspot,5,rolling,4,,,,ARIMA,500.0,10090.0,10590.0,"(2, 0, 0)",10.486,10.928,,,
+monash_sunspot,5,rolling,5,,,,ARIMA,500.0,10342.0,10842.0,"(2, 0, 1)",5.868,5.926,,,
+monash_sunspot,5,expanding,0,,,,ARIMA,500.0,252.0,752.0,"(2, 0, 1)",199.228,199.274,,,
+monash_sunspot,5,expanding,1,,,,ARIMA,752.0,252.0,1004.0,"(2, 0, 1)",175.78590425531914,175.99867021276594,,,
+monash_sunspot,5,expanding,2,,,,ARIMA,1004.0,252.0,1256.0,"(2, 0, 1)",158.33067729083666,159.0756972111554,,,
+monash_sunspot,5,expanding,3,,,,ARIMA,1256.0,252.0,1508.0,"(2, 0, 1)",139.16799363057325,139.71815286624204,,,
+monash_sunspot,5,expanding,4,,,,ARIMA,1508.0,252.0,1760.0,"(3, 0, 0)",123.01724137931036,123.3441644562334,,,
+monash_sunspot,5,expanding,5,,,,ARIMA,1760.0,252.0,2012.0,"(3, 0, 0)",109.87329545454546,110.29147727272728,,,
+sp500,1,rolling,0,500.0,0.000194658738497,,RandomForest,,,,,,,,,
+sp500,1,rolling,1,500.0,0.0002830789902321,,RandomForest,,,,,,,,,
+sp500,1,rolling,2,500.0,0.0003367589635536,,RandomForest,,,,,,,,,
+sp500,1,rolling,3,500.0,0.0002306692624773,,RandomForest,,,,,,,,,
+sp500,1,rolling,4,500.0,0.0002737288314232,,RandomForest,,,,,,,,,
+sp500,1,rolling,5,500.0,0.000149250372131,,RandomForest,,,,,,,,,
+sp500,1,expanding,0,500.0,0.0001798117858813,,RandomForest,,,,,,,,,
+sp500,1,expanding,1,752.0,0.0001436495956928,,RandomForest,,,,,,,,,
+sp500,1,expanding,2,1004.0,0.0001288219433463,,RandomForest,,,,,,,,,
+sp500,1,expanding,3,1256.0,0.0001208266796748,,RandomForest,,,,,,,,,
+sp500,1,expanding,4,1508.0,0.0001604777747642,,RandomForest,,,,,,,,,
+sp500,1,expanding,5,1760.0,0.000153837169229,,RandomForest,,,,,,,,,
+sp500,5,rolling,0,500.0,0.000447678057072,,RandomForest,,,,,,,,,
+sp500,5,rolling,1,500.0,0.0006173451552365,,RandomForest,,,,,,,,,
+sp500,5,rolling,2,500.0,0.0006283214692293,,RandomForest,,,,,,,,,
+sp500,5,rolling,3,500.0,0.0004909127609836,,RandomForest,,,,,,,,,
+sp500,5,rolling,4,500.0,0.0005793930011539,,RandomForest,,,,,,,,,
+sp500,5,rolling,5,500.0,0.0004262938221387,,RandomForest,,,,,,,,,
+sp500,5,expanding,0,500.0,0.0003885790125572,,RandomForest,,,,,,,,,
+sp500,5,expanding,1,752.0,0.0002933126766434,,RandomForest,,,,,,,,,
+sp500,5,expanding,2,1004.0,0.0002825803133988,,RandomForest,,,,,,,,,
+sp500,5,expanding,3,1256.0,0.0002956336394923,,RandomForest,,,,,,,,,
+sp500,5,expanding,4,1508.0,0.0003085272247709,,RandomForest,,,,,,,,,
+sp500,5,expanding,5,1760.0,0.0003681288172156,,RandomForest,,,,,,,,,
+dax,1,rolling,0,500.0,0.0002161411557144,,RandomForest,,,,,,,,,
+dax,1,rolling,1,500.0,0.0002601600094676,,RandomForest,,,,,,,,,
+dax,1,rolling,2,500.0,0.0003055505497531,,RandomForest,,,,,,,,,
+dax,1,rolling,3,500.0,0.0002463994122342,,RandomForest,,,,,,,,,
+dax,1,rolling,4,500.0,0.0002315136758591,,RandomForest,,,,,,,,,
+dax,1,rolling,5,500.0,0.0001668710731107,,RandomForest,,,,,,,,,
+dax,1,expanding,0,500.0,0.0002289883186146,,RandomForest,,,,,,,,,
+dax,1,expanding,1,752.0,0.0001922322317821,,RandomForest,,,,,,,,,
+dax,1,expanding,2,1004.0,0.0002053196487389,,RandomForest,,,,,,,,,
+dax,1,expanding,3,1256.0,0.00018717150009,,RandomForest,,,,,,,,,
+dax,1,expanding,4,1508.0,0.0002223359458487,,RandomForest,,,,,,,,,
+dax,1,expanding,5,1760.0,0.0002426885748939,,RandomForest,,,,,,,,,
+dax,5,rolling,0,500.0,0.0005818063172122,,RandomForest,,,,,,,,,
+dax,5,rolling,1,500.0,0.0006271123388422,,RandomForest,,,,,,,,,
+dax,5,rolling,2,500.0,0.0006466656728186,,RandomForest,,,,,,,,,
+dax,5,rolling,3,500.0,0.0004486716110511,,RandomForest,,,,,,,,,
+dax,5,rolling,4,500.0,0.0005125690573049,,RandomForest,,,,,,,,,
+dax,5,rolling,5,500.0,0.0005180998719275,,RandomForest,,,,,,,,,
+dax,5,expanding,0,500.0,0.0004892901656204,,RandomForest,,,,,,,,,
+dax,5,expanding,1,752.0,0.0004750763965791,,RandomForest,,,,,,,,,
+dax,5,expanding,2,1004.0,0.000465575789722,,RandomForest,,,,,,,,,
+dax,5,expanding,3,1256.0,0.0004275842187105,,RandomForest,,,,,,,,,
+dax,5,expanding,4,1508.0,0.0004036388495476,,RandomForest,,,,,,,,,
+dax,5,expanding,5,1760.0,0.000439562536609,,RandomForest,,,,,,,,,
+nasdaq,1,rolling,0,500.0,0.0002335877306622,,RandomForest,,,,,,,,,
+nasdaq,1,rolling,1,500.0,0.0002850034736599,,RandomForest,,,,,,,,,
+nasdaq,1,rolling,2,500.0,0.0003745220442739,,RandomForest,,,,,,,,,
+nasdaq,1,rolling,3,500.0,0.0002830207030282,,RandomForest,,,,,,,,,
+nasdaq,1,rolling,4,500.0,0.0003024612789295,,RandomForest,,,,,,,,,
+nasdaq,1,rolling,5,500.0,0.0002461664466356,,RandomForest,,,,,,,,,
+nasdaq,1,expanding,0,500.0,0.0002025896580133,,RandomForest,,,,,,,,,
+nasdaq,1,expanding,1,752.0,0.0001627176296417,,RandomForest,,,,,,,,,
+nasdaq,1,expanding,2,1004.0,0.0001760446866754,,RandomForest,,,,,,,,,
+nasdaq,1,expanding,3,1256.0,0.0001549647741502,,RandomForest,,,,,,,,,
+nasdaq,1,expanding,4,1508.0,0.0001812115481298,,RandomForest,,,,,,,,,
+nasdaq,1,expanding,5,1760.0,0.0001923840061972,,RandomForest,,,,,,,,,
+nasdaq,5,rolling,0,500.0,0.0005673706885589,,RandomForest,,,,,,,,,
+nasdaq,5,rolling,1,500.0,0.0006241417735611,,RandomForest,,,,,,,,,
+nasdaq,5,rolling,2,500.0,0.0007334546532098,,RandomForest,,,,,,,,,
+nasdaq,5,rolling,3,500.0,0.0006359424943193,,RandomForest,,,,,,,,,
+nasdaq,5,rolling,4,500.0,0.0006683402001326,,RandomForest,,,,,,,,,
+nasdaq,5,rolling,5,500.0,0.0004549705813308,,RandomForest,,,,,,,,,
+nasdaq,5,expanding,0,500.0,0.0005484728521682,,RandomForest,,,,,,,,,
+nasdaq,5,expanding,1,752.0,0.0004043613798215,,RandomForest,,,,,,,,,
+nasdaq,5,expanding,2,1004.0,0.0004707825559683,,RandomForest,,,,,,,,,
+nasdaq,5,expanding,3,1256.0,0.0004236693505605,,RandomForest,,,,,,,,,
+nasdaq,5,expanding,4,1508.0,0.0004601136257353,,RandomForest,,,,,,,,,
+nasdaq,5,expanding,5,1760.0,0.0004936457907649,,RandomForest,,,,,,,,,
+djia,1,rolling,0,500.0,0.0002578008870815,,RandomForest,,,,,,,,,
+djia,1,rolling,1,500.0,0.0002119486857834,,RandomForest,,,,,,,,,
+djia,1,rolling,2,500.0,0.0002800601285658,,RandomForest,,,,,,,,,
+djia,1,rolling,3,500.0,0.0001979070384558,,RandomForest,,,,,,,,,
+djia,1,rolling,4,500.0,0.0002059643612761,,RandomForest,,,,,,,,,
+djia,1,rolling,5,500.0,0.0001462538294379,,RandomForest,,,,,,,,,
+djia,1,expanding,0,500.0,0.0001426715673865,,RandomForest,,,,,,,,,
+djia,1,expanding,1,752.0,0.0001289770788461,,RandomForest,,,,,,,,,
+djia,1,expanding,2,1004.0,0.0001458265421763,,RandomForest,,,,,,,,,
+djia,1,expanding,3,1256.0,0.0001695928851308,,RandomForest,,,,,,,,,
+djia,1,expanding,4,1508.0,0.0001924326734326,,RandomForest,,,,,,,,,
+djia,1,expanding,5,1760.0,0.0002127161788811,,RandomForest,,,,,,,,,
+djia,5,rolling,0,500.0,0.0005015922984427,,RandomForest,,,,,,,,,
+djia,5,rolling,1,500.0,0.0007415010443839,,RandomForest,,,,,,,,,
+djia,5,rolling,2,500.0,0.0008024710324203,,RandomForest,,,,,,,,,
+djia,5,rolling,3,500.0,0.0004874016303466,,RandomForest,,,,,,,,,
+djia,5,rolling,4,500.0,0.0004178825242687,,RandomForest,,,,,,,,,
+djia,5,rolling,5,500.0,0.0003544637466817,,RandomForest,,,,,,,,,
+djia,5,expanding,0,500.0,0.0002955757216577,,RandomForest,,,,,,,,,
+djia,5,expanding,1,752.0,0.0002538099219415,,RandomForest,,,,,,,,,
+djia,5,expanding,2,1004.0,0.0002937858646826,,RandomForest,,,,,,,,,
+djia,5,expanding,3,1256.0,0.0003482917805733,,RandomForest,,,,,,,,,
+djia,5,expanding,4,1508.0,0.0003996957353547,,RandomForest,,,,,,,,,
+djia,5,expanding,5,1760.0,0.0004320247110729,,RandomForest,,,,,,,,,
+monash_sunspot,1,rolling,0,500.0,0.5017985007511501,,RandomForest,,,,,,,,,
+monash_sunspot,1,rolling,1,500.0,0.3232333654488669,,RandomForest,,,,,,,,,
+monash_sunspot,1,rolling,2,500.0,0.2063756307318474,,RandomForest,,,,,,,,,
+monash_sunspot,1,rolling,3,500.0,0.1668013978631504,,RandomForest,,,,,,,,,
+monash_sunspot,1,rolling,4,500.0,0.1583123419900066,,RandomForest,,,,,,,,,
+monash_sunspot,1,rolling,5,500.0,0.0518414967423363,,RandomForest,,,,,,,,,
+monash_sunspot,1,expanding,0,500.0,0.9414965212527796,,RandomForest,,,,,,,,,
+monash_sunspot,1,expanding,1,752.0,0.7593960750721369,,RandomForest,,,,,,,,,
+monash_sunspot,1,expanding,2,1004.0,0.5146768656824191,,RandomForest,,,,,,,,,
+monash_sunspot,1,expanding,3,1256.0,0.3626286444517518,,RandomForest,,,,,,,,,
+monash_sunspot,1,expanding,4,1508.0,0.2987776998547214,,RandomForest,,,,,,,,,
+monash_sunspot,1,expanding,5,1760.0,0.2956320814625771,,RandomForest,,,,,,,,,
+monash_sunspot,5,rolling,0,500.0,0.4653538326931199,,RandomForest,,,,,,,,,
+monash_sunspot,5,rolling,1,500.0,0.5348379369777166,,RandomForest,,,,,,,,,
+monash_sunspot,5,rolling,2,500.0,0.2966619387717251,,RandomForest,,,,,,,,,
+monash_sunspot,5,rolling,3,500.0,0.1637168663015012,,RandomForest,,,,,,,,,
+monash_sunspot,5,rolling,4,500.0,0.1600026007050742,,RandomForest,,,,,,,,,
+monash_sunspot,5,rolling,5,500.0,0.0902451898854393,,RandomForest,,,,,,,,,
+monash_sunspot,5,expanding,0,500.0,1.3243382341250745,,RandomForest,,,,,,,,,
+monash_sunspot,5,expanding,1,752.0,0.7985331096774826,,RandomForest,,,,,,,,,
+monash_sunspot,5,expanding,2,1004.0,0.644494136779644,,RandomForest,,,,,,,,,
+monash_sunspot,5,expanding,3,1256.0,0.9699096499366752,,RandomForest,,,,,,,,,
+monash_sunspot,5,expanding,4,1508.0,0.6725699260212171,,RandomForest,,,,,,,,,
+monash_sunspot,5,expanding,5,1760.0,0.4580046472597326,,RandomForest,,,,,,,,,
+sp500,1,rolling,0,500.0,4.049497147207149e-05,0.5,XGBoost,,,,,,,,,
+sp500,1,rolling,1,500.0,0.0002331350260647,31.5,XGBoost,,,,,,,,,
+sp500,1,rolling,2,500.0,0.0009724636911414,22.5,XGBoost,,,,,,,,,
+sp500,1,rolling,3,500.0,0.0002508550533093,143.0,XGBoost,,,,,,,,,
+sp500,1,rolling,4,500.0,0.0003890533116646,5.0,XGBoost,,,,,,,,,
+sp500,1,rolling,5,500.0,5.274996146908961e-05,1.5,XGBoost,,,,,,,,,
+sp500,1,expanding,0,500.0,5.333623266778886e-05,1.0,XGBoost,,,,,,,,,
+sp500,1,expanding,1,752.0,6.941296305740252e-05,16.5,XGBoost,,,,,,,,,
+sp500,1,expanding,2,1004.0,7.921113137854263e-05,16.0,XGBoost,,,,,,,,,
+sp500,1,expanding,3,1256.0,1.6289199265884236e-05,0.5,XGBoost,,,,,,,,,
+sp500,1,expanding,4,1508.0,3.476696656434797e-05,2.0,XGBoost,,,,,,,,,
+sp500,1,expanding,5,1760.0,7.436641317326576e-05,14.5,XGBoost,,,,,,,,,
+sp500,5,rolling,0,500.0,0.0004933484015055,6.0,XGBoost,,,,,,,,,
+sp500,5,rolling,1,500.0,0.0004020025080535,6.0,XGBoost,,,,,,,,,
+sp500,5,rolling,2,500.0,0.0009735803469084,28.5,XGBoost,,,,,,,,,
+sp500,5,rolling,3,500.0,0.0002890116884373,1.0,XGBoost,,,,,,,,,
+sp500,5,rolling,4,500.0,0.0001593026245245,0.0,XGBoost,,,,,,,,,
+sp500,5,rolling,5,500.0,8.977887773653492e-05,0.0,XGBoost,,,,,,,,,
+sp500,5,expanding,0,500.0,0.0001022670403472,0.0,XGBoost,,,,,,,,,
+sp500,5,expanding,1,752.0,0.0002012967597693,3.5,XGBoost,,,,,,,,,
+sp500,5,expanding,2,1004.0,0.0003900666779372,17.5,XGBoost,,,,,,,,,
+sp500,5,expanding,3,1256.0,0.0002846322604455,4.5,XGBoost,,,,,,,,,
+sp500,5,expanding,4,1508.0,0.0001768640504451,4.5,XGBoost,,,,,,,,,
+sp500,5,expanding,5,1760.0,0.0001986469433177,8.5,XGBoost,,,,,,,,,
+dax,1,rolling,0,500.0,8.392117888433859e-05,5.5,XGBoost,,,,,,,,,
+dax,1,rolling,1,500.0,0.000289149058517,7.0,XGBoost,,,,,,,,,
+dax,1,rolling,2,500.0,0.0005636613932438,16.5,XGBoost,,,,,,,,,
+dax,1,rolling,3,500.0,0.0002967356995213,67.5,XGBoost,,,,,,,,,
+dax,1,rolling,4,500.0,6.0439233493525535e-05,0.5,XGBoost,,,,,,,,,
+dax,1,rolling,5,500.0,0.0002125616883859,110.5,XGBoost,,,,,,,,,
+dax,1,expanding,0,500.0,0.0001937767665367,40.5,XGBoost,,,,,,,,,
+dax,1,expanding,1,752.0,0.000287832255708,16.5,XGBoost,,,,,,,,,
+dax,1,expanding,2,1004.0,5.585812687058933e-05,0.5,XGBoost,,,,,,,,,
+dax,1,expanding,3,1256.0,7.093329622875899e-05,1.0,XGBoost,,,,,,,,,
+dax,1,expanding,4,1508.0,6.496356218121946e-05,0.5,XGBoost,,,,,,,,,
+dax,1,expanding,5,1760.0,0.0002060380065813,48.5,XGBoost,,,,,,,,,
+dax,5,rolling,0,500.0,0.0001298236165894,0.0,XGBoost,,,,,,,,,
+dax,5,rolling,1,500.0,0.0003647693083621,1.0,XGBoost,,,,,,,,,
+dax,5,rolling,2,500.0,0.001033830223605,5.5,XGBoost,,,,,,,,,
+dax,5,rolling,3,500.0,0.0001294738467549,0.0,XGBoost,,,,,,,,,
+dax,5,rolling,4,500.0,0.0007812143303453,24.0,XGBoost,,,,,,,,,
+dax,5,rolling,5,500.0,0.0006377513054758,18.5,XGBoost,,,,,,,,,
+dax,5,expanding,0,500.0,0.0001993913465412,0.5,XGBoost,,,,,,,,,
+dax,5,expanding,1,752.0,0.0006090437527745,17.0,XGBoost,,,,,,,,,
+dax,5,expanding,2,1004.0,0.0009999286849051,12.5,XGBoost,,,,,,,,,
+dax,5,expanding,3,1256.0,0.000371773756342,7.0,XGBoost,,,,,,,,,
+dax,5,expanding,4,1508.0,0.0001611340558156,0.0,XGBoost,,,,,,,,,
+dax,5,expanding,5,1760.0,0.0007628400926478,33.5,XGBoost,,,,,,,,,
+nasdaq,1,rolling,0,500.0,3.8552771002287045e-05,0.0,XGBoost,,,,,,,,,
+nasdaq,1,rolling,1,500.0,0.0003030394727829,21.0,XGBoost,,,,,,,,,
+nasdaq,1,rolling,2,500.0,0.0006763081764802,166.5,XGBoost,,,,,,,,,
+nasdaq,1,rolling,3,500.0,0.000511678867042,85.5,XGBoost,,,,,,,,,
+nasdaq,1,rolling,4,500.0,0.0003663383249659,11.0,XGBoost,,,,,,,,,
+nasdaq,1,rolling,5,500.0,0.0004476256144698,15.5,XGBoost,,,,,,,,,
+nasdaq,1,expanding,0,500.0,8.982505823951215e-05,6.5,XGBoost,,,,,,,,,
+nasdaq,1,expanding,1,752.0,0.0001211580383824,12.0,XGBoost,,,,,,,,,
+nasdaq,1,expanding,2,1004.0,9.14732736418955e-05,4.0,XGBoost,,,,,,,,,
+nasdaq,1,expanding,3,1256.0,0.0002990552748087,38.5,XGBoost,,,,,,,,,
+nasdaq,1,expanding,4,1508.0,0.0001037687179632,19.0,XGBoost,,,,,,,,,
+nasdaq,1,expanding,5,1760.0,1.9938286641263403e-05,0.0,XGBoost,,,,,,,,,
+nasdaq,5,rolling,0,500.0,0.0002392555325059,1.0,XGBoost,,,,,,,,,
+nasdaq,5,rolling,1,500.0,0.0006974443094804,3.5,XGBoost,,,,,,,,,
+nasdaq,5,rolling,2,500.0,0.001731637166813,5.5,XGBoost,,,,,,,,,
+nasdaq,5,rolling,3,500.0,0.0003634796012192,1.0,XGBoost,,,,,,,,,
+nasdaq,5,rolling,4,500.0,0.0002854306658264,0.0,XGBoost,,,,,,,,,
+nasdaq,5,rolling,5,500.0,0.0004418730677571,8.5,XGBoost,,,,,,,,,
+nasdaq,5,expanding,0,500.0,0.0002199018199462,0.0,XGBoost,,,,,,,,,
+nasdaq,5,expanding,1,752.0,0.000660759222228,34.5,XGBoost,,,,,,,,,
+nasdaq,5,expanding,2,1004.0,0.0002023147244472,1.5,XGBoost,,,,,,,,,
+nasdaq,5,expanding,3,1256.0,0.000268324452918,3.5,XGBoost,,,,,,,,,
+nasdaq,5,expanding,4,1508.0,0.0007293604430742,9.5,XGBoost,,,,,,,,,
+nasdaq,5,expanding,5,1760.0,0.0002840666275005,3.5,XGBoost,,,,,,,,,
+djia,1,rolling,0,500.0,3.0332035748870112e-05,0.0,XGBoost,,,,,,,,,
+djia,1,rolling,1,500.0,0.0002407860592938,7.5,XGBoost,,,,,,,,,
+djia,1,rolling,2,500.0,0.0007056391914375,37.0,XGBoost,,,,,,,,,
+djia,1,rolling,3,500.0,0.0001617575180716,6.0,XGBoost,,,,,,,,,
+djia,1,rolling,4,500.0,6.160850898595527e-05,0.5,XGBoost,,,,,,,,,
+djia,1,rolling,5,500.0,0.0001970409648492,78.5,XGBoost,,,,,,,,,
+djia,1,expanding,0,500.0,0.0001334986736765,62.0,XGBoost,,,,,,,,,
+djia,1,expanding,1,752.0,0.0001202323255711,36.0,XGBoost,,,,,,,,,
+djia,1,expanding,2,1004.0,9.664578101364896e-05,23.5,XGBoost,,,,,,,,,
+djia,1,expanding,3,1256.0,7.184243440860882e-05,29.5,XGBoost,,,,,,,,,
+djia,1,expanding,4,1508.0,0.0001786854700185,81.0,XGBoost,,,,,,,,,
+djia,1,expanding,5,1760.0,3.471334275673144e-05,0.5,XGBoost,,,,,,,,,
+djia,5,rolling,0,500.0,0.0006442603771574,26.0,XGBoost,,,,,,,,,
+djia,5,rolling,1,500.0,0.0003851726651191,3.5,XGBoost,,,,,,,,,
+djia,5,rolling,2,500.0,0.0005959008703939,6.0,XGBoost,,,,,,,,,
+djia,5,rolling,3,500.0,0.0007154621998779,9.0,XGBoost,,,,,,,,,
+djia,5,rolling,4,500.0,0.0003496769350022,5.0,XGBoost,,,,,,,,,
+djia,5,rolling,5,500.0,0.000113034278911,0.0,XGBoost,,,,,,,,,
+djia,5,expanding,0,500.0,0.0008514185319654,45.5,XGBoost,,,,,,,,,
+djia,5,expanding,1,752.0,0.0001288350031245,2.0,XGBoost,,,,,,,,,
+djia,5,expanding,2,1004.0,0.0001120424640248,1.0,XGBoost,,,,,,,,,
+djia,5,expanding,3,1256.0,9.935067646438256e-05,0.0,XGBoost,,,,,,,,,
+djia,5,expanding,4,1508.0,0.0001512108574388,1.5,XGBoost,,,,,,,,,
+djia,5,expanding,5,1760.0,0.0004984561237506,34.5,XGBoost,,,,,,,,,
+monash_sunspot,1,rolling,0,500.0,1.5150578022003174,67.5,XGBoost,,,,,,,,,
+monash_sunspot,1,rolling,1,500.0,1.1905255317687988,130.0,XGBoost,,,,,,,,,
+monash_sunspot,1,rolling,2,500.0,0.8118848204612732,66.5,XGBoost,,,,,,,,,
+monash_sunspot,1,rolling,3,500.0,0.4600253701210022,77.5,XGBoost,,,,,,,,,
+monash_sunspot,1,rolling,4,500.0,0.3372357189655304,79.0,XGBoost,,,,,,,,,
+monash_sunspot,1,rolling,5,500.0,0.1913928836584091,91.5,XGBoost,,,,,,,,,
+monash_sunspot,1,expanding,0,500.0,2.886361837387085,82.5,XGBoost,,,,,,,,,
+monash_sunspot,1,expanding,1,752.0,2.774599313735962,159.0,XGBoost,,,,,,,,,
+monash_sunspot,1,expanding,2,1004.0,2.634087085723877,99.0,XGBoost,,,,,,,,,
+monash_sunspot,1,expanding,3,1256.0,1.6278945207595823,129.5,XGBoost,,,,,,,,,
+monash_sunspot,1,expanding,4,1508.0,1.1575939655303955,142.5,XGBoost,,,,,,,,,
+monash_sunspot,1,expanding,5,1760.0,1.022457718849182,113.0,XGBoost,,,,,,,,,
+monash_sunspot,5,rolling,0,500.0,1.879705786705017,38.5,XGBoost,,,,,,,,,
+monash_sunspot,5,rolling,1,500.0,1.290632724761963,60.0,XGBoost,,,,,,,,,
+monash_sunspot,5,rolling,2,500.0,1.076814889907837,46.5,XGBoost,,,,,,,,,
+monash_sunspot,5,rolling,3,500.0,0.5958757996559143,57.0,XGBoost,,,,,,,,,
+monash_sunspot,5,rolling,4,500.0,0.2672244906425476,40.0,XGBoost,,,,,,,,,
+monash_sunspot,5,rolling,5,500.0,0.4605058431625366,116.5,XGBoost,,,,,,,,,
+monash_sunspot,5,expanding,0,500.0,2.755120277404785,22.5,XGBoost,,,,,,,,,
+monash_sunspot,5,expanding,1,752.0,4.096225261688232,92.0,XGBoost,,,,,,,,,
+monash_sunspot,5,expanding,2,1004.0,3.220153331756592,85.5,XGBoost,,,,,,,,,
+monash_sunspot,5,expanding,3,1256.0,2.275500535964966,111.0,XGBoost,,,,,,,,,
+monash_sunspot,5,expanding,4,1508.0,1.8209933042526243,91.0,XGBoost,,,,,,,,,
+monash_sunspot,5,expanding,5,1760.0,1.9408200979232788,105.0,XGBoost,,,,,,,,,
+sp500,1,rolling,0,500.0,2.091483247489241e-05,1.0,LightGBM,,,,,,,,,
+sp500,1,rolling,1,500.0,0.0001008671460998,5.5,LightGBM,,,,,,,,,
+sp500,1,rolling,2,500.0,0.0001855783491083,53.0,LightGBM,,,,,,,,,
+sp500,1,rolling,3,500.0,9.875928298705751e-05,91.5,LightGBM,,,,,,,,,
+sp500,1,rolling,4,500.0,0.0001417096702391,2.5,LightGBM,,,,,,,,,
+sp500,1,rolling,5,500.0,2.267243092938452e-05,1.0,LightGBM,,,,,,,,,
+sp500,1,expanding,0,500.0,3.4300653742076776e-05,2.0,LightGBM,,,,,,,,,
+sp500,1,expanding,1,752.0,4.244400103452732e-05,8.5,LightGBM,,,,,,,,,
+sp500,1,expanding,2,1004.0,3.280388928505533e-05,10.0,LightGBM,,,,,,,,,
+sp500,1,expanding,3,1256.0,1.022185295550323e-05,1.0,LightGBM,,,,,,,,,
+sp500,1,expanding,4,1508.0,3.302126597739352e-05,2.5,LightGBM,,,,,,,,,
+sp500,1,expanding,5,1760.0,3.72933716615479e-05,9.0,LightGBM,,,,,,,,,
+sp500,5,rolling,0,500.0,0.000246604648994,39.5,LightGBM,,,,,,,,,
+sp500,5,rolling,1,500.0,0.0002342752900852,1.5,LightGBM,,,,,,,,,
+sp500,5,rolling,2,500.0,0.0014644449506107,17.0,LightGBM,,,,,,,,,
+sp500,5,rolling,3,500.0,0.0001674706709036,1.0,LightGBM,,,,,,,,,
+sp500,5,rolling,4,500.0,0.0002731576163859,1.5,LightGBM,,,,,,,,,
+sp500,5,rolling,5,500.0,0.0001966496054473,2.5,LightGBM,,,,,,,,,
+sp500,5,expanding,0,500.0,0.0001488828377404,1.5,LightGBM,,,,,,,,,
+sp500,5,expanding,1,752.0,0.0001254403530772,6.0,LightGBM,,,,,,,,,
+sp500,5,expanding,2,1004.0,0.0001785019193761,14.0,LightGBM,,,,,,,,,
+sp500,5,expanding,3,1256.0,0.0003264499591478,10.5,LightGBM,,,,,,,,,
+sp500,5,expanding,4,1508.0,0.0001166887545798,2.0,LightGBM,,,,,,,,,
+sp500,5,expanding,5,1760.0,0.0002765942846361,40.0,LightGBM,,,,,,,,,
+dax,1,rolling,0,500.0,3.4826041302113315e-05,3.0,LightGBM,,,,,,,,,
+dax,1,rolling,1,500.0,4.448230050808391e-05,1.0,LightGBM,,,,,,,,,
+dax,1,rolling,2,500.0,0.0001432746779197,2.0,LightGBM,,,,,,,,,
+dax,1,rolling,3,500.0,0.0001883670468347,64.0,LightGBM,,,,,,,,,
+dax,1,rolling,4,500.0,4.512020070674891e-05,1.0,LightGBM,,,,,,,,,
+dax,1,rolling,5,500.0,7.172097507502144e-05,22.5,LightGBM,,,,,,,,,
+dax,1,expanding,0,500.0,9.468932217141318e-05,14.0,LightGBM,,,,,,,,,
+dax,1,expanding,1,752.0,0.0001618728055974,89.5,LightGBM,,,,,,,,,
+dax,1,expanding,2,1004.0,0.000103743451858,3.0,LightGBM,,,,,,,,,
+dax,1,expanding,3,1256.0,3.434938681825734e-05,1.0,LightGBM,,,,,,,,,
+dax,1,expanding,4,1508.0,6.522281011898254e-05,1.5,LightGBM,,,,,,,,,
+dax,1,expanding,5,1760.0,0.0001210918437639,42.5,LightGBM,,,,,,,,,
+dax,5,rolling,0,500.0,0.0002238610626524,2.0,LightGBM,,,,,,,,,
+dax,5,rolling,1,500.0,0.0001624645567222,1.0,LightGBM,,,,,,,,,
+dax,5,rolling,2,500.0,0.0015694074235359,9.5,LightGBM,,,,,,,,,
+dax,5,rolling,3,500.0,7.39692091249851e-05,1.0,LightGBM,,,,,,,,,
+dax,5,rolling,4,500.0,0.00021838792508,1.5,LightGBM,,,,,,,,,
+dax,5,rolling,5,500.0,0.0007456634758396,28.5,LightGBM,,,,,,,,,
+dax,5,expanding,0,500.0,6.958812641210642e-05,1.0,LightGBM,,,,,,,,,
+dax,5,expanding,1,752.0,0.0002912116699617,18.0,LightGBM,,,,,,,,,
+dax,5,expanding,2,1004.0,0.0005546421832109,36.0,LightGBM,,,,,,,,,
+dax,5,expanding,3,1256.0,0.0003393529329699,7.5,LightGBM,,,,,,,,,
+dax,5,expanding,4,1508.0,0.0001023834042478,1.0,LightGBM,,,,,,,,,
+dax,5,expanding,5,1760.0,0.0003029903471396,15.5,LightGBM,,,,,,,,,
+nasdaq,1,rolling,0,500.0,1.7453423200409057e-05,1.0,LightGBM,,,,,,,,,
+nasdaq,1,rolling,1,500.0,0.0002509741836181,23.5,LightGBM,,,,,,,,,
+nasdaq,1,rolling,2,500.0,0.0004353159195162,33.5,LightGBM,,,,,,,,,
+nasdaq,1,rolling,3,500.0,0.0002812458471441,96.0,LightGBM,,,,,,,,,
+nasdaq,1,rolling,4,500.0,0.0002300035469667,4.5,LightGBM,,,,,,,,,
+nasdaq,1,rolling,5,500.0,8.199000551208022e-05,2.0,LightGBM,,,,,,,,,
+nasdaq,1,expanding,0,500.0,3.836017082368288e-05,3.0,LightGBM,,,,,,,,,
+nasdaq,1,expanding,1,752.0,5.609199099335465e-05,26.5,LightGBM,,,,,,,,,
+nasdaq,1,expanding,2,1004.0,0.0001481660346882,10.0,LightGBM,,,,,,,,,
+nasdaq,1,expanding,3,1256.0,4.3083972082949394e-05,4.5,LightGBM,,,,,,,,,
+nasdaq,1,expanding,4,1508.0,7.607226758856737e-05,12.5,LightGBM,,,,,,,,,
+nasdaq,1,expanding,5,1760.0,3.487066513823506e-05,1.5,LightGBM,,,,,,,,,
+nasdaq,5,rolling,0,500.0,0.0006435493058204,10.0,LightGBM,,,,,,,,,
+nasdaq,5,rolling,1,500.0,0.0004296250038678,2.0,LightGBM,,,,,,,,,
+nasdaq,5,rolling,2,500.0,0.0011769112827984,11.5,LightGBM,,,,,,,,,
+nasdaq,5,rolling,3,500.0,0.000214331919281,1.0,LightGBM,,,,,,,,,
+nasdaq,5,rolling,4,500.0,0.0003556942636213,1.5,LightGBM,,,,,,,,,
+nasdaq,5,rolling,5,500.0,0.0003953204453083,4.0,LightGBM,,,,,,,,,
+nasdaq,5,expanding,0,500.0,0.0001624883939878,1.0,LightGBM,,,,,,,,,
+nasdaq,5,expanding,1,752.0,0.0003710358333061,18.5,LightGBM,,,,,,,,,
+nasdaq,5,expanding,2,1004.0,0.0004348498656548,9.0,LightGBM,,,,,,,,,
+nasdaq,5,expanding,3,1256.0,0.0003751203877177,18.0,LightGBM,,,,,,,,,
+nasdaq,5,expanding,4,1508.0,0.0001771836082072,2.0,LightGBM,,,,,,,,,
+nasdaq,5,expanding,5,1760.0,0.0002947585570408,8.0,LightGBM,,,,,,,,,
+djia,1,rolling,0,500.0,4.340198608897128e-05,7.0,LightGBM,,,,,,,,,
+djia,1,rolling,1,500.0,0.0002705083063774,9.5,LightGBM,,,,,,,,,
+djia,1,rolling,2,500.0,0.0001474843377576,6.0,LightGBM,,,,,,,,,
+djia,1,rolling,3,500.0,3.040825747776459e-05,1.0,LightGBM,,,,,,,,,
+djia,1,rolling,4,500.0,4.16978574321202e-05,1.0,LightGBM,,,,,,,,,
+djia,1,rolling,5,500.0,1.881026347141711e-05,85.5,LightGBM,,,,,,,,,
+djia,1,expanding,0,500.0,2.441692472601401e-05,35.0,LightGBM,,,,,,,,,
+djia,1,expanding,1,752.0,3.0324280196607364e-05,19.0,LightGBM,,,,,,,,,
+djia,1,expanding,2,1004.0,3.385235521451021e-05,40.0,LightGBM,,,,,,,,,
+djia,1,expanding,3,1256.0,0.000102258530456,25.0,LightGBM,,,,,,,,,
+djia,1,expanding,4,1508.0,7.87242602136658e-05,113.0,LightGBM,,,,,,,,,
+djia,1,expanding,5,1760.0,3.380512620677237e-05,1.0,LightGBM,,,,,,,,,
+djia,5,rolling,0,500.0,0.0003782357359245,29.5,LightGBM,,,,,,,,,
+djia,5,rolling,1,500.0,0.0001585075673928,1.0,LightGBM,,,,,,,,,
+djia,5,rolling,2,500.0,0.0004707259647392,2.5,LightGBM,,,,,,,,,
+djia,5,rolling,3,500.0,0.0004201931408121,30.5,LightGBM,,,,,,,,,
+djia,5,rolling,4,500.0,0.0009257714818028,13.0,LightGBM,,,,,,,,,
+djia,5,rolling,5,500.0,4.877422365168024e-05,1.0,LightGBM,,,,,,,,,
+djia,5,expanding,0,500.0,0.0004049651187646,90.5,LightGBM,,,,,,,,,
+djia,5,expanding,1,752.0,5.9130217439765633e-05,1.0,LightGBM,,,,,,,,,
+djia,5,expanding,2,1004.0,6.936534563706629e-05,1.0,LightGBM,,,,,,,,,
+djia,5,expanding,3,1256.0,6.911911945288872e-05,1.0,LightGBM,,,,,,,,,
+djia,5,expanding,4,1508.0,0.0002537706551864,18.5,LightGBM,,,,,,,,,
+djia,5,expanding,5,1760.0,0.0003980018338325,43.5,LightGBM,,,,,,,,,
+monash_sunspot,1,rolling,0,500.0,1.3568157330486386,64.5,LightGBM,,,,,,,,,
+monash_sunspot,1,rolling,1,500.0,1.062091358821326,62.0,LightGBM,,,,,,,,,
+monash_sunspot,1,rolling,2,500.0,0.712060541995975,89.5,LightGBM,,,,,,,,,
+monash_sunspot,1,rolling,3,500.0,0.6143488489739708,131.5,LightGBM,,,,,,,,,
+monash_sunspot,1,rolling,4,500.0,0.1977423652900576,60.5,LightGBM,,,,,,,,,
+monash_sunspot,1,rolling,5,500.0,0.085057511609994,68.0,LightGBM,,,,,,,,,
+monash_sunspot,1,expanding,0,500.0,2.1662204463178125,81.0,LightGBM,,,,,,,,,
+monash_sunspot,1,expanding,1,752.0,1.504083168391054,155.5,LightGBM,,,,,,,,,
+monash_sunspot,1,expanding,2,1004.0,1.6375128209458816,113.5,LightGBM,,,,,,,,,
+monash_sunspot,1,expanding,3,1256.0,1.2513402362977584,95.0,LightGBM,,,,,,,,,
+monash_sunspot,1,expanding,4,1508.0,0.5894987134581305,132.5,LightGBM,,,,,,,,,
+monash_sunspot,1,expanding,5,1760.0,0.6423434197470331,175.0,LightGBM,,,,,,,,,
+monash_sunspot,5,rolling,0,500.0,1.1103008650860902,47.5,LightGBM,,,,,,,,,
+monash_sunspot,5,rolling,1,500.0,0.5740689999006744,67.0,LightGBM,,,,,,,,,
+monash_sunspot,5,rolling,2,500.0,0.7438450787729266,58.5,LightGBM,,,,,,,,,
+monash_sunspot,5,rolling,3,500.0,0.5132111741392994,80.0,LightGBM,,,,,,,,,
+monash_sunspot,5,rolling,4,500.0,0.2476045067446315,49.5,LightGBM,,,,,,,,,
+monash_sunspot,5,rolling,5,500.0,0.1592498825295895,162.5,LightGBM,,,,,,,,,
+monash_sunspot,5,expanding,0,500.0,2.232119377479874,18.0,LightGBM,,,,,,,,,
+monash_sunspot,5,expanding,1,752.0,1.8795904031858892,76.5,LightGBM,,,,,,,,,
+monash_sunspot,5,expanding,2,1004.0,1.9321514083401208,79.5,LightGBM,,,,,,,,,
+monash_sunspot,5,expanding,3,1256.0,1.7825023804497986,94.5,LightGBM,,,,,,,,,
+monash_sunspot,5,expanding,4,1508.0,1.030940938190922,96.0,LightGBM,,,,,,,,,
+monash_sunspot,5,expanding,5,1760.0,0.6699838553131111,105.5,LightGBM,,,,,,,,,
+sp500,1,rolling,0,,,,LSTM,,,,,,,479.0,15.0,7.098430069163442e-05
+sp500,1,rolling,1,,,,LSTM,,,,,,,479.0,15.0,0.0002848121803253
+sp500,1,rolling,2,,,,LSTM,,,,,,,479.0,19.0,6.47287379251793e-05
+sp500,1,rolling,3,,,,LSTM,,,,,,,479.0,15.0,4.561345849651843e-05
+sp500,1,expanding,0,,,,LSTM,,,,,,,479.0,12.0,2.243719791295007e-05
+sp500,1,expanding,1,,,,LSTM,,,,,,,731.0,11.0,2.03994641196914e-05
+sp500,1,expanding,2,,,,LSTM,,,,,,,983.0,13.0,4.0270282624987885e-05
+sp500,1,expanding,3,,,,LSTM,,,,,,,1235.0,10.0,2.468698949087411e-05
+sp500,5,rolling,0,,,,LSTM,,,,,,,479.0,11.0,0.0003171912103425
+sp500,5,rolling,1,,,,LSTM,,,,,,,479.0,13.0,0.0008371579460799
+sp500,5,rolling,2,,,,LSTM,,,,,,,479.0,13.0,0.0004437758761923
+sp500,5,rolling,3,,,,LSTM,,,,,,,479.0,10.0,0.0002461344993207
+sp500,5,expanding,0,,,,LSTM,,,,,,,479.0,12.0,9.350089385407044e-05
+sp500,5,expanding,1,,,,LSTM,,,,,,,731.0,14.0,7.947436824906617e-05
+sp500,5,expanding,2,,,,LSTM,,,,,,,983.0,16.0,0.0001850777189247
+sp500,5,expanding,3,,,,LSTM,,,,,,,1235.0,12.0,0.0001154014098574
+dax,1,rolling,0,,,,LSTM,,,,,,,479.0,20.0,0.0001113094185711
+dax,1,rolling,1,,,,LSTM,,,,,,,479.0,13.0,0.0001002744756988
+dax,1,rolling,2,,,,LSTM,,,,,,,479.0,15.0,5.4174557590158656e-05
+dax,1,rolling,3,,,,LSTM,,,,,,,479.0,19.0,6.562297494383529e-05
+dax,1,expanding,0,,,,LSTM,,,,,,,479.0,14.0,6.86871717334725e-05
+dax,1,expanding,1,,,,LSTM,,,,,,,731.0,13.0,8.429871377302334e-05
+dax,1,expanding,2,,,,LSTM,,,,,,,983.0,21.0,0.0001088576027541
+dax,1,expanding,3,,,,LSTM,,,,,,,1235.0,11.0,6.351773481583223e-05
+dax,5,rolling,0,,,,LSTM,,,,,,,479.0,13.0,0.0004892843426205
+dax,5,rolling,1,,,,LSTM,,,,,,,479.0,10.0,0.0006723873084411
+dax,5,rolling,2,,,,LSTM,,,,,,,479.0,13.0,0.0003579260373953
+dax,5,rolling,3,,,,LSTM,,,,,,,479.0,25.0,0.0002568236377555
+dax,5,expanding,0,,,,LSTM,,,,,,,479.0,11.0,0.0005111751379445
+dax,5,expanding,1,,,,LSTM,,,,,,,731.0,10.0,0.0005490581388585
+dax,5,expanding,2,,,,LSTM,,,,,,,983.0,12.0,0.0006097251316532
+dax,5,expanding,3,,,,LSTM,,,,,,,1235.0,11.0,0.000264691596385
+nasdaq,1,rolling,0,,,,LSTM,,,,,,,479.0,14.0,0.0001081606897059
+nasdaq,1,rolling,1,,,,LSTM,,,,,,,479.0,13.0,0.0004252323997206
+nasdaq,1,rolling,2,,,,LSTM,,,,,,,479.0,18.0,0.0001132576726377
+nasdaq,1,rolling,3,,,,LSTM,,,,,,,479.0,13.0,9.474708349443972e-05
+nasdaq,1,expanding,0,,,,LSTM,,,,,,,479.0,22.0,3.856373587041162e-05
+nasdaq,1,expanding,1,,,,LSTM,,,,,,,731.0,18.0,5.527768007596024e-05
+nasdaq,1,expanding,2,,,,LSTM,,,,,,,983.0,15.0,4.443095167516731e-05
+nasdaq,1,expanding,3,,,,LSTM,,,,,,,1235.0,16.0,0.000110363587737
+nasdaq,5,rolling,0,,,,LSTM,,,,,,,479.0,15.0,0.0004876136081293
+nasdaq,5,rolling,1,,,,LSTM,,,,,,,479.0,15.0,0.0013382148463279
+nasdaq,5,rolling,2,,,,LSTM,,,,,,,479.0,9.0,0.0007717029657214
+nasdaq,5,rolling,3,,,,LSTM,,,,,,,479.0,10.0,0.000432314001955
+nasdaq,5,expanding,0,,,,LSTM,,,,,,,479.0,9.0,0.0002548834891058
+nasdaq,5,expanding,1,,,,LSTM,,,,,,,731.0,25.0,0.0002885580470319
+nasdaq,5,expanding,2,,,,LSTM,,,,,,,983.0,17.0,0.000273421377642
+nasdaq,5,expanding,3,,,,LSTM,,,,,,,1235.0,12.0,0.0006159245385788
+djia,1,rolling,0,,,,LSTM,,,,,,,479.0,12.0,6.737793592037633e-05
+djia,1,rolling,1,,,,LSTM,,,,,,,479.0,12.0,0.0001905187527881
+djia,1,rolling,2,,,,LSTM,,,,,,,479.0,11.0,4.196709051029757e-05
+djia,1,rolling,3,,,,LSTM,,,,,,,479.0,15.0,5.630108353216201e-05
+djia,1,expanding,0,,,,LSTM,,,,,,,479.0,14.0,5.398735447670333e-05
+djia,1,expanding,1,,,,LSTM,,,,,,,731.0,18.0,3.465743066044524e-05
+djia,1,expanding,2,,,,LSTM,,,,,,,983.0,18.0,3.980615292675793e-05
+djia,1,expanding,3,,,,LSTM,,,,,,,1235.0,14.0,0.0001739404833642
+djia,5,rolling,0,,,,LSTM,,,,,,,479.0,15.0,0.0003684200346469
+djia,5,rolling,1,,,,LSTM,,,,,,,479.0,11.0,0.0005870867753401
+djia,5,rolling,2,,,,LSTM,,,,,,,479.0,17.0,0.000251967459917
+djia,5,rolling,3,,,,LSTM,,,,,,,479.0,9.0,0.0003990565892308
+djia,5,expanding,0,,,,LSTM,,,,,,,479.0,11.0,0.0002757683687377
+djia,5,expanding,1,,,,LSTM,,,,,,,731.0,19.0,0.0001623297575861
+djia,5,expanding,2,,,,LSTM,,,,,,,983.0,17.0,0.0002375695621594
+djia,5,expanding,3,,,,LSTM,,,,,,,1235.0,16.0,0.0006794111686758
+monash_sunspot,1,rolling,0,,,,LSTM,,,,,,,479.0,25.0,223.52561950683597
+monash_sunspot,1,rolling,1,,,,LSTM,,,,,,,479.0,13.0,51.50349426269531
+monash_sunspot,1,rolling,2,,,,LSTM,,,,,,,479.0,13.0,42.72227478027344
+monash_sunspot,1,rolling,3,,,,LSTM,,,,,,,479.0,10.0,10.912864685058594
+monash_sunspot,1,expanding,0,,,,LSTM,,,,,,,479.0,25.0,38344.5078125
+monash_sunspot,1,expanding,1,,,,LSTM,,,,,,,731.0,25.0,5363.0380859375
+monash_sunspot,1,expanding,2,,,,LSTM,,,,,,,983.0,25.0,5688.16943359375
+monash_sunspot,1,expanding,3,,,,LSTM,,,,,,,1235.0,25.0,1844.4427490234373
+monash_sunspot,5,rolling,0,,,,LSTM,,,,,,,479.0,25.0,248.1616058349609
+monash_sunspot,5,rolling,1,,,,LSTM,,,,,,,479.0,15.0,64.46884155273438
+monash_sunspot,5,rolling,2,,,,LSTM,,,,,,,479.0,13.0,44.242183685302734
+monash_sunspot,5,rolling,3,,,,LSTM,,,,,,,479.0,10.0,9.756903648376465
+monash_sunspot,5,expanding,0,,,,LSTM,,,,,,,479.0,25.0,37395.62109375
+monash_sunspot,5,expanding,1,,,,LSTM,,,,,,,731.0,25.0,6196.234375
+monash_sunspot,5,expanding,2,,,,LSTM,,,,,,,983.0,25.0,4989.10693359375
+monash_sunspot,5,expanding,3,,,,LSTM,,,,,,,1235.0,25.0,1811.953125
+sp500,1,rolling,0,,,,TFT,,,,,,,479.0,13.0,7.03045807313174e-05
+sp500,1,rolling,1,,,,TFT,,,,,,,479.0,25.0,0.0002793662715703
+sp500,1,rolling,2,,,,TFT,,,,,,,479.0,16.0,5.98790793446824e-05
+sp500,1,rolling,3,,,,TFT,,,,,,,479.0,14.0,4.672600334743038e-05
+sp500,1,expanding,0,,,,TFT,,,,,,,479.0,15.0,2.118323027389124e-05
+sp500,1,expanding,1,,,,TFT,,,,,,,731.0,15.0,2.05721335078124e-05
+sp500,1,expanding,2,,,,TFT,,,,,,,983.0,11.0,4.052744770888239e-05
+sp500,1,expanding,3,,,,TFT,,,,,,,1235.0,10.0,2.4344133635167964e-05
+sp500,5,rolling,0,,,,TFT,,,,,,,479.0,23.0,0.0003273170732427
+sp500,5,rolling,1,,,,TFT,,,,,,,479.0,11.0,0.0008114869706332
+sp500,5,rolling,2,,,,TFT,,,,,,,479.0,9.0,0.0004474893503356
+sp500,5,rolling,3,,,,TFT,,,,,,,479.0,14.0,0.0002585145703051
+sp500,5,expanding,0,,,,TFT,,,,,,,479.0,11.0,6.982404011068866e-05
+sp500,5,expanding,1,,,,TFT,,,,,,,731.0,15.0,8.713679562788457e-05
+sp500,5,expanding,2,,,,TFT,,,,,,,983.0,13.0,0.0002080104459309
+sp500,5,expanding,3,,,,TFT,,,,,,,1235.0,10.0,0.0001124392656493
+dax,1,rolling,0,,,,TFT,,,,,,,479.0,14.0,0.0001075681502697
+dax,1,rolling,1,,,,TFT,,,,,,,479.0,11.0,0.0001035139212035
+dax,1,rolling,2,,,,TFT,,,,,,,479.0,15.0,5.180886364541948e-05
+dax,1,rolling,3,,,,TFT,,,,,,,479.0,15.0,6.167604442453012e-05
+dax,1,expanding,0,,,,TFT,,,,,,,479.0,11.0,6.814269727328792e-05
+dax,1,expanding,1,,,,TFT,,,,,,,731.0,14.0,8.43305024318397e-05
+dax,1,expanding,2,,,,TFT,,,,,,,983.0,12.0,0.000105765670014
+dax,1,expanding,3,,,,TFT,,,,,,,1235.0,12.0,6.185247184475884e-05
+dax,5,rolling,0,,,,TFT,,,,,,,479.0,21.0,0.0004556594358291
+dax,5,rolling,1,,,,TFT,,,,,,,479.0,11.0,0.0005756804021075
+dax,5,rolling,2,,,,TFT,,,,,,,479.0,17.0,0.0003361355920787
+dax,5,rolling,3,,,,TFT,,,,,,,479.0,25.0,0.0001894520974019
+dax,5,expanding,0,,,,TFT,,,,,,,479.0,11.0,0.0004782736068591
+dax,5,expanding,1,,,,TFT,,,,,,,731.0,10.0,0.0004963322426192
+dax,5,expanding,2,,,,TFT,,,,,,,983.0,14.0,0.0006191410939209
+dax,5,expanding,3,,,,TFT,,,,,,,1235.0,20.0,0.0002535433450248
+nasdaq,1,rolling,0,,,,TFT,,,,,,,479.0,25.0,0.0001092947277356
+nasdaq,1,rolling,1,,,,TFT,,,,,,,479.0,15.0,0.000433478213381
+nasdaq,1,rolling,2,,,,TFT,,,,,,,479.0,17.0,0.0001072759623639
+nasdaq,1,rolling,3,,,,TFT,,,,,,,479.0,11.0,9.472226520301774e-05
+nasdaq,1,expanding,0,,,,TFT,,,,,,,479.0,14.0,3.632594962255098e-05
+nasdaq,1,expanding,1,,,,TFT,,,,,,,731.0,14.0,5.570711073232815e-05
+nasdaq,1,expanding,2,,,,TFT,,,,,,,983.0,15.0,4.3711825128411874e-05
+nasdaq,1,expanding,3,,,,TFT,,,,,,,1235.0,12.0,0.0001100397930713
+nasdaq,5,rolling,0,,,,TFT,,,,,,,479.0,21.0,0.0004733416717499
+nasdaq,5,rolling,1,,,,TFT,,,,,,,479.0,16.0,0.0013492160942405
+nasdaq,5,rolling,2,,,,TFT,,,,,,,479.0,10.0,0.000709238811396
+nasdaq,5,rolling,3,,,,TFT,,,,,,,479.0,13.0,0.0004224713193252
+nasdaq,5,expanding,0,,,,TFT,,,,,,,479.0,10.0,0.0002456154616083
+nasdaq,5,expanding,1,,,,TFT,,,,,,,731.0,17.0,0.0003040773444809
+nasdaq,5,expanding,2,,,,TFT,,,,,,,983.0,11.0,0.0002943663857877
+nasdaq,5,expanding,3,,,,TFT,,,,,,,1235.0,17.0,0.0006035161786712
+djia,1,rolling,0,,,,TFT,,,,,,,479.0,11.0,6.863415910629556e-05
+djia,1,rolling,1,,,,TFT,,,,,,,479.0,14.0,0.0001862469362094
+djia,1,rolling,2,,,,TFT,,,,,,,479.0,12.0,4.227461613481864e-05
+djia,1,rolling,3,,,,TFT,,,,,,,479.0,21.0,5.85414600209333e-05
+djia,1,expanding,0,,,,TFT,,,,,,,479.0,18.0,5.462752960738726e-05
+djia,1,expanding,1,,,,TFT,,,,,,,731.0,12.0,3.2676500268280506e-05
+djia,1,expanding,2,,,,TFT,,,,,,,983.0,21.0,3.834935341728851e-05
+djia,1,expanding,3,,,,TFT,,,,,,,1235.0,13.0,0.0001757637364789
+djia,5,rolling,0,,,,TFT,,,,,,,479.0,9.0,0.0003683361865114
+djia,5,rolling,1,,,,TFT,,,,,,,479.0,12.0,0.0005607812199741
+djia,5,rolling,2,,,,TFT,,,,,,,479.0,23.0,0.0002733513829298
+djia,5,rolling,3,,,,TFT,,,,,,,479.0,13.0,0.0003965376818086
+djia,5,expanding,0,,,,TFT,,,,,,,479.0,15.0,0.0002597215934656
+djia,5,expanding,1,,,,TFT,,,,,,,731.0,25.0,0.0001370291574858
+djia,5,expanding,2,,,,TFT,,,,,,,983.0,11.0,0.0002313728327862
+djia,5,expanding,3,,,,TFT,,,,,,,1235.0,20.0,0.0006425120518542
+monash_sunspot,1,rolling,0,,,,TFT,,,,,,,479.0,12.0,223.00050354003903
+monash_sunspot,1,rolling,1,,,,TFT,,,,,,,479.0,11.0,57.7637939453125
+monash_sunspot,1,rolling,2,,,,TFT,,,,,,,479.0,25.0,40.47990036010742
+monash_sunspot,1,rolling,3,,,,TFT,,,,,,,479.0,10.0,11.013701438903809
+monash_sunspot,1,expanding,0,,,,TFT,,,,,,,479.0,24.0,2568.20556640625
+monash_sunspot,1,expanding,1,,,,TFT,,,,,,,731.0,12.0,1116.1617431640625
+monash_sunspot,1,expanding,2,,,,TFT,,,,,,,983.0,11.0,1919.6619873046875
+monash_sunspot,1,expanding,3,,,,TFT,,,,,,,1235.0,10.0,1518.2579345703125
+monash_sunspot,5,rolling,0,,,,TFT,,,,,,,479.0,12.0,252.62921142578125
+monash_sunspot,5,rolling,1,,,,TFT,,,,,,,479.0,11.0,79.35601806640625
+monash_sunspot,5,rolling,2,,,,TFT,,,,,,,479.0,22.0,44.23208618164063
+monash_sunspot,5,rolling,3,,,,TFT,,,,,,,479.0,10.0,9.723276138305664
+monash_sunspot,5,expanding,0,,,,TFT,,,,,,,479.0,25.0,2589.890869140625
+monash_sunspot,5,expanding,1,,,,TFT,,,,,,,731.0,12.0,1366.4056396484375
+monash_sunspot,5,expanding,2,,,,TFT,,,,,,,983.0,11.0,2297.49609375
+monash_sunspot,5,expanding,3,,,,TFT,,,,,,,1235.0,10.0,1765.8216552734375

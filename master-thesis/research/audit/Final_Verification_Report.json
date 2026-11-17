@@ -1,0 +1,429 @@
+{
+  "verified_utc": "2026-11-13T09:45:48.201156+00:00",
+  "final_artifacts": {
+    "docx": {
+      "path": "/mnt/agents/output/Final_Master_Thesis_Trustworthy_Financial_Forecasting.docx",
+      "sha256": "d25c31dc05d5ff0f9aacd52083112a385630587c2844eef5a3fc10beed24c684",
+      "bytes": 712888,
+      "word_validation_gate": "PASSED",
+      "mechanical_repairs_reviewed": [
+        "document.xml: 14 paragraph-property ordering repairs",
+        "numbering.xml: two zero-padded numbering IDs",
+        "settings.xml: one settings-order repair",
+        "styles.xml: three paragraph-property ordering repairs"
+      ]
+    },
+    "pdf": {
+      "path": "/mnt/agents/output/Final_Master_Thesis_Trustworthy_Financial_Forecasting.pdf",
+      "sha256": "954499e23bd30e6af1b50db021a204470e95a5041b7e9726610bc32294282939",
+      "bytes": 1270444,
+      "pages": 89
+    },
+    "manuscript_markdown": {
+      "path": "/mnt/agents/output/thesis_execution/manuscript/Final_Master_Thesis.md",
+      "sha256": "546bc1f4517fab71166d46c3ee1f1fcc228c702e9d932bb91634f7138c6b9b6e",
+      "whitespace_delimited_words": 44244
+    },
+    "readiness_notes": {
+      "path": "/mnt/agents/output/Reproducibility_and_Readiness_Notes.md",
+      "sha256": "b077825be0e4788c050b5f620b685e4f61b8a745f18f17ba77efbbc1133da172"
+    }
+  },
+  "execution": {
+    "checks_passed": 1648,
+    "checks_total": 1648,
+    "all_passed": true,
+    "benchmark_fold_groups_checked": 760,
+    "benchmark_max_abs_error": 1.4210854715202004e-14,
+    "executed_notebooks": 8,
+    "notebook_hashes_match_manuscript": true,
+    "notebook_sequential_and_error_free": true,
+    "notebook_sha256": {
+      "01_Linear_Regression_Executed.ipynb": "e2f88de91e4ec74dc51211d98c7260421151ca92406e903ab2e8e7bff21ae681",
+      "02_ARIMA_Executed.ipynb": "f4b51700d676e787d5e808a23a9ad7d99fdb48c8704527e37b14e19d93bc3348",
+      "03_Random_Forest_Executed.ipynb": "e26fb7128efd63afdfcd781fe6c69b666eced889bc44cc826fd0a817fc94079e",
+      "04_XGBoost_Executed.ipynb": "7a631e26a7690c087d3a5372fb6e781e9161ce7c9f502639074aeb4b9ef88273",
+      "05_LightGBM_Executed.ipynb": "a4bb8b597a0b3b23834cf4317717047e944f46430f8e7d99d71b92f9c15fa0af",
+      "06_LSTM_Executed.ipynb": "40412fdaebb079d6b036366f8b48ee6cdade2c6c5949a6625460d7c0f98a6bd7",
+      "07_Temporal_Fusion_Transformer_Executed.ipynb": "44d895c6ee1595ddb2c3eff337d91cfd4e9e69691766a5f6638db506b770efa0",
+      "08_Cross_Model_Synthesis_Executed.ipynb": "03bab453fe281241eaa9c0354bac84b8893a4353768b308bbea573132a4e2eca"
+    },
+    "notebook_states": {
+      "01_Linear_Regression_Executed.ipynb": {
+        "execution_counts": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "sequential_from_one": true,
+        "stored_errors": 0,
+        "sha256_in_table_c2": true
+      },
+      "02_ARIMA_Executed.ipynb": {
+        "execution_counts": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "sequential_from_one": true,
+        "stored_errors": 0,
+        "sha256_in_table_c2": true
+      },
+      "03_Random_Forest_Executed.ipynb": {
+        "execution_counts": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "sequential_from_one": true,
+        "stored_errors": 0,
+        "sha256_in_table_c2": true
+      },
+      "04_XGBoost_Executed.ipynb": {
+        "execution_counts": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "sequential_from_one": true,
+        "stored_errors": 0,
+        "sha256_in_table_c2": true
+      },
+      "05_LightGBM_Executed.ipynb": {
+        "execution_counts": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "sequential_from_one": true,
+        "stored_errors": 0,
+        "sha256_in_table_c2": true
+      },
+      "06_LSTM_Executed.ipynb": {
+        "execution_counts": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "sequential_from_one": true,
+        "stored_errors": 0,
+        "sha256_in_table_c2": true
+      },
+      "07_Temporal_Fusion_Transformer_Executed.ipynb": {
+        "execution_counts": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "sequential_from_one": true,
+        "stored_errors": 0,
+        "sha256_in_table_c2": true
+      },
+      "08_Cross_Model_Synthesis_Executed.ipynb": {
+        "execution_counts": [
+          1,
+          2
+        ],
+        "sequential_from_one": true,
+        "stored_errors": 0,
+        "sha256_in_table_c2": true
+      }
+    },
+    "native_prediction_rows": 188160,
+    "native_fold_metric_rows": 760,
+    "attribution_rows": 78400,
+    "matched_origins": 18480,
+    "matched_prediction_rows": 129360,
+    "matched_metric_rows": 140,
+    "pairwise_tests": 420
+  },
+  "arima_benchmark_correction": {
+    "report_sha256": "0ab2ea462ad65659eb477cb9350cde44d56afc1131bcd892131862d3617a7fe9",
+    "all_invariance_and_outcome_checks_passed": true,
+    "prediction_invariance": true,
+    "explanation_invariance": true,
+    "matched_primary_invariance": true,
+    "cross_model_invariance": true,
+    "train_mean_rows_changed": 30240,
+    "train_mean_max_abs_old_new_difference": 0.8240000000000123,
+    "descriptive_lower_loss_cells": {
+      "old": 4,
+      "corrected": 1,
+      "tests": 16
+    },
+    "dm_sign_changes": [
+      {
+        "model": "ARIMA",
+        "series": "dax",
+        "horizon": 5,
+        "scheme": "expanding",
+        "comparison": "training_mean",
+        "dm_old": -0.8925622251138084,
+        "dm_new": 0.3916672154172126,
+        "p_raw_old": 0.3720916559752631,
+        "p_raw_new": 0.6953041168239136,
+        "p_bh_14_tests_old": 0.5788092426281871,
+        "p_bh_14_tests_new": 0.8111881362945659,
+        "outcome_old": "not_significant",
+        "outcome_new": "not_significant"
+      },
+      {
+        "model": "ARIMA",
+        "series": "nasdaq",
+        "horizon": 5,
+        "scheme": "expanding",
+        "comparison": "training_mean",
+        "dm_old": -0.6359606556579751,
+        "dm_new": 0.2651113177274812,
+        "p_raw_old": 0.5248020664331623,
+        "p_raw_new": 0.7909237089137626,
+        "p_bh_14_tests_old": 0.984141592451442,
+        "p_bh_14_tests_new": 0.984141592451442,
+        "outcome_old": "not_significant",
+        "outcome_new": "not_significant"
+      },
+      {
+        "model": "ARIMA",
+        "series": "sp500",
+        "horizon": 5,
+        "scheme": "expanding",
+        "comparison": "training_mean",
+        "dm_old": -1.594455226286928,
+        "dm_new": 1.7160267053373557,
+        "p_raw_old": 0.1108341114139435,
+        "p_raw_new": 0.0861571547247366,
+        "p_bh_14_tests_old": 0.221668222827887,
+        "p_bh_14_tests_new": 0.2010333610243854,
+        "outcome_old": "not_significant",
+        "outcome_new": "not_significant"
+      }
+    ],
+    "adjusted_inference_counts_unchanged": true
+  },
+  "predictive_invariance": {
+    "matched_metrics": {
+      "rows": 140,
+      "max_absolute_numeric_difference": 0.0,
+      "column_differences": {
+        "n": 0.0,
+        "rmse": 0.0,
+        "mae": 0.0,
+        "r2": 0.0,
+        "da": 0.0,
+        "persistence_rmse": 0.0,
+        "train_mean_rmse": 0.0,
+        "rmse_relative_to_persistence": 0.0,
+        "rmse_relative_to_train_mean": 0.0,
+        "mean_rmse_rank": 0.0
+      },
+      "identical_rmse_ranking_per_cell": true
+    },
+    "dm_pairwise": {
+      "rows": 420,
+      "max_absolute_numeric_difference": 0.0,
+      "column_differences": {
+        "n": 0.0,
+        "mean_squared_error_a": 0.0,
+        "mean_squared_error_b": 0.0,
+        "dm_statistic_a_minus_b": 0.0,
+        "p_raw": 0.0,
+        "p_bh_21_pairs": 0.0
+      },
+      "significance_decisions_identical": true,
+      "lower_loss_models_identical": true
+    },
+    "explanation_only_change_left_predictive_evidence_unchanged": true
+  },
+  "preservation": {
+    "chapters_2_3_preserved_except_pfi_citation_repair": true,
+    "references_preserved_except_editorial_note_removed": true,
+    "title_exact": true,
+    "single_references_section": true,
+    "single_appendices_section": true,
+    "no_unresolved_table_markers": true,
+    "RQ1_verbatim": true,
+    "RQ2_verbatim": true,
+    "RQ3_verbatim": true,
+    "assembly_hash_current": true,
+    "assembly_word_count_current": true,
+    "exhibit_page_map_current": true,
+    "heading_page_map_current": true,
+    "documented_citation_cleanup": [
+      "Joined the split PFI citation and replaced its erroneous full stop with a semicolon.",
+      "Removed the unresolved journal-name inference note from the Hu et al. entry without adding or changing bibliographic metadata."
+    ]
+  },
+  "native_benchmark_claims": {
+    "financial_tests": 224,
+    "financial_significant_wins_BH14": 0,
+    "financial_significant_losses_BH14": 26,
+    "financial_nonsignificant_BH14": 198,
+    "financial_BH14_losses_to_persistence": 11,
+    "financial_BH14_losses_to_training_mean": 15,
+    "financial_significant_wins_BH2_sensitivity": 0,
+    "financial_significant_losses_BH2_sensitivity": 39,
+    "financial_BH2_losses_to_persistence": 15,
+    "financial_BH2_losses_to_training_mean": 24,
+    "financial_negative_differential_with_raw_p_below_005": 0,
+    "sunspot_training_mean_wins_BH14": 28,
+    "sunspot_persistence_wins_BH14": 2,
+    "sunspot_persistence_losses_BH14": 23,
+    "sunspot_persistence_nonsignificant_BH14": 3,
+    "sunspot_persistence_win_adjusted_p": {
+      "LSTM": 0.017183824993234,
+      "TFT": 0.0221686337212232
+    },
+    "summary_rows_reconciled_exactly": 28,
+    "arima_financial_training_mean_lower_loss_cells": 1
+  },
+  "document_text": {
+    "pdf_pages": 89,
+    "docx_title_and_research_questions_present": true,
+    "pdf_title_and_research_questions_present": true,
+    "docx_corrected_arima_interpretation_present": true,
+    "pdf_corrected_arima_interpretation_present": true,
+    "docx_final_audit_count_present": true,
+    "pdf_final_audit_count_present": true,
+    "docx_placeholder_counts": {
+      "unresolved_table_marker": 0,
+      "template_braces": 0,
+      "todo_token": 0,
+      "tbd_token": 0,
+      "xxx_token": 0,
+      "insert_placeholder": 0,
+      "lorem_ipsum": 0,
+      "replacement_character": 0,
+      "markdown_bold_delimiter": 0,
+      "markdown_image_syntax": 0,
+      "markdown_link_syntax": 0,
+      "editorial_inference_note": 0,
+      "old_arima_descriptive_count": 0,
+      "old_execution_audit_count": 0
+    },
+    "pdf_placeholder_counts": {
+      "unresolved_table_marker": 0,
+      "template_braces": 0,
+      "todo_token": 0,
+      "tbd_token": 0,
+      "xxx_token": 0,
+      "insert_placeholder": 0,
+      "lorem_ipsum": 0,
+      "replacement_character": 0,
+      "markdown_bold_delimiter": 0,
+      "markdown_image_syntax": 0,
+      "markdown_link_syntax": 0,
+      "editorial_inference_note": 0,
+      "old_arima_descriptive_count": 0,
+      "old_execution_audit_count": 0
+    },
+    "document_preparation_note_present": true,
+    "unintended_approval_or_submission_claims": 0
+  },
+  "pagination": {
+    "docx": "/mnt/agents/output/Final_Master_Thesis_Trustworthy_Financial_Forecasting.docx",
+    "pdf": "/mnt/agents/output/Final_Master_Thesis_Trustworthy_Financial_Forecasting.pdf",
+    "total_rendered_pages": 89,
+    "chapter_1_start_page": 7,
+    "chapter_8_start_page": 75,
+    "references_start_page": 77,
+    "appendices_start_page": 81,
+    "main_text_physical_pages": 70,
+    "main_text_page_interval_inclusive": [
+      7,
+      76
+    ],
+    "main_text_target_70_to_80": true,
+    "headings_mapped": 122,
+    "exhibits_mapped": 34
+  },
+  "visual_qa": {
+    "word_engine_reported_pages": 84,
+    "word_pages_rendered": 60,
+    "word_near_blank_pages": [],
+    "word_clipped_pages": [],
+    "word_fidelity_verdict": "lossy",
+    "word_fidelity_categories": {
+      "content-loss": 9,
+      "degraded": 294,
+      "interactivity-loss": 124,
+      "metadata-loss": 945,
+      "unknown": 1
+    },
+    "word_high_severity_findings": [],
+    "word_content_loss": [
+      {
+        "category": "content-loss",
+        "severity": "low",
+        "part": "word/numbering.xml",
+        "element": "w:lvlOverride",
+        "count": 9,
+        "note": "编号级别覆盖（w:lvlOverride/w:startOverride）不建模（语料命中均行为中性，首例非中性出现再建模）"
+      }
+    ],
+    "pdf_pages_rendered": 89,
+    "pdf_inspector_warnings": [],
+    "contact_sheets_reviewed": [
+      "word_corrected_final/contact-sheet.png",
+      "pdf_corrected_final/contact-sheet.png"
+    ],
+    "full_resolution_pdf_pages_reviewed": [
+      4,
+      45,
+      47,
+      56,
+      86,
+      88,
+      89
+    ],
+    "table_5_4_page": 56,
+    "table_B_5_page": 86,
+    "preliminary_orphan_resolved": true,
+    "clipping_or_missing_content_observed": false
+  },
+  "readiness_notes_current": {
+    "word_count_44244": true,
+    "execution_audit_1648": true,
+    "word_engine_pages_84": true,
+    "arima_correction_documented": true,
+    "surrogate_restrictions_documented": true,
+    "stale_128_audit_absent": true,
+    "administrative_conditions_retained": true
+  },
+  "readiness_verdict": "Scientifically complete for author submission review, conditional on administrative requirements and advisor/institutional approval.",
+  "machine_verification": {
+    "checks": {
+      "execution_all_passed": true,
+      "notebooks_all_current": true,
+      "arima_correction_all_passed": true,
+      "native_summary_reconciled": true,
+      "preservation_all_passed": true,
+      "docx_title_rqs": true,
+      "pdf_title_rqs": true,
+      "docx_no_placeholders": true,
+      "pdf_no_placeholders": true,
+      "corrected_values_in_both_formats": true,
+      "pagination_complete": true,
+      "word_qa_no_blank_or_clipping": true,
+      "pdf_qa_no_warnings": true,
+      "readiness_notes_current": true,
+      "no_unintended_approval_claim": true
+    },
+    "checks_passed": 15,
+    "checks_total": 15,
+    "all_passed": true
+  }
+}

@@ -1,0 +1,6 @@
+method,regime,rho_median,cosine_median,top1_match_rate,count
+ARIMA_native_counterfactual_lag,bear,1.0,1.0,0.9597069597069597,546
+ARIMA_native_counterfactual_lag,boundary,1.0,1.0,0.9709302325581395,516
+ARIMA_native_counterfactual_lag,bull,1.0,1.0,0.9711779448621554,798
+ARIMA_native_counterfactual_lag,crisis,1.0,1.0,1.0,60
+ARIMA_native_counterfactual_lag,na,1.0,0.9999739109011185,0.9916666666666667,480

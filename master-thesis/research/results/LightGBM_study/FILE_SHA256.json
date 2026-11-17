@@ -1,0 +1,20 @@
+{
+  "evidence/completion_audit.json": "44908825893fb32d795d30b96087eb42d7b0aa455658d0ff84f33e438380f456",
+  "evidence/evidence_statement.json": "e6db9cd8c29817def968df8a9597b298d9221a4bec53fcd108bab3aa51621c82",
+  "evidence/evidence_statement.md": "fb9c4f5409e803ec811b7466fb033add89ed8e94426b9d5853e79013fcb03a9a",
+  "evidence/provenance.json": "ae12db2a83291c308a9ed8ab1a3a95c0a7c196ef4ad5f5d76637a268f618115d",
+  "figures/fig_faithfulness.png": "2f3366808593d2ad8e1a1c54fb9c8e4372efbe1129b09a8c63e887a2946e339a",
+  "figures/fig_rq1.png": "e43ad381c6772a36ed83baca0b1608bba97fb752352c591c4b07d35beaf7f16c",
+  "figures/fig_shap_importance.png": "845a9d0b0cbcaad2cdb25b3eddce15b3fa8bbb4b6d41490b2719ef4e2e8f6652",
+  "figures/fig_stability.png": "e811abc8f018e2752f1b5f7ae8f873908617dc358f04b7af040421caa8f90b4f",
+  "tables/attributions.csv": "c16496132a6bafad26ffcb56d8cfeb08d77dd9d37a18faae862c3718f2a31df7",
+  "tables/benchmark_dm.csv": "7349eb4d3dada86a7cdd496ba13f4dd107836320c95ac5fcbf9caaa3ee4f2d1b",
+  "tables/faithfulness.csv": "f68dc628b65ae44f444e2aee6f9db5774050a49b8d00f14983769c4a02cc3a47",
+  "tables/fold_metrics.csv": "e4414c6babe9f2ddca735c5e59ab84ef9451e46466a9154a582aa954175f9ddb",
+  "tables/forecast_diagnostics.csv": "d4a30a9a5a6d88a87bb9ca622697542b85083e0f515a21d8a21e5e4737eca94e",
+  "tables/observation_predictions.csv": "cb76cfac63e41c50268e946c0bbec03e826a2bd35d824e934e180fc7a2c910b6",
+  "tables/seed_stability.csv": "4c3c3afecbef426a2453349db041d129229e1055292727475df96157241f369f",
+  "tables/shap_importance.csv": "1a961606a65c9efacf9af3b98b6f4c2db448e256ff68b632be812046ca73590a",
+  "tables/stability.csv": "89f49cc7d273f660b01c26792c150af86ddd0695fcc9755693176c2e4fe5297e",
+  "tables/stability_summary.csv": "87ab8a5acb9e1e9357eb3d8a493fdfb63284c953550fcd166af1799ed2f7f0a1"
+}

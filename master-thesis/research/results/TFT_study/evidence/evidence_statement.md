@@ -1,0 +1,33 @@
+# Executed evidence statement — TFT
+
+Execution version: `corrected-independent-rerun-v1`
+
+This notebook was executed in the recorded environment. Cross-model conclusions are defined only after matched-origin synthesis.
+
+## RQ1
+Status: model_execution_complete_cross_model_answer_in_synthesis
+
+- Native-coverage fold metrics are exported with observation-level predictions; seven-way claims use only matched origins in the cross-model synthesis.
+  - Value: `{'dax|h1': 0.00970499270039445, 'dax|h5': 0.021921687061163354, 'djia|h1': 0.009474316183183262, 'djia|h5': 0.021327429209882478, 'monash_sunspot|h1': 30.165351751335532, 'monash_sunspot|h5': 29.711104572099185, 'nasdaq|h1': 0.011457400287428065, 'nasdaq|h5': 0.02583479495452056, 'sp500|h1': 0.008579838328881642, 'sp500|h5': 0.018910531072753277}`
+  - Artifact: `tables/fold_metrics.csv and tables/observation_predictions.csv`
+
+## RQ2
+Status: model_execution_complete_cross_model_answer_in_synthesis
+
+- Consecutive-fold attributions use identical, contiguous, out-of-sample probe origins; Spearman, cosine, and top-feature agreement are exported.
+  - Value: `{'KernelSHAP_lag_aggregated|bear': 0.152704627669473, 'KernelSHAP_lag_aggregated|boundary': 0.0, 'KernelSHAP_lag_aggregated|bull': 0.19999999999999998, 'KernelSHAP_lag_aggregated|crisis': 0.39999999999999997, 'KernelSHAP_lag_aggregated|na': 0.21081851067789195, 'native_variable_selection|bear': 0.0, 'native_variable_selection|boundary': 0.19999999999999998, 'native_variable_selection|bull': 0.0, 'native_variable_selection|crisis': 0.09999999999999999, 'native_variable_selection|na': -0.39999999999999997}`
+  - Artifact: `tables/stability.csv`
+
+## RQ3
+Status: model_execution_complete_economic_identification_bounded
+
+- Faithfulness is evaluated diagnostic by diagnostic; no feature ranking is interpreted as a causal economic driver.
+  - Value: `{'max_shap_additivity_residual': 3.0517578125e-05}`
+  - Artifact: `tables/faithfulness.csv`
+
+## Limitations
+
+- Only lagged prices or native Sunspot values are available; causal economic-driver identification is not possible.
+- Regime labels are ex post data-driven strata, not independently dated historical crises.
+- Zero-baseline interventions and synthetic local-surrogate samples can leave the natural data manifold.
+- The simplified TFT adapter is not the full PyTorch Forecasting architecture.

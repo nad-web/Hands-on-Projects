@@ -1,0 +1,66 @@
+{
+  "RQ1": {
+    "question": "Accuracy\u2013interpretability trade-off",
+    "status": "model_execution_complete_cross_model_answer_in_synthesis",
+    "claims": [
+      {
+        "claim": "Native-coverage fold metrics are exported with observation-level predictions; seven-way claims use only matched origins in the cross-model synthesis.",
+        "value": {
+          "dax|h1": 0.011814908049751582,
+          "dax|h5": 0.026110806338117187,
+          "djia|h1": 0.010792531064982352,
+          "djia|h5": 0.023060679912794632,
+          "monash_sunspot|h1": 19.90352446098259,
+          "monash_sunspot|h5": 30.664719692971072,
+          "nasdaq|h1": 0.012822516436618121,
+          "nasdaq|h5": 0.028290740144713524,
+          "sp500|h1": 0.010160075296545166,
+          "sp500|h5": 0.021514188017307336
+        },
+        "artifact": "tables/fold_metrics.csv and tables/observation_predictions.csv",
+        "thesis_ref": "Chapters 4\u20136",
+        "citation": "Diebold & Mariano (1995)"
+      }
+    ]
+  },
+  "RQ2": {
+    "question": "Temporal stability and regime robustness",
+    "status": "model_execution_complete_cross_model_answer_in_synthesis",
+    "claims": [
+      {
+        "claim": "Consecutive-fold attributions use identical, contiguous, out-of-sample probe origins; Spearman, cosine, and top-feature agreement are exported.",
+        "value": {
+          "TreeSHAP_full_ensemble|bear": 0.6000000000000001,
+          "TreeSHAP_full_ensemble|boundary": 0.39999999999999997,
+          "TreeSHAP_full_ensemble|bull": 0.39999999999999997,
+          "TreeSHAP_full_ensemble|crisis": 0.7999999999999999,
+          "TreeSHAP_full_ensemble|na": 0.7999999999999999
+        },
+        "artifact": "tables/stability.csv",
+        "thesis_ref": "Chapters 4\u20136",
+        "citation": "Molnar (2022)"
+      }
+    ]
+  },
+  "RQ3": {
+    "question": "Faithfulness and economic drivers",
+    "status": "model_execution_complete_economic_identification_bounded",
+    "claims": [
+      {
+        "claim": "Faithfulness is evaluated diagnostic by diagnostic; no feature ranking is interpreted as a causal economic driver.",
+        "value": {
+          "max_shap_additivity_residual": 2.7711166694643907e-13
+        },
+        "artifact": "tables/faithfulness.csv",
+        "thesis_ref": "Chapters 4\u20136",
+        "citation": "Shapley (1953); Ribeiro et al. (2016)"
+      }
+    ]
+  },
+  "limitations": [
+    "Only lagged prices or native Sunspot values are available; causal economic-driver identification is not possible.",
+    "Regime labels are ex post data-driven strata, not independently dated historical crises.",
+    "Zero-baseline interventions and synthetic local-surrogate samples can leave the natural data manifold.",
+    "Model-specific limitations are documented in the thesis."
+  ]
+}

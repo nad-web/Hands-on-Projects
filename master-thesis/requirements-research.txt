@@ -1,0 +1,18 @@
+# Recorded model environments from supplied provenance (Python 3.12 on Linux).
+# Needed only for full research execution; the static app has no Python dependencies.
+ipykernel
+jupyter-client
+lightgbm==4.6.0
+nbclient==0.11.0
+nbformat==5.11.1
+numpy==2.2.5
+pandas==2.3.2
+scikit-learn==1.7.2
+scipy==1.16.2
+shap==0.54.1
+statsmodels==0.14.5
+torch==2.8.0
+
+# Required notebook imports/tools without versions recorded in the source provenance.
+matplotlib
+xgboost

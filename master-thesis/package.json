@@ -1,0 +1,12 @@
+{
+  "name": "forecast-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static interactive research companion to the supplied financial forecasting thesis.",
+  "scripts": {
+    "test": "node --test tests/core.test.mjs",
+    "check": "node --check assets/app.js && node --check assets/core.js && node --check assets/charts.js && node --check sw.js",
+    "verify": "python3 tools/verify.py"
+  }
+}

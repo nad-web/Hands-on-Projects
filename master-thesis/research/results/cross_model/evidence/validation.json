@@ -1,0 +1,16 @@
+{
+  "all_seven_notebook_prediction_tables_present": true,
+  "native_prediction_row_count_188160": true,
+  "native_fold_metric_row_count_760": true,
+  "matched_origin_count_18480": true,
+  "matched_prediction_row_count_129360": true,
+  "each_cell_has_924_origins": true,
+  "each_matched_fold_has_231_origins": true,
+  "each_origin_has_exactly_seven_models": true,
+  "twenty_one_dm_pairs_per_cell": true,
+  "bh_adjustment_complete_for_finite_p": true,
+  "native_benchmark_block_row_count_280": true,
+  "fourteen_native_benchmark_tests_per_cell": true,
+  "native_benchmark_bh14_complete": true,
+  "economic_identification_boundary_explicit": true
+}

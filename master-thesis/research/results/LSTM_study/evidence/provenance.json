@@ -1,0 +1,90 @@
+{
+  "data": {
+    "sp500": {
+      "path": "/mnt/agents/output/thesis_execution/results/data/sp500_observations.csv",
+      "sha256": "b6e2effa145f522c58b79df2b539773f4e982de93e65fa05e831527376382dec"
+    },
+    "dax": {
+      "path": "/mnt/agents/output/thesis_execution/results/data/dax_observations.csv",
+      "sha256": "169967b8f9633df68c3687712c5d3242c3374bb291bd6d2cc24782e796a5d06f"
+    },
+    "nasdaq": {
+      "path": "/mnt/agents/output/thesis_execution/results/data/nasdaq_observations.csv",
+      "sha256": "ac5afab623382ea080acb4f4898eff55183bf61f21cd15bcfa9cabacaa8548d4"
+    },
+    "djia": {
+      "path": "/mnt/agents/output/thesis_execution/results/data/djia_observations.csv",
+      "sha256": "184eb30bac156709fe4b4b19b411f0990600a1edee9e7febb2f156b30add3600"
+    },
+    "monash_sunspot": {
+      "path": "/mnt/agents/output/thesis_execution/results/data/monash_sunspot_no_missing_T1_85babb464a3e.csv",
+      "sha256": "46932f9f6f3f0fa7cade6ecd3d52d2b68c3105599d697d155ec4eb636abc3164"
+    },
+    "monash_sunspot_tsf": {
+      "path": "/mnt/agents/output/thesis_execution/results/data/sunspot_dataset_without_missing_values.tsf",
+      "sha256": "6c4137ec1b9b8f95c56dd9e60a06f8f68d2aa98164432a1f981be711c9902472"
+    }
+  },
+  "execution_version": "corrected-independent-rerun-v1",
+  "sunspot_source_verification": {
+    "tsf_rows": 73924,
+    "execution_rows": 11109,
+    "aligned_rows": 11109,
+    "value_mismatches": 0,
+    "source_start": "1818-01-08",
+    "source_end": "2020-05-31",
+    "execution_start": "1990-01-01",
+    "execution_end": "2020-05-31"
+  },
+  "environment": {
+    "python": "3.12.12 (main, Oct  9 2025, 22:40:06) [GCC 12.2.0]",
+    "platform": "Linux-6.6.69-cube.pvm.guest.005.x-g039db8913c80-x86_64-with-glibc2.36",
+    "processor": "",
+    "cpu_count": 3,
+    "packages": {
+      "numpy": "2.2.5",
+      "pandas": "2.3.2",
+      "scipy": "1.16.2",
+      "scikit-learn": "1.7.2",
+      "statsmodels": "0.14.5",
+      "shap": "0.54.1",
+      "lightgbm": "4.6.0",
+      "torch": "2.8.0",
+      "nbformat": "5.11.1",
+      "nbclient": "0.11.0"
+    }
+  },
+  "seed": 20261017,
+  "seeds": [
+    20261017
+  ],
+  "budgets": {
+    "horizons": [
+      1,
+      5
+    ],
+    "folds": 4,
+    "schemes": [
+      "rolling",
+      "expanding"
+    ],
+    "explained_folds": 3,
+    "probe_n": 30,
+    "thesis_full": false
+  },
+  "documented_corrections": [
+    "Use the supplied raw Monash TSF-traceable Sunspot values and verify every aligned value.",
+    "Export every observation-level prediction with aligned origin and target dates.",
+    "Use observation-level squared errors in HAC Diebold\u2013Mariano tests.",
+    "Use identical contiguous out-of-sample probe origins across explained folds.",
+    "Extend probes from the last explained test block through the frame end to retain regime diversity without entering any explained training set.",
+    "Use four lag groups for both model-ranked and random deep interventions.",
+    "Deep evaluation origins are explicitly te_start+lookback through te_end-1, and each input sequence is contiguous frame history.",
+    "Explanation probes are contiguous 21-row histories ending immediately before each selected target origin.",
+    "KernelSHAP additivity is computed as an actual residual against the fitted network prediction.",
+    "KernelSHAP coordinates are aggregated by net summation over the 21 positions of each lag feature.",
+    "Permutation importance shuffles complete lag channels across samples while preserving within-sequence temporal structure.",
+    "Deletion/insertion and random controls intervene on the same four lag groups.",
+    "The final 10% of training sequences is used for validation without an inner purge or validation-tail refit, as in the preserved design."
+  ]
+}

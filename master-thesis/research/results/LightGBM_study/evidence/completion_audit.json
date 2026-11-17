@@ -1,0 +1,23 @@
+{
+  "model": "LightGBM",
+  "execution_version": "corrected-independent-rerun-v1",
+  "executed_in_this_environment": true,
+  "run_started_utc": "2026-11-06T14:15:38.357859+00:00",
+  "run_finished_utc": "2026-11-06T14:17:43.448853+00:00",
+  "wall_seconds": 125.09097266197205,
+  "planned_fold_units": 120,
+  "completed_fold_units": 120,
+  "missing_fold_units": 0,
+  "observation_prediction_rows": 30240,
+  "planned_explained_units": 80,
+  "completed_explained_units": 80,
+  "validation_checks": {
+    "all_planned_fold_units_complete": true,
+    "all_explained_units_complete": true,
+    "predictions_finite": true,
+    "prediction_metrics_recompute": true,
+    "sunspot_matches_original_tsf": true,
+    "observation_level_predictions_exported": true,
+    "no_missing_prediction_targets": true
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "source": "Yahoo Finance",
+  "ticker": "^IXIC",
+  "retrieved_utc": "2026-10-17T10:46:42.113254+00:00",
+  "n": 9067,
+  "task": {
+    "id": "nasdaq",
+    "family": "indices",
+    "name": "NASDAQ Composite",
+    "path": "cache/yahoo_1990-01-01_2026-01-01/nasdaq/observations.csv",
+    "source": "Yahoo Finance",
+    "snapshot": "1990-01-01_to_2026-01-01_exclusive",
+    "retrieved_utc": "2026-10-17T10:46:42.113254+00:00",
+    "timezone": "America/New_York",
+    "calendar": "observed_native_market_sessions_no_calendar_fill",
+    "target_kind": "log_return",
+    "start": "1990-01-02",
+    "end": "2025-12-31",
+    "price_column": "adjusted_close",
+    "open_column": "adjusted_open",
+    "prices_adjusted_consistently": true,
+    "currency": "USD",
+    "frequency": "daily_trading_sessions",
+    "macro_policy": "provisional_price_only",
+    "macro_files": []
+  },
+  "acquisition": "Yahoo_chart_HTTPS",
+  "urls": [
+    "https://query1.finance.yahoo.com/v8/finance/chart/%5EIXIC?period1=631152000&period2=1767225600&interval=1d&events=history&includeAdjustedClose=true"
+  ],
+  "provider_metadata": {
+    "currency": "USD",
+    "symbol": "^IXIC",
+    "exchangeName": "NIM",
+    "fullExchangeName": "Nasdaq GIDS",
+    "instrumentType": "INDEX",
+    "firstTradeDate": 34612200,
+    "regularMarketTime": 1792185359,
+    "hasPrePostMarketData": false,
+    "gmtoffset": -14400,
+    "timezone": "EDT",
+    "exchangeTimezoneName": "America/New_York",
+    "regularMarketPrice": 26140.033,
+    "regularMarketChangePercent": -2.145,
+    "fulldayPrice": 26140.033,
+    "fulldayChange": -572.992,
+    "fulldayChangePercent": -2.145,
+    "fiftyTwoWeekHigh": 27722.75,
+    "fiftyTwoWeekLow": 20690.25,
+    "regularMarketDayHigh": 26674.66,
+    "regularMarketDayLow": 26023.102,
+    "regularMarketVolume": 8351719000,
+    "longName": "NASDAQ Composite",
+    "shortName": "NASDAQ Composite",
+    "chartPreviousClose": 454.8,
+    "priceHint": 2,
+    "currentTradingPeriod": {
+      "pre": {
+        "timezone": "EDT",
+        "start": 1792137600,
+        "end": 1792157400,
+        "gmtoffset": -14400
+      },
+      "regular": {
+        "timezone": "EDT",
+        "start": 1792157400,
+        "end": 1792180800,
+        "gmtoffset": -14400
+      },
+      "post": {
+        "timezone": "EDT",
+        "start": 1792180800,
+        "end": 1792195200,
+        "gmtoffset": -14400
+      }
+    },
+    "dataGranularity": "1d",
+    "range": "",
+    "validRanges": [
+      "1d",
+      "5d",
+      "1mo",
+      "3mo",
+      "6mo",
+      "1y",
+      "2y",
+      "5y",
+      "10y",
+      "ytd",
+      "max"
+    ]
+  },
+  "dropped_null_close_dates": [],
+  "adjustment": "adjusted_close=Yahoo Adj Close; adjusted_open=Open*Adj Close/Close",
+  "normalized_sha256": "29f0d2a14b2e2c8e9b93dfe611352a263ccbc797989789d91166f00eebedc8f0",
+  "archived_source_sha256": {
+    "yahoo_chart.json": "fdc818b402309f06400b32ec08ff2ce2ac1182a2fd498a4c8b90ec0b246bdb82"
+  }
+}

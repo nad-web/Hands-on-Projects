@@ -1,0 +1,18 @@
+{
+  "source_notebooks": {
+    "Linear": "/mnt/agents/output/thesis_execution/results/Linear_study",
+    "ARIMA": "/mnt/agents/output/thesis_execution/results/ARIMA_study",
+    "RandomForest": "/mnt/agents/output/thesis_execution/results/RandomForest_study",
+    "XGBoost": "/mnt/agents/output/thesis_execution/results/XGBoost_study",
+    "LightGBM": "/mnt/agents/output/thesis_execution/results/LightGBM_study",
+    "LSTM": "/mnt/agents/output/thesis_execution/results/LSTM_study",
+    "TFT": "/mnt/agents/output/thesis_execution/results/TFT_study"
+  },
+  "environment": {
+    "python": "3.12.12 (main, Oct  9 2025, 22:40:06) [GCC 12.2.0]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.36"
+  },
+  "method": "All-seven intersection by series, horizon, scheme, origin index, origin date, and target date; rolling static folds 2\u20135 align to deep folds 0\u20133; expanding folds 0\u20133 align directly.",
+  "dm": "Observation-level squared-error loss; HAC lag h-1 with autocovariances estimated only within matched forecast blocks; two-sided asymptotic normal p; BH within each 21-pair family at q=0.05.",
+  "native_benchmark_dm": "Supplementary native-coverage model-minus-benchmark squared-loss tests; HAC lag h-1 within native fold blocks; BH across all 14 model-benchmark tests within each series-horizon-scheme cell. Static n=1512 and deep n=924; these are not matched seven-way tests. The original unsegmented per-model two-test BH export is retained for sensitivity."
+}

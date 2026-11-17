@@ -1,0 +1,19 @@
+{
+  "evidence/completion_audit.json": "d6fbb29d945f6a366f8f902d6c1d8dde54f86adbe51e32bdd179e380313f1f3a",
+  "evidence/evidence_statement.json": "5855d79f9eb535729df8e4b6ec91eddf2f829b5f7e13ad0fd65be8d9b4b049bc",
+  "evidence/evidence_statement.md": "97d00a91f546778a2c41f0a2b54270c7861e2fe9e6b9a2595234ac6381ec95fe",
+  "evidence/provenance.json": "44bdd7e37b2ef750c040384af2f9636cc634aa44b8ad36ba4a7fcd4a0f01db0f",
+  "figures/fig_native_importance.png": "97bc90bc54699390d19e97e56809d796183e3df570c5a28de1ecf2320ad7b853",
+  "figures/fig_rq1.png": "9231eaf8793f7a6a7216d52953129fa990bf94c7ed4428a13af0bc234967108a",
+  "figures/fig_stability.png": "ea7ad67099f6c855e794b3ad104b082f9375634a2e6a180d10f05075fce30f4c",
+  "tables/attributions.csv": "c6edcd052093a973a35dcc7c07803158f0402350ff4b688cf79970e10dfd8f34",
+  "tables/benchmark_dm.csv": "6da586c84c935cfac0c3928da86452f7d8a59cdaa9df72dba82c242315de7dfc",
+  "tables/faithfulness.csv": "7b58068e7494f9c6d2a70bd2f8ec197a2eec4ec3003a5e1b390b943b4c384519",
+  "tables/fold_metrics.csv": "3ead54f11f76ad4b0d4a64ec48d466fef3326129e2d45f6813048967dd2f3aac",
+  "tables/forecast_diagnostics.csv": "6fb39463d53cd5e2d088efa3761859f610d0b5917179e3e15441d82352ee2df1",
+  "tables/native_params.csv": "055c72a823a26bb1c68ffb1fedcefb8e5bb56c7d38eda958011e0f4acb05639d",
+  "tables/observation_predictions.csv": "1034d6df779e4141c5322e43dc499654d698cb1e4a1dfc17e0fef13c8f9b7db0",
+  "tables/shap_importance.csv": "25c9cf8b3e8c7490c5eeb02daa5c49f514e479da06d02393817a7fe966e62ad9",
+  "tables/stability.csv": "7dbd6a66c6fafcfb94104e2c5079eade5488634ff064f8ab0b4de1a7d088475d",
+  "tables/stability_summary.csv": "32775f6eba84bb9fe873d39b3b8280e887fadf64c76e9374bcdb9da97d20caa7"
+}

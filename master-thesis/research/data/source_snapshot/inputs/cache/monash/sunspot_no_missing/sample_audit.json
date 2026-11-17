@@ -1,0 +1,15 @@
+{
+  "source_n": 73924,
+  "source_start": "1818-01-08",
+  "source_end": "2020-05-31",
+  "sample_n": 11109,
+  "sample_start": "1990-01-01",
+  "sample_end": "2020-05-31",
+  "sample_rule": "The user selected this Monash Sunspot file as the sole benchmark. For a bounded laptop robustness block, start at the same 1990 date as index acquisition, retain native daily counts, use a one-day direct level target, and preserve the full original TSF. These numerical task settings are explicit implementation proposals, not previously fixed thesis facts.",
+  "missing_n": 0,
+  "zero_n": 1848,
+  "minimum": 0.0,
+  "maximum": 410.0,
+  "tsf_sha256": "6c4137ec1b9b8f95c56dd9e60a06f8f68d2aa98164432a1f981be711c9902472",
+  "task_csv_sha256": "46932f9f6f3f0fa7cade6ecd3d52d2b68c3105599d697d155ec4eb636abc3164"
+}

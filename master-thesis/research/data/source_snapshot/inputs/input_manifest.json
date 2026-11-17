@@ -1,0 +1,23 @@
+{
+  "original_protocol": "f6cab585608a958c15a57b4e03f6c71a18962f50c8ff9e50fa8c7964c5824ded",
+  "sha256": {
+    "tasks.yaml": "1f4562876f5bf727a66a6086c67c62296368e99c54ab2f7733fe736ffa68fb34",
+    "cache/yahoo_1990-01-01_2026-01-01/djia/source.json": "fe3d79b75b0cc4a2c9a8b430491e69f9ea8e7e11679ad7e92e3fedf0f118eb8d",
+    "cache/yahoo_1990-01-01_2026-01-01/djia/yahoo_chart.json": "ec9d436bd0d9121401a96fe1beb0179ee25cd286298073e223b37d2d521ef9da",
+    "cache/yahoo_1990-01-01_2026-01-01/djia/observations.csv": "52f0ad16695bf4664916f906236a2c2eaae80555f2ae99070c4670af39f3c20d",
+    "cache/yahoo_1990-01-01_2026-01-01/sp500/source.json": "64c8ef7dea123c6910e35c6cd6ced63b1b92a8a8b40195e706957e1eace2073a",
+    "cache/yahoo_1990-01-01_2026-01-01/sp500/yahoo_chart.json": "f3f90f601d5e3bb1344ff31a5d3a02157c9d1266502fc328b3f600d4795ac956",
+    "cache/yahoo_1990-01-01_2026-01-01/sp500/observations.csv": "3387ceea876277e4407615b1f9d4f506406fba63c80453e598c973f5b907cd11",
+    "cache/yahoo_1990-01-01_2026-01-01/nasdaq/source.json": "e911c533402839c284d8e089e9c0d4d34b2a8d6b5fa9a8fe540fcbc4ea6925cd",
+    "cache/yahoo_1990-01-01_2026-01-01/nasdaq/yahoo_chart.json": "fdc818b402309f06400b32ec08ff2ce2ac1182a2fd498a4c8b90ec0b246bdb82",
+    "cache/yahoo_1990-01-01_2026-01-01/nasdaq/observations.csv": "29f0d2a14b2e2c8e9b93dfe611352a263ccbc797989789d91166f00eebedc8f0",
+    "cache/yahoo_1990-01-01_2026-01-01/dax/source.json": "f7477267c2f11552d72c837847d462f6a4db7f1f8d1074d63fde209bf69ce457",
+    "cache/yahoo_1990-01-01_2026-01-01/dax/yahoo_chart.json": "b21afe812a6133566f32e14bb64ea7ee46712cb51bba44ea8e521b873e76ecf0",
+    "cache/yahoo_1990-01-01_2026-01-01/dax/observations.csv": "60185c637278760dd774388e4694a641dfd98462b2f4d8b5c3a4b2646fad9f89",
+    "cache/monash/sunspot_no_missing/acquisition.json": "b3c408617241f4e4e845ab58adce62b84ed8c13b498d4049f8f03c41c210bf44",
+    "cache/monash/sunspot_no_missing/sunspot_dataset_without_missing_values.tsf": "6c4137ec1b9b8f95c56dd9e60a06f8f68d2aa98164432a1f981be711c9902472",
+    "cache/monash/sunspot_no_missing/sample_audit.json": "7b38d742db98ce0b8ef5bd88470172ee8a7aa982d5deea75593a8c7824d786d7",
+    "cache/monash/sunspot_no_missing/tsf_metadata.json": "a1ad9263c233d9130ec7ffdec4fbc4ca1fbf2f67d64639c77882bf74a2f8fdda",
+    "cache/monash/sunspot_no_missing/monash_sunspot_no_missing_T1_85babb464a3e.csv": "46932f9f6f3f0fa7cade6ecd3d52d2b68c3105599d697d155ec4eb636abc3164"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "relation": "Sunspot",
+  "frequency": "daily",
+  "missing": "false",
+  "equallength": "true",
+  "attributes": [
+    [
+      "series_name",
+      "string"
+    ],
+    [
+      "start_timestamp",
+      "date"
+    ]
+  ],
+  "series_n": 1
+}

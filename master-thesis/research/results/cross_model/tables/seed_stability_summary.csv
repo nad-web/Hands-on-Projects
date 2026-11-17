@@ -1,0 +1,16 @@
+model,sample,regime,rho_median,top1_match_rate,count
+LightGBM,financial,bear,0.7999999999999999,0.6071428571428571,728
+LightGBM,financial,boundary,0.7999999999999999,0.563953488372093,688
+LightGBM,financial,bull,0.7999999999999999,0.6127819548872181,1064
+LightGBM,financial,crisis,0.7999999999999999,0.675,80
+LightGBM,sunspot,na,1.0,0.9125,640
+RandomForest,financial,bear,1.0,0.8063186813186813,728
+RandomForest,financial,boundary,1.0,0.8008720930232558,688
+RandomForest,financial,bull,1.0,0.831766917293233,1064
+RandomForest,financial,crisis,1.0,0.7625,80
+RandomForest,sunspot,na,1.0,0.9828125,640
+XGBoost,financial,bear,0.7999999999999999,0.5425824175824175,728
+XGBoost,financial,boundary,0.7999999999999999,0.49273255813953487,688
+XGBoost,financial,bull,0.7999999999999999,0.5375939849624061,1064
+XGBoost,financial,crisis,0.7999999999999999,0.5125,80
+XGBoost,sunspot,na,1.0,0.8546875,640

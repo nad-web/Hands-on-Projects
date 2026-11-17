@@ -1,0 +1,99 @@
+{
+  "source": "Yahoo Finance",
+  "ticker": "^DJI",
+  "retrieved_utc": "2026-10-17T10:46:46.727455+00:00",
+  "n": 8561,
+  "task": {
+    "id": "djia",
+    "family": "indices",
+    "name": "Dow Jones Industrial Average",
+    "path": "cache/yahoo_1990-01-01_2026-01-01/djia/observations.csv",
+    "source": "Yahoo Finance",
+    "snapshot": "1990-01-01_to_2026-01-01_exclusive",
+    "retrieved_utc": "2026-10-17T10:46:46.727455+00:00",
+    "timezone": "America/New_York",
+    "calendar": "observed_native_market_sessions_no_calendar_fill",
+    "target_kind": "log_return",
+    "start": "1992-01-02",
+    "end": "2025-12-31",
+    "price_column": "adjusted_close",
+    "open_column": "adjusted_open",
+    "prices_adjusted_consistently": true,
+    "currency": "USD",
+    "frequency": "daily_trading_sessions",
+    "macro_policy": "provisional_price_only",
+    "macro_files": []
+  },
+  "acquisition": "Yahoo_chart_HTTPS",
+  "urls": [
+    "https://query1.finance.yahoo.com/v8/finance/chart/%5EDJI?period1=631152000&period2=1767225600&interval=1d&events=history&includeAdjustedClose=true"
+  ],
+  "provider_metadata": {
+    "currency": "USD",
+    "symbol": "^DJI",
+    "exchangeName": "DJI",
+    "fullExchangeName": "DJI",
+    "instrumentType": "INDEX",
+    "firstTradeDate": 694362600,
+    "regularMarketTime": 1792183329,
+    "hasPrePostMarketData": false,
+    "gmtoffset": -14400,
+    "timezone": "EDT",
+    "exchangeTimezoneName": "America/New_York",
+    "regularMarketPrice": 52002.41,
+    "regularMarketChangePercent": -0.336,
+    "fulldayPrice": 52002.41,
+    "fulldayChange": -175.281,
+    "fulldayChangePercent": -0.336,
+    "fiftyTwoWeekHigh": 54744.33,
+    "fiftyTwoWeekLow": 45057.28,
+    "regularMarketDayHigh": 52582.32,
+    "regularMarketDayLow": 51847.94,
+    "regularMarketVolume": 488091543,
+    "longName": "Dow Jones Industrial Average",
+    "shortName": "Dow Jones Industrial Average",
+    "chartPreviousClose": 3152.1,
+    "priceHint": 2,
+    "currentTradingPeriod": {
+      "pre": {
+        "timezone": "EDT",
+        "start": 1792137600,
+        "end": 1792157400,
+        "gmtoffset": -14400
+      },
+      "regular": {
+        "timezone": "EDT",
+        "start": 1792157400,
+        "end": 1792180800,
+        "gmtoffset": -14400
+      },
+      "post": {
+        "timezone": "EDT",
+        "start": 1792180800,
+        "end": 1792195200,
+        "gmtoffset": -14400
+      }
+    },
+    "dataGranularity": "1d",
+    "range": "",
+    "validRanges": [
+      "1d",
+      "5d",
+      "1mo",
+      "3mo",
+      "6mo",
+      "1y",
+      "2y",
+      "5y",
+      "10y",
+      "ytd",
+      "max"
+    ]
+  },
+  "dropped_null_close_dates": [],
+  "adjustment": "adjusted_close=Yahoo Adj Close; adjusted_open=Open*Adj Close/Close",
+  "normalized_sha256": "52f0ad16695bf4664916f906236a2c2eaae80555f2ae99070c4670af39f3c20d",
+  "archived_source_sha256": {
+    "yahoo_chart.json": "ec9d436bd0d9121401a96fe1beb0179ee25cd286298073e223b37d2d521ef9da"
+  }
+}

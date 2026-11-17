@@ -1,0 +1,21 @@
+| model        | method            | metric             | count   | mean         | median       | min          | max          |
+|:-------------|:------------------|:-------------------|:--------|:-------------|:-------------|:-------------|:-------------|
+| LSTM         | LIME_fidelity     | median_holdout_mse | 60      | 7.388974e-07 | 4.663921e-07 | 2.118831e-11 | 6.510513e-06 |
+| LSTM         | LIME_vs_SHAP      | spearman_rho       | 60      | 0.816667     | 0.800000     | 0.000000     | 1.000000     |
+| LSTM         | PFI_vs_SHAP       | spearman_rho       | 60      | 0.070000     | 0.200000     | -1.000000    | 1.000000     |
+| LightGBM     | LIME_fidelity     | median_holdout_mse | 80      | 41.419635    | 8.022527e-07 | 9.024151e-10 | 466.909055   |
+| LightGBM     | LIME_vs_SHAP      | spearman_rho       | 80      | 0.560000     | 0.800000     | -0.800000    | 1.000000     |
+| LightGBM     | PFI_vs_SHAP       | spearman_rho       | 80      | 0.167500     | 0.200000     | -1.000000    | 1.000000     |
+| Linear       | LIME_fidelity     | median_holdout_mse | 80      | 2.077337e-16 | 1.660896e-25 | 3.190887e-27 | 9.268996e-15 |
+| Linear       | LIME_vs_SHAP      | spearman_rho       | 80      | 0.962500     | 1.000000     | 0.800000     | 1.000000     |
+| Linear       | PFI_vs_SHAP       | spearman_rho       | 80      | 0.195000     | 0.300000     | -1.000000    | 1.000000     |
+| RandomForest | LIME_fidelity     | median_holdout_mse | 80      | 33.415428    | 1.145848e-05 | 7.777788e-07 | 446.153390   |
+| RandomForest | LIME_vs_SHAP      | spearman_rho       | 80      | 0.597500     | 0.800000     | -0.800000    | 1.000000     |
+| RandomForest | PFI_vs_SHAP       | spearman_rho       | 78      | 0.187179     | 0.200000     | -1.000000    | 1.000000     |
+| TFT          | LIME_fidelity     | median_holdout_mse | 60      | 0.005042     | 4.100014e-09 | 4.210450e-10 | 0.288941     |
+| TFT          | LIME_vs_SHAP      | spearman_rho       | 60      | 0.840000     | 1.000000     | 0.000000     | 1.000000     |
+| TFT          | PFI_vs_SHAP       | spearman_rho       | 60      | -0.040000    | 0.000000     | -1.000000    | 1.000000     |
+| TFT          | native_vs_posthoc | spearman_rho       | 60      | 0.333333     | 0.500000     | -1.000000    | 1.000000     |
+| XGBoost      | LIME_fidelity     | median_holdout_mse | 80      | 50.171297    | 1.190305e-06 | 1.171840e-09 | 605.047997   |
+| XGBoost      | LIME_vs_SHAP      | spearman_rho       | 80      | 0.527500     | 0.800000     | -0.800000    | 1.000000     |
+| XGBoost      | PFI_vs_SHAP       | spearman_rho       | 80      | 0.130000     | 0.400000     | -1.000000    | 1.000000     |

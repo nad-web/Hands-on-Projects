@@ -1,0 +1,17 @@
+model,method,sample,bear,boundary,bull,crisis,na,bear_minus_boundary,bull_minus_boundary,crisis_minus_boundary
+ARIMA,ARIMA_native_counterfactual_lag,financial,1.0,1.0,1.0,1.0,,0.0,0.0,0.0
+ARIMA,ARIMA_native_counterfactual_lag,sunspot,,,,,1.0,,,
+LSTM,KernelSHAP_lag_aggregated,financial,0.1999999999999999,0.3999999999999999,0.3999999999999999,0.1999999999999999,,-0.2,0.0,-0.2
+LSTM,KernelSHAP_lag_aggregated,sunspot,,,,,0.3999999999999999,,,
+LightGBM,TreeSHAP_full_ensemble,financial,0.6000000000000001,0.3999999999999999,0.3999999999999999,0.7999999999999999,,0.20000000000000018,0.0,0.4
+LightGBM,TreeSHAP_full_ensemble,sunspot,,,,,0.7999999999999999,,,
+Linear,exact_linear_SHAP,financial,0.7999999999999999,0.7999999999999999,0.7999999999999999,0.7999999999999999,,0.0,0.0,0.0
+Linear,exact_linear_SHAP,sunspot,,,,,1.0,,,
+RandomForest,TreeSHAP_full_ensemble,financial,0.7999999999999999,0.7999999999999999,0.7999999999999999,0.7999999999999999,,0.0,0.0,0.0
+RandomForest,TreeSHAP_full_ensemble,sunspot,,,,,0.7999999999999999,,,
+TFT,KernelSHAP_lag_aggregated,financial,0.1527046276694729,0.0,0.1999999999999999,0.3999999999999999,,0.1527046276694729,0.1999999999999999,0.3999999999999999
+TFT,KernelSHAP_lag_aggregated,sunspot,,,,,0.2108185106778919,,,
+TFT,native_variable_selection,financial,0.0,0.1999999999999999,0.0,0.09999999999999995,,-0.1999999999999999,-0.1999999999999999,-0.09999999999999995
+TFT,native_variable_selection,sunspot,,,,,-0.3999999999999999,,,
+XGBoost,TreeSHAP_full_ensemble,financial,0.7999999999999999,0.3999999999999999,0.7999999999999999,0.7999999999999999,,0.4,0.4,0.4
+XGBoost,TreeSHAP_full_ensemble,sunspot,,,,,0.7999999999999999,,,
