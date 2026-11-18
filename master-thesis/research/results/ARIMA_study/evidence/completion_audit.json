@@ -1,6 +1,6 @@
 {
   "model": "ARIMA",
-  "execution_version": "corrected-independent-rerun-v1",
+  "execution_version": "thesis-execution-v1",
   "executed_in_this_environment": true,
   "run_started_utc": "2026-11-13T09:12:44.104801+00:00",
   "run_finished_utc": "2026-11-13T09:20:58.857450+00:00",

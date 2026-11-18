@@ -1,0 +1,13 @@
+{
+  "source": "Yahoo Finance",
+  "ticker": "^GDAXI",
+  "name": "DAX",
+  "retrieved_utc": "2026-10-23T08:53:40.263918",
+  "n": 9107,
+  "timezone": "Europe/Berlin",
+  "currency": "EUR",
+  "target_kind": "log_return",
+  "sha256": "169967b8f9633df68c3687712c5d3242c3374bb291bd6d2cc24782e796a5d06f",
+  "start": "1990-01-02",
+  "end": "2025-12-30"
+}

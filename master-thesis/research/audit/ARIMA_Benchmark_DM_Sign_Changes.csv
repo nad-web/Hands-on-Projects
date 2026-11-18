@@ -1,4 +1,0 @@
-model,series,horizon,scheme,comparison,dm_old,dm_new,p_raw_old,p_raw_new,p_bh_14_tests_old,p_bh_14_tests_new,outcome_old,outcome_new
-ARIMA,dax,5,expanding,training_mean,-0.8925622251138084,0.3916672154172126,0.3720916559752631,0.6953041168239136,0.5788092426281871,0.8111881362945659,not_significant,not_significant
-ARIMA,nasdaq,5,expanding,training_mean,-0.6359606556579751,0.2651113177274812,0.5248020664331623,0.7909237089137626,0.984141592451442,0.984141592451442,not_significant,not_significant
-ARIMA,sp500,5,expanding,training_mean,-1.594455226286928,1.7160267053373557,0.1108341114139435,0.0861571547247366,0.221668222827887,0.2010333610243854,not_significant,not_significant

@@ -25,9 +25,9 @@ if run.exists():raise SystemExit('Output already exists. Choose a new folder to 
 try:
     import nbformat
     from nbclient import NotebookClient
-except ImportError:raise SystemExit('Install the recorded research environment first. See requirements-research.txt and README.md.')
+except ImportError:raise SystemExit('Install the recorded research environment first. See research/requirements.txt and README.md.')
 (run/'notebooks').mkdir(parents=True)
-shutil.copytree(APP/'research/results/data',run/'data')
+shutil.copytree(APP/'research/data',run/'data')
 queue=[BOOKS[m] for m in selected]
 if selected==list(BOOKS):queue.append('08_Cross_Model_Synthesis_Executed.ipynb')
 print('Research outputs will be written to',run,flush=True)

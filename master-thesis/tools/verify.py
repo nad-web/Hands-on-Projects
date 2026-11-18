@@ -31,12 +31,12 @@ def calc(actual,pred,baseline):
 
 def main():
     inv=load('data/inventory.json');manifest=load('data/manifest.json');summary=load('data/summary.json')
-    assert len(inv)==manifest['files']==261
+    assert len(inv)==manifest['files']==184
     for f in inv:
         p=(APP/f['path']).resolve();assert p.is_relative_to(APP.resolve()) and p.is_file(), f['path']
         assert p.stat().st_size==f['bytes']
         assert hashlib.sha256(p.read_bytes()).hexdigest()==f['sha256'], f['path']
-    print('PASS — 261 original files match the inventory SHA-256 hashes.')
+    print('PASS — 184 approved original files match the inventory SHA-256 hashes.')
 
     sources=rows('research/results/cross_model/tables/matched_observation_predictions.csv')
     datasets={}
@@ -86,27 +86,51 @@ def main():
         nb=load(b['path']);codes=[c for c in nb['cells'] if c['cell_type']=='code'];counts=[c['execution_count'] for c in codes]
         assert counts==list(range(1,len(codes)+1))
         assert not [o for c in codes for o in c.get('outputs',[]) if o['output_type']=='error']
-    ms=load('data/manuscript.json');assert len(ms['references'])==47 and len(ms['chapters'])==11
-    assert hashlib.sha256((APP/ms['source']).read_bytes()).hexdigest()==ms['sha256']
-    assert [c['title'] for c in ms['chapters'][1:9]]==['Introduction','Theoretical Background','Literature Review','Methodology','Results','Discussion','Limitations','Conclusion']
-    for c in ms['chapters']:
-        for block in c['blocks']:
-            if block['type']=='image':assert (APP/block['src']).is_file()
+    assert manifest['manuscript_excluded'] is True
+    allowed=load('data/public-source-list.json')
+    assert {f['path'].removeprefix('research/') for f in inv}==set(allowed)
+    assert len(load('data/guide.json')['references'])==47
+    forbidden={'.doc','.docx','.pdf','.ppt','.pptx','.zip','.rtf','.odt'}
+    for p in APP.rglob('*'):
+        if p.is_file():
+            assert p.suffix.lower() not in forbidden, str(p.relative_to(APP))
+            assert 'manuscript' not in str(p.relative_to(APP)).lower(), str(p.relative_to(APP))
+    assert len(summary['stability_cells'])==496
+    print('PASS — 184 approved sources; no manuscript files, hidden transcripts, or source archives in public folder.')
     assert len(summary['dm_pairwise'])==420
     for r in summary['dm_pairwise']:assert r['significant_q05']==(r['p_bh_21_pairs']<.05)
     benchmarks=[r for r in summary['native_benchmark_block_dm'] if r['sample']=='financial']
     assert len(benchmarks)==224 and not [r for r in benchmarks if r['outcome']=='model_win']
-    print('PASS — 8 notebooks have sequential stored execution and no stored errors; manuscript chapters, 47 references, and inference labels are consistent.')
+    print('PASS — 8 notebooks have sequential stored execution and no stored errors; 47 bibliography entries and inference labels are consistent.')
 
-    for path in ['index.html','assets/app.js','assets/core.js','assets/charts.js','assets/style.css','assets/vendor/marked.js','manifest.webmanifest','sw.js','cache-manifest.json']:
+    for path in ['index.html','simulation/index.html','documentation/index.html','documentation/handbook.html','assets/academic.js','assets/scientific.js','assets/app.js','assets/core.js','assets/charts.js','assets/style.css','assets/vendor/marked.js','manifest.webmanifest','sw.js','cache-manifest.json']:
         assert (APP/path).is_file(),path
     offline=load('cache-manifest.json')
     for name in offline['files']:
         p=(APP/name).resolve();assert p.is_file() and p.is_relative_to(APP.resolve()),name
+    from html.parser import HTMLParser
+    from urllib.parse import urlparse,unquote
+    import html
+    class CodeParser(HTMLParser):
+        def __init__(self): super().__init__(convert_charrefs=True); self.capture=False; self.blocks=[]
+        def handle_starttag(self,tag,attrs):
+            if tag=='pre' and 'data-original-code-cell' in dict(attrs): self.capture=True; self.blocks.append('')
+        def handle_data(self,text):
+            if self.capture:self.blocks[-1]+=text
+        def handle_endtag(self,tag):
+            if tag=='pre':self.capture=False
+    code_count=0
+    for b in load('data/notebooks.json'):
+        text=(APP/f"documentation/notebooks/{b['slug']}.html").read_text(); parser=CodeParser();parser.feed(text)
+        expected=[''.join(c['source']) for c in load('research/notebooks/'+b['file'])['cells'] if c['cell_type']=='code']
+        assert parser.blocks==expected, b['file']
+        code_count+=len(expected)
+    assert code_count==37
+    print('PASS — all 37 rendered notebook code cells exactly match original sources.')
     report={'status':'passed','scope':'Static app data and source preservation; seven-model training was not re-executed.',
-            'original_files_sha256_verified':261,'matched_forecasts_exact':129360,'matched_metric_cells_recomputed':140,
+            'original_files_sha256_verified':184,'matched_forecasts_exact':129360,'matched_metric_cells_recomputed':140,
             'attributions_exact':78400,'native_ols_predictions_verified':30240,'ols_max_absolute_error':maxerr,
-            'executed_notebooks_checked':8,'manuscript_chapters_including_abstract_references_appendices':11,'references':47,
+            'executed_notebooks_checked':8,'complete_manuscript_excluded':True,'references':47,
             'pairwise_test_labels_checked':420,'financial_native_benchmark_tests_checked':224,
             'offline_pack_files':len(offline['files'])}
     (APP/'verification-report.json').write_text(json.dumps(report,indent=2)+'\n')

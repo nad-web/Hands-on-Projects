@@ -1,6 +1,6 @@
 {
   "RQ1": {
-    "question": "Accuracy\u2013interpretability trade-off",
+    "question": "Accuracy–interpretability trade-off",
     "status": "model_execution_complete_cross_model_answer_in_synthesis",
     "claims": [
       {
@@ -18,7 +18,7 @@
           "sp500|h5": 0.018910531072753277
         },
         "artifact": "tables/fold_metrics.csv and tables/observation_predictions.csv",
-        "thesis_ref": "Chapters 4\u20136",
+        "thesis_ref": "Chapters 4–6",
         "citation": "Diebold & Mariano (1995)"
       }
     ]
@@ -42,7 +42,7 @@
           "native_variable_selection|na": -0.39999999999999997
         },
         "artifact": "tables/stability.csv",
-        "thesis_ref": "Chapters 4\u20136",
+        "thesis_ref": "Chapters 4–6",
         "citation": "Molnar (2022)"
       }
     ]
@@ -57,7 +57,7 @@
           "max_shap_additivity_residual": 3.0517578125e-05
         },
         "artifact": "tables/faithfulness.csv",
-        "thesis_ref": "Chapters 4\u20136",
+        "thesis_ref": "Chapters 4–6",
         "citation": "Shapley (1953); Ribeiro et al. (2016)"
       }
     ]

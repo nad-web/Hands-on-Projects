@@ -1,16 +1,16 @@
 {
   "status": "passed",
   "scope": "Static app data and source preservation; seven-model training was not re-executed.",
-  "original_files_sha256_verified": 261,
+  "original_files_sha256_verified": 184,
   "matched_forecasts_exact": 129360,
   "matched_metric_cells_recomputed": 140,
   "attributions_exact": 78400,
   "native_ols_predictions_verified": 30240,
   "ols_max_absolute_error": 2.7000623958883807e-13,
   "executed_notebooks_checked": 8,
-  "manuscript_chapters_including_abstract_references_appendices": 11,
+  "complete_manuscript_excluded": true,
   "references": 47,
   "pairwise_test_labels_checked": 420,
   "financial_native_benchmark_tests_checked": 224,
-  "offline_pack_files": 191
+  "offline_pack_files": 293
 }

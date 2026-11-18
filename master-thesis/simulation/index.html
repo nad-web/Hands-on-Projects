@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101518">
+  <meta name="description" content="Forecast Atlas — an interactive companion to a master's thesis on trustworthy financial forecasting. Explore seven models, recorded forecasts, explanations, and original research evidence.">
+  <meta name="color-scheme" content="dark light">
+  <title>Forecast Atlas · An interactive research companion</title>
+  <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="stylesheet" href="../assets/style.css?v=2">
+  <link rel="stylesheet" href="../assets/academic.css?v=2">
+  <link rel="stylesheet" href="../assets/scenarios.css?v=2.1">
+  <link rel="stylesheet" href="../assets/vendor/katex/katex.min.css">
+  <script defer src="../assets/vendor/katex/katex.min.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <aside id="sidebar" class="sidebar" aria-label="Primary navigation">
+    <a href="#home" class="brand" aria-label="Forecast Atlas home"><span class="brand-symbol">f<span data-icon="external"></span></span><span>forecast<span class="brand-atlas">ATLAS / RESEARCH LAB</span></span></a>
+    <div class="sidebar-label">THE RESEARCH COMPANION <span>01—09</span></div>
+    <nav id="navigation"></nav>
+    <div class="sidebar-bottom">
+      <div class="archive-label"><span class="status-dot"></span> Grounded in the experiment</div>
+      <p>Real forecasts.<br>Inspectable explanations.<br>Every claim has a source.</p>
+      <button class="quiet sidebar-action" data-action="tour"><span data-icon="compass"></span> Take a guided tour <span data-icon="external"></span></button>
+      <button class="quiet sidebar-action" data-action="offline"><span data-icon="download"></span> Keep available offline <span>↓</span></button>
+      <div class="byline">Designed & built by<br><strong>Developer Noorullah Adel</strong></div>
+    </div>
+  </aside>
+  <div id="sidebar-scrim" class="sidebar-scrim" data-action="menu"></div>
+  <div class="workspace">
+    <header class="topbar">
+      <div class="breadcrumb"><button class="icon-btn mobile-menu" data-action="menu" aria-label="Toggle menu"><span data-icon="menu"></span></button><span class="topbar-kicker">MASTER’S THESIS</span><span class="slash">/</span><span id="breadcrumb">Observatory</span></div>
+      <div class="topbar-actions"><a class="portal-switch" href="../">Gateway</a><a class="portal-switch" href="../documentation/">Documentation ↗</a>
+        <span class="archive-status"><span class="status-dot"></span> EXPERIMENT ARCHIVE</span>
+        <button class="icon-btn" data-action="search" title="Search the research files ( / )" aria-label="Search research"><span data-icon="search"></span></button>
+        <button class="icon-btn" data-action="share" title="Copy a link to this experiment" aria-label="Copy current view link"><span data-icon="link"></span></button>
+        <button class="icon-btn" data-action="theme" title="Switch color theme" aria-label="Switch color theme"><span data-icon="sun"></span></button>
+      </div>
+    </header>
+    <main id="main" tabindex="-1"><div class="loading-state"><div class="loader"></div><h1>Opening the research archive</h1><p>Preparing the original experiment data…</p></div></main>
+    <footer class="footer"><span>FORECAST ATLAS <span class="muted">/</span> TRUSTWORTHY FINANCIAL FORECASTING</span><span>Recorded research · No live market feed <span class="footer-dot">·</span> <a href="../README.md">About this app</a></span></footer>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="modal" class="modal"><div id="modal-content"></div></dialog>
+  <div id="tour" class="tour" hidden></div>
+  <noscript><div class="no-js">Enable JavaScript to explore the interactive thesis. Read the full notebook documentation from the gateway.</div></noscript>
+  <script type="module" src="../assets/app.js?v=2.1"></script>
+</body>
+</html>

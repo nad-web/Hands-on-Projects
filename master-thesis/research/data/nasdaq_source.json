@@ -1,0 +1,13 @@
+{
+  "source": "Yahoo Finance",
+  "ticker": "^IXIC",
+  "name": "NASDAQ Composite",
+  "retrieved_utc": "2026-10-23T08:53:40.649639",
+  "n": 9067,
+  "timezone": "America/New_York",
+  "currency": "USD",
+  "target_kind": "log_return",
+  "sha256": "ac5afab623382ea080acb4f4898eff55183bf61f21cd15bcfa9cabacaa8548d4",
+  "start": "1990-01-02",
+  "end": "2025-12-31"
+}

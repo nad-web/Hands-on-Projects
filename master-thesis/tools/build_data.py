@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Compile supplied research artifacts into a static, traceable browser dataset.
 
-Usage: python3 tools/build_data.py [path/to/Master_Thesis_Package]
+Usage: python3 tools/build_data.py [path/to/whole_thesis_Package_Submission]
 Only regeneration needs numpy. The delivered website has no build dependencies.
 """
 from pathlib import Path
@@ -10,11 +10,8 @@ import csv
 import hashlib
 import json
 import math
-import re
 import shutil
 import sys
-import xml.etree.ElementTree as ET
-import zipfile
 
 APP = Path(__file__).resolve().parents[1]
 SRC = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else APP / 'research'
@@ -23,9 +20,6 @@ DATA = APP / 'data'
 MODELS = ['Linear', 'ARIMA', 'RandomForest', 'XGBoost', 'LightGBM', 'LSTM', 'TFT']
 SERIES = ['sp500', 'dax', 'nasdaq', 'djia', 'monash_sunspot']
 LABELS = ['S&P 500', 'DAX', 'NASDAQ Composite', 'Dow Jones', 'Monash Sunspot']
-NS = {'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main',
-      'r': 'http://schemas.openxmlformats.org/officeDocument/2006/relationships',
-      'a': 'http://schemas.openxmlformats.org/drawingml/2006/main'}
 
 
 def dump(path, value):
@@ -51,91 +45,18 @@ def read_csv(path):
         return [{k: value(v) for k, v in r.items()} for r in csv.DictReader(f)]
 
 
-def body_text(node):
-    # Include Office Math text as well as ordinary Word runs, in source order.
-    return ''.join(('\t' if x.tag.endswith('}tab') else '\n' if x.tag.endswith('}br') else x.text or '')
-                   for x in node.iter() if x.tag.split('}')[-1] in ('t', 'tab', 'br'))
-
-
-def manuscript():
-    file = DEST / 'Master Thesis.docx'
-    with zipfile.ZipFile(file) as z:
-        root = ET.fromstring(z.read('word/document.xml'))
-        rels = {x.attrib['Id']: x.attrib['Target'] for x in ET.fromstring(z.read('word/_rels/document.xml.rels'))}
-        chapters = [{'id': 'abstract', 'title': 'Abstract', 'number': '00', 'blocks': []}]
-        chapter = chapters[0]
-        started = False
-        counters = [0, 0, 0]
-        refs = []
-        headings = []
-        for el in root.find('w:body', NS):
-            tag = el.tag.split('}')[-1]
-            if tag == 'p':
-                text = body_text(el).strip()
-                style_el = el.find('w:pPr/w:pStyle', NS)
-                style = style_el.attrib.get('{' + NS['w'] + '}val', '') if style_el is not None else ''
-                if text == 'Abstract': started = True; continue
-                if not started and not re.fullmatch(r'Heading[123]', style): continue
-                if text in ('Table of Contents', 'List of Tables', 'Table of Figures'): started = False; continue
-                if re.fullmatch(r'Heading[123]', style):
-                    started = True
-                    level = int(style[-1])
-                    if level == 1:
-                        counters[0] += 1; counters[1:] = [0, 0]
-                        chapter = {'id': 'chapter-' + str(counters[0]), 'title': text,
-                                   'number': f'{counters[0]:02}', 'blocks': []}
-                        chapters.append(chapter)
-                    else:
-                        counters[level-1] += 1
-                        if level == 2: counters[2] = 0
-                        anchor = 's-' + '-'.join(str(n) for n in counters[:level])
-                        chapter['blocks'].append({'type': 'heading', 'level': level, 'text': text,
-                                                  'number': '.'.join(str(n) for n in counters[:level]), 'id': anchor})
-                        headings.append({'chapter': chapter['id'], 'id': anchor, 'text': text})
-                elif not style.startswith(('TOC', 'TableofFigures')) and text:
-                    kind = 'caption' if style == 'Caption' else 'reference' if style == 'Bibliography' else 'paragraph'
-                    chapter['blocks'].append({'type': kind, 'text': text})
-                    if kind == 'reference':
-                        urls = re.findall(r'https?://[^\s]+', text)
-                        # Hyperlink target can be hidden behind a Word field.
-                        for link in el.findall('.//w:hyperlink', NS):
-                            rid = link.attrib.get('{' + NS['r'] + '}id')
-                            target = rels.get(rid, '')
-                            if target.startswith('http'): urls.append(target)
-                        refs.append({'text': text, 'urls': list(dict.fromkeys(u.rstrip('.,;)') for u in urls))})
-                for blip in el.findall('.//a:blip', NS):
-                    rid = blip.attrib.get('{' + NS['r'] + '}embed')
-                    target = rels.get(rid, '')
-                    if target.startswith('media/'):
-                        img = APP / 'assets' / 'manuscript' / Path(target).name
-                        img.parent.mkdir(exist_ok=True, parents=True)
-                        img.write_bytes(z.read('word/' + target))
-                        chapter['blocks'].append({'type': 'image', 'src': str(img.relative_to(APP))})
-            elif tag == 'tbl' and started:
-                rows = [[body_text(c).strip() for c in row.findall('w:tc', NS)] for row in el.findall('w:tr', NS)]
-                chapter['blocks'].append({'type': 'table', 'rows': rows})
-            # Heading1 follows generated Word TOC: re-enable before next iteration.
-            if tag == 'p':
-                pass
-        # Headings occur after TOC while started is false; recover with a second pass if needed.
-        if len(chapters) < 5:
-            raise AssertionError('Manuscript chapter extraction did not reach the main text')
-    dump(DATA / 'manuscript.json', {'source': 'research/Master Thesis.docx', 'sha256': sha(file),
-                                  'chapters': chapters, 'headings': headings, 'references': refs,
-                                  'rendering': 'Reading edition extracted from Word. Tables and embedded images are retained; formulas are plain text. Download Word for submission layout.'})
-    return len(chapters), len(refs)
-
-
 def main():
     if not SRC.is_dir(): raise SystemExit('Research source folder not found: ' + str(SRC))
+    allowed = json.loads((DATA / 'public-source-list.json').read_text())
+    # The explicit submission-file allowlist excludes the complete thesis and private archives.
     if SRC != DEST:
-        DEST.mkdir(parents=True, exist_ok=True)
-        for f in SRC.rglob('*'):
-            if not f.is_file() or any(part.startswith('.') or part == '__MACOSX' for part in f.relative_to(SRC).parts): continue
-            if f.name.endswith('.docx.txt'): continue
-            target = DEST / f.relative_to(SRC)
+        for relative in allowed:
+            source, target = SRC / relative, DEST / relative
+            if not source.is_file(): raise SystemExit('Missing approved source: ' + relative)
             target.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copy2(f, target)
+            shutil.copy2(source, target)
+    actual = {str(f.relative_to(DEST)) for f in DEST.rglob('*') if f.is_file()}
+    if actual != set(allowed): raise SystemExit('Research folder differs from the public source allowlist. Use a clean destination.')
     DATA.mkdir(exist_ok=True)
     cross = DEST / 'results/cross_model/tables'
     names = ['financial_model_summary', 'model_summary', 'matched_metrics', 'matched_fold_metrics', 'native_fold_metrics',
@@ -144,21 +65,33 @@ def main():
              'native_benchmark_summary', 'native_benchmark_block_dm', 'tft_native_signals', 'arima_native_params']
     tables = {name: read_csv(cross / (name + '.csv')) for name in names}
     tables['faithfulness'] = read_csv(cross / 'faithfulness.csv')
+    stability = collections.defaultdict(list)
+    for row in read_csv(cross / 'stability.csv'):
+        key = tuple(row[k] for k in ['model','method','series','horizon','scheme','regime'])
+        stability[key].append(row)
+    import statistics
+    def med(rows, key):
+        vals = [r[key] for r in rows if isinstance(r[key], (int, float)) and math.isfinite(r[key])]
+        return statistics.median(vals) if vals else None
+    tables['stability_cells'] = [dict(zip(['model','method','series','horizon','scheme','regime'], key),
+        rho_median=med(rows,'rho'), cosine_median=med(rows,'cosine'),
+        top1_match_rate=sum(bool(r['top1_match']) for r in rows)/len(rows), count=len(rows))
+        for key,rows in sorted(stability.items())]
     dump(DATA / 'summary.json', tables)
 
     series_meta = []
     raw = {}
     for sid, label in zip(SERIES, LABELS):
         fname = f'{sid}_observations.csv' if sid != 'monash_sunspot' else 'monash_sunspot_no_missing_T1_85babb464a3e.csv'
-        rows = read_csv(DEST / 'results/data' / fname)
+        rows = read_csv(DEST / 'data' / fname)
         dates = [r.get('Date', r.get('date')) for r in rows]
         levels = [r.get('Adj Close', r.get('value')) for r in rows]
         returns = [None] + [math.log(levels[i] / levels[i-1]) for i in range(1, len(levels))] if sid != 'monash_sunspot' else levels
         raw[sid] = {'dates': dates, 'level': levels, 'signal': returns}
         dump(DATA / 'series' / (sid + '.json'), raw[sid])
         series_meta.append({'id': sid, 'label': label, 'rows': len(rows), 'start': dates[0], 'end': dates[-1],
-                            'financial': sid != 'monash_sunspot', 'file': 'research/results/data/' + fname,
-                            'sha256': sha(DEST / 'results/data' / fname)})
+                            'financial': sid != 'monash_sunspot', 'file': 'research/data/' + fname,
+                            'sha256': sha(DEST / 'data' / fname)})
 
     predictions = read_csv(cross / 'matched_observation_predictions.csv')
     groups = collections.defaultdict(list)
@@ -226,14 +159,13 @@ def main():
     dump(DATA / 'linear.json', {'folds': linear, 'verification': {'predictions_checked':checked, 'max_abs_error':max_error,
                             'method':'OLS reconstructed using the executed standardized features and exact fold training intervals; not a surrogate.'}})
 
-    chapters, references = manuscript()
+    references = len(json.loads((DATA / 'guide.json').read_text())['references'])
     inventory = []
     for f in sorted(DEST.rglob('*')):
         if not f.is_file(): continue
         rel = str(f.relative_to(DEST))
         ext = f.suffix[1:]
         category = ('Notebooks' if ext=='ipynb' else 'Figures' if ext=='png' else 'Data & tables' if ext in ('csv','tsf')
-                    else 'Manuscripts' if ext in ('docx','pptx') or 'Revised_Master_Thesis' in rel else 'Code' if ext=='py'
                     else 'Audit & evidence')
         inventory.append({'path':'research/'+rel, 'name':f.name, 'category':category, 'ext':ext,
                           'bytes':f.stat().st_size, 'sha256':sha(f),
@@ -245,11 +177,11 @@ def main():
             'subtitle':'An Experimental Evaluation of Explainable Machine Learning Models for Stock Price Prediction',
             'series':series_meta, 'models':MODELS, 'files':len(inventory), 'matched_origins':18480,
             'matched_predictions':len(predictions), 'native_predictions':188160, 'matched_cells':140,
-            'attribution_rows':sum(len(v) for v in agroups.values()), 'chapters':chapters, 'references':references,
-            'source_bytes':sum(f['bytes'] for f in inventory), 'version':'1.0.0', 'compiled':'2026-11-17',
+            'attribution_rows':sum(len(v) for v in agroups.values()), 'references':references, 'manuscript_excluded':True,
+            'source_bytes':sum(f['bytes'] for f in inventory), 'version':'2.1.0', 'compiled':'2026-11-18',
             'execution_version':'corrected-independent-rerun-v1',
-            'source_priority':['Master Thesis.docx','results/cross_model','notebooks/*_Executed.ipynb'],
-            'source_note':'source/Revised_Master_Thesis.md describes an earlier experiment and is retained as legacy material. Word is the primary reading source; corrected CSV exports drive all charts.',
+            'source_priority':['results/cross_model','notebooks/*_Executed.ipynb'],
+            'source_note':'Public research companion. The complete thesis manuscript and any full-text reader are excluded. Corrected submission CSV exports and the eight executed notebooks drive all reported results.',
             'linear_verification':{'predictions_checked':checked,'max_abs_error':max_error}}
     dump(DATA / 'manifest.json', info)
     print(json.dumps(info, indent=2))

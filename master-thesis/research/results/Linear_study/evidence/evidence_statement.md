@@ -1,6 +1,6 @@
 # Executed evidence statement — Linear
 
-Execution version: `corrected-independent-rerun-v1`
+Execution version: `thesis-execution-v1`
 
 This notebook was executed in the recorded environment. Cross-model conclusions are defined only after matched-origin synthesis.
 

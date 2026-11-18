@@ -1,0 +1,13 @@
+{
+  "source": "Yahoo Finance",
+  "ticker": "^DJI",
+  "name": "Dow Jones Industrial Average",
+  "retrieved_utc": "2026-10-23T08:53:41.055550",
+  "n": 8561,
+  "timezone": "America/New_York",
+  "currency": "USD",
+  "target_kind": "log_return",
+  "sha256": "184eb30bac156709fe4b4b19b411f0990600a1edee9e7febb2f156b30add3600",
+  "start": "1992-01-02",
+  "end": "2025-12-31"
+}

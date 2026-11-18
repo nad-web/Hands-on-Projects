@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "date": "2026-11-18",
+  "scope": "Public companion interactions; recorded data are fixed and full model training was not re-executed.",
+  "research_questions": "All three direct answers, dataset and horizon filters, fixed probe changes, and interpretation buttons checked.",
+  "learning": "All nine pathways opened; live returns, fold design, metrics, additive residuals, attribution scaling, worker inference, terminology and equation searches, quiz feedback, and seven model workshops checked. LSTM gates, softmax temperature, and zero-vector undefined stability checked.",
+  "ensemble": "Weight normalization, empty mixture handling, and 924-row CSV download verified against source predictions.",
+  "documentation": "Global notebook search, full-code expansion, within-notebook search, original downloads and math rendering checked. All 37 code cells independently verified by the included source-fidelity check.",
+  "offline": "The complete 293-file interface and documentation cache reported ready at the nested project path. Browser storage availability depends on the device.",
+  "responsive": "The research-question, Learn and Documentation layouts were checked at 375 CSS pixels. The historical explorer fit a 390-pixel-wide frame with 375 CSS pixels of content width, and its mobile results shortcut updated with the active slider.",
+  "manuscript": "Complete Word/PDF/PPTX thesis files, original source archives, and manuscript transcript assets absent from the public folder.",
+  "release": "2.1.0",
+  "historical_scenarios": {
+    "path": "/Hands-on-Projects/master-thesis/simulation/",
+    "source_navigation": "Opened from RQ1 and the selected XGBoost workshop. The worked example in Methods opened the same 152 Sunspot origins.",
+    "interaction": "Changed financial inputs and match count, selected model and date, checked source lag dates, verified replay on 2017-11-24, and restored the full state after a reload. The earliest prior-only pool was empty and switching to the archive restored results.",
+    "dax": "The five-session expanding DAX example opened the 1994-02-23 origin and showed a realised -5.847% cumulative log return and a 0.326% Linear forecast.",
+    "export": "The browser CSV contained 1,064 records for 152 exact profiles across seven models. Each prediction, target, original and matched fold, target date and origin index was compared with the submitted matched forecast CSV.",
+    "source_integrity": "All 184 original research files were independently compared byte for byte with the supplied submission ZIP."
+  }
+}
