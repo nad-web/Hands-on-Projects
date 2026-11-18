@@ -1,16 +1,33 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#101518">
+  <meta name="theme-color" content="#f5f2e8">
   <meta name="description" content="Forecast Atlas — an interactive companion to a master's thesis on trustworthy financial forecasting. Explore seven models, recorded forecasts, explanations, and original research evidence.">
-  <meta name="color-scheme" content="dark light">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    // Restore an explicit lab preference before the first paint.
+    try {
+      if (localStorage.getItem('forecast-atlas-lab-theme') === 'dark') {
+        document.documentElement.dataset.theme = 'dark';
+        document.querySelector('meta[name="theme-color"]').content = '#101518';
+      }
+    } catch {}
+    // A previously installed worker may serve the old palette during its update.
+    if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!getComputedStyle(document.documentElement).getPropertyValue('--model-linear').trim()) {
+          location.reload();
+        }
+      }, {once: true});
+    }
+  </script>
   <title>Forecast Atlas · An interactive research companion</title>
   <link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
   <link rel="manifest" href="../manifest.webmanifest">
   <link rel="stylesheet" href="../assets/style.css?v=2">
-  <link rel="stylesheet" href="../assets/academic.css?v=2">
+  <link rel="stylesheet" href="../assets/academic.css?v=paper1">
   <link rel="stylesheet" href="../assets/scenarios.css?v=2.1">
   <link rel="stylesheet" href="../assets/vendor/katex/katex.min.css">
   <script defer src="../assets/vendor/katex/katex.min.js"></script>
@@ -47,6 +64,6 @@
   <dialog id="modal" class="modal"><div id="modal-content"></div></dialog>
   <div id="tour" class="tour" hidden></div>
   <noscript><div class="no-js">Enable JavaScript to explore the interactive thesis. Read the full notebook documentation from the gateway.</div></noscript>
-  <script type="module" src="../assets/app.js?v=2.1"></script>
+  <script type="module" src="../assets/app.js?v=paper1"></script>
 </body>
 </html>

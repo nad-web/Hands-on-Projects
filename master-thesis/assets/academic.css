@@ -15,3 +15,57 @@
 @media(max-width:1150px){.learn-layout{grid-template-columns:170px minmax(0,1fr);gap:20px}.question-tab{padding:16px}.question-tab strong{font-size:14px}.evidence-bar{grid-template-columns:120px 1fr 58px;gap:8px}.topbar-kicker{display:none}.topbar-actions{gap:5px!important}}
 @media(max-width:760px){.question-tabs{gap:7px}.question-tab{padding:14px 10px}.question-tab small{display:none}.question-tab strong{font-size:12px}.answer-panel{padding:22px 20px}.answer-panel h2{font-size:15px}.final-answer{font-size:21px}.answer-findings{grid-template-columns:1fr;gap:15px}.learn-layout{display:block}.lesson-menu{position:static;border-right:0;border-bottom:1px solid var(--border);padding:0 0 14px;margin-bottom:24px;display:flex;overflow-x:auto;gap:6px}.lesson-item{display:flex;flex-shrink:0;width:auto;padding:10px 12px;white-space:nowrap;background:var(--surface);border:1px solid var(--border)}.lesson-doc-link{display:none}.lesson-item i{display:none}.learning-hero{padding:25px}.learning-hero h2,.lesson-reading h2{font-size:27px}.learning-course-grid,.term-grid,.blend-layout{grid-template-columns:1fr}.course-card{min-height:160px}.equation-card{padding:22px 18px}.equation-card .pill{margin-top:8px}.reference-search{flex-wrap:wrap;gap:10px}.reference-search input{flex-basis:100%}.claim-cards{grid-template-columns:1fr}.claim-cards button{padding:14px}.mini-metrics{gap:8px}.live-number{padding:14px 12px}.live-number strong{font-size:21px}.portal-switch{font-size:9px;padding:5px}.topbar-actions .archive-status{display:none}.topbar-actions .icon-btn{width:28px}.topbar{padding-left:12px!important;padding-right:12px!important}.breadcrumb{font-size:10px!important;gap:7px!important}.evidence-bar{grid-template-columns:126px 1fr 57px}.knowledge-check,.lesson-takeaway{padding:22px 18px}.lesson-reading .lesson-lead,.lesson-lead{font-size:15px}}
 @media(prefers-reduced-motion:reduce){.course-card,.question-tab{transition:none}}
+
+/* Model colors follow the simulation theme in charts, legends and SVG exports. */
+:root {
+  color-scheme: dark;
+  --model-linear: #b9efcc;
+  --model-arima: #dec992;
+  --model-random-forest: #91b5e1;
+  --model-xgboost: #e4a588;
+  --model-lightgbm: #91d4ca;
+  --model-lstm: #c2b6f0;
+  --model-tft: #e4a6c7;
+  --chart-secondary-opacity: .5;
+}
+
+/* Warm paper, sage navigation and dark ink for the research lab. */
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f5f2e8;
+  --sidebar: #e1e9df;
+  --surface: #fffdf6;
+  --surface2: #eaf0e7;
+  --surface3: #dae4d8;
+  --border: #c2cabc;
+  --control-edge: #76877a;
+  --text: #20372f;
+  --muted: #435b50;
+  --faint: #50665b;
+  --accent: #155a46;
+  --accent2: #286548;
+  --blue: #386587;
+  --purple: #6c5083;
+  --red: #974536;
+  --gold: #805c17;
+  --shadow: 0 18px 50px #293e2e14;
+  --model-linear: #176749;
+  --model-arima: #7c591e;
+  --model-random-forest: #366491;
+  --model-xgboost: #9a4326;
+  --model-lightgbm: #086b6e;
+  --model-lstm: #705393;
+  --model-tft: #964564;
+  --chart-secondary-opacity: .82;
+}
+
+html[data-theme="light"] :is(select, input[type="date"], input[type="number"], input[type="search"], input[type="text"]) {
+  border-color: var(--control-edge);
+}
+
+html[data-theme="light"] .nav-item .nav-num { opacity: 1; }
+html[data-theme="light"] .stability-cell small { color: var(--text); }
+html[data-theme="light"] .heat-legend > i {
+  background: linear-gradient(90deg, var(--surface2), var(--accent2));
+}
+html[data-theme="light"] #forecast-svg path[stroke] { filter: none; }

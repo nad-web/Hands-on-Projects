@@ -439,7 +439,13 @@ document.addEventListener('click',async event=>{
     else if(a==='open-scenarios')navigate('replay',{replayTab:'scenarios'});
     else if(a==='retry'){if(manifest)render();else boot();}
     else if(a==='menu'){$('#sidebar').classList.toggle('open');$('#sidebar-scrim').classList.toggle('open');}
-    else if(a==='theme'){const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=theme;try{localStorage.setItem('forecast-atlas-theme',theme);}catch{}}
+    else if(a==='theme'){
+      const root=document.documentElement;
+      const theme=root.dataset.theme==='light'?'dark':'light';
+      root.dataset.theme=theme;
+      document.querySelector('meta[name="theme-color"]').content=getComputedStyle(root).getPropertyValue('--bg').trim();
+      try{localStorage.setItem('forecast-atlas-lab-theme',theme);}catch{}
+    }
     else if(a==='search'){navigate('vault');setTimeout(()=>$('#vault-search')?.focus(),0);}
     else if(a==='share'){remember();try{await navigator.clipboard.writeText(location.href);toast('Link to this experiment copied.');}catch{showModal('Link to this experiment',`<input style="width:100%" type="text" readonly aria-label="Current experiment link" value="${esc(location.href)}">`);}}
     else if(a==='play'){if(playing)stopPlayback();else{if(state.cursor>=923)state.cursor=0;playing=true;$('#play-button').innerHTML=icon('pause');$('#play-button').setAttribute('aria-label','Pause forecast replay');timer=setTimeout(playTick,Number($('#play-speed')?.value||400));}}
@@ -496,7 +502,7 @@ window.addEventListener('pagehide',stopPlayback);
 document.addEventListener('visibilitychange',()=>{if(document.hidden)stopPlayback();});
 
 async function boot(){
-  icons();try{const saved=localStorage.getItem('forecast-atlas-theme');if(saved==='light'||saved==='dark')document.documentElement.dataset.theme=saved;}catch{}
+  icons();
   readHash();
   if(location.protocol==='file:'){setMain(`<div class="browser-error"><h1>Open the local research app</h1><p>The interactive datasets need a local web server. Double-click <strong>START_HERE.command</strong> on a Mac, or run this command in the master-thesis folder:</p><code>python3 -m http.server 8000</code><p class="mt">Then open <a href="http://localhost:8000">http://localhost:8000</a>. The published GitHub Pages version works directly in the browser.</p></div>`);return;}
   try{[manifest,summary,inventory]=await Promise.all([getJSON('data/manifest.json'),getJSON('data/summary.json'),getJSON('data/inventory.json')]);setupAcademic({state,summary,getJSON,forecasts,attrs,rawSeries,header,contextBar,modelTabs,navigate,remember,toast,url:urlPath,exportRows:(name,rows)=>download(name,csvText(rows),'text/csv')});await render();}
